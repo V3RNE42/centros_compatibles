@@ -1781,21 +1781,28 @@
           scrollWheelZoom: false,
         }).setView([37.374, -6.015], 11);
 
-        L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+        const tileLayer = L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
           maxZoom: 19,
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/">CARTO</a>',
           subdomains: "abc",
-        }).addTo(map);
+        });
 
-        // Hide loading indicator once the first tiles load
+        // Hide loading indicator — listen BEFORE tiles start loading
         let loaderHidden = false;
-        map.on("tileload", () => {
+        function hideLoader() {
           if (!loaderHidden) {
             loaderHidden = true;
             const loader = document.getElementById("map-loader");
             if (loader) loader.classList.add("is-hidden");
           }
-        });
+        }
+        map.on("tileload", hideLoader);
+        map.on("tileerror", hideLoader);
+
+        tileLayer.addTo(map);
+
+        // Safety net: if tiles somehow loaded before listener, hide instantly
+        setTimeout(hideLoader, 3000);
 
         const markerBounds = [];
 
