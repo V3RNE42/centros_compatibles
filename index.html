@@ -1309,6 +1309,18 @@
                 <span class="email-chip" tabindex="0" role="button" data-email="sevilla.viapol@englishconnection.es">sevilla.viapol@englishconnection.es</span>
               </td>
             </tr>
+            <tr>
+              <td data-label="Site Name">Notting Hill — Academia de Idiomas y Enseñanza</td>
+              <td data-label="Physical Address">
+                C/ Virgen de la Estrella, 10, 41011 Seville (Los Remedios)
+              </td>
+              <td data-label="Website">
+                <a class="link-chip" href="https://www.nottinghillacademia.com/" target="_blank" rel="noopener">nottinghillacademia.com</a>
+              </td>
+              <td class="email-cell" data-label="Email Address">
+                <span class="email-chip" tabindex="0" role="button" data-email="nottingsevillahill@gmail.com">nottingsevillahill@gmail.com</span>
+              </td>
+            </tr>
             <!-- <tr>
               <td data-label="Site Name">
                 Colegio Internacional de Sevilla - San Francisco de Paula
@@ -1437,6 +1449,7 @@
             <li><span class="legend-number">62</span><span class="legend-text"><strong>Attendis Preschool Aljarafe</strong><span>Espartinas</span></span></li>
             <li><span class="legend-number">63</span><span class="legend-text"><strong>CLIC International House Sevilla</strong><span>Central Seville</span></span></li>
             <li><span class="legend-number">64</span><span class="legend-text"><strong>Giralda Center / Spanish House Idiomas</strong><span>Central Seville</span></span></li>
+            <li><span class="legend-number">65</span><span class="legend-text"><strong>Notting Hill — Academia de Idiomas y Enseñanza</strong><span>Los Remedios / C. Virgen de la Estrella</span></span></li>
 </ol>
 </div>
 </section>
@@ -1703,71 +1716,72 @@
 
 
       const mapLocations = [
-        { number: 1, name: "Yago School Sevilla", area: "Castilleja de la Cuesta", lat: 37.3848, lng: -6.0548 },
-        { number: 2, name: "Centro Norteamericano", area: "Central Seville", lat: 37.3861, lng: -5.9951 },
-        { number: 3, name: "CBS, The British School of Seville", area: "Bollullos de la Mitación", lat: 37.3315, lng: -6.1292 },
-        { number: 4, name: "Highlands School Sevilla", area: "Montequinto", lat: 37.3377, lng: -5.9409 },
-        { number: 5, name: "St. Angela International School Sevilla", area: "Salteras / La Cartuja area", lat: 37.4075, lng: -6.0808 },
-        { number: 6, name: "Colegio Alemán de Sevilla Alberto Durero", area: "Sevilla Este", lat: 37.4034, lng: -5.9235 },
-        { number: 7, name: "Colegio Internacional Almenar", area: "Dos Hermanas", lat: 37.2884, lng: -5.9485 },
-        { number: 8, name: "Europa International School", area: "Espartinas", lat: 37.3869, lng: -6.1272 },
-        { number: 9, name: "Sevilla Language Center", area: "Central Seville", lat: 37.3806, lng: -5.9942 },
-        { number: 10, name: "My English School Sevilla", area: "Los Remedios", lat: 37.3779, lng: -6.0069 },
-        { number: 11, name: "ELI - English Language Institute", area: "Nervión / central address", lat: 37.3824, lng: -5.9636 },
-        { number: 12, name: "AMT Spain / AM Transnational", area: "Los Bermejales", lat: 37.3482, lng: -5.9803 },
-        { number: 13, name: "Colegio San Alberto Magno", area: "Sevilla Este / Nervión", lat: 37.4003, lng: -5.9878 },
-        { number: 14, name: "Centro Cristo Rey", area: "Central Seville", lat: 37.3854, lng: -5.9978 },
-        { number: 15, name: "Escuela Profesional Marcelo Spínola", area: "Central Seville", lat: 37.3935, lng: -5.9935 },
-        { number: 16, name: "Centro Sagrada Familia de Urgel", area: "Central / San Bernardo", lat: 37.3882, lng: -5.9845 },
-        { number: 17, name: "Colegio Calasancio Hispalense", area: "Los Remedios", lat: 37.3811, lng: -6.0019 },
-        { number: 18, name: "Colegio Ntra. Sra. del Carmen", area: "Central / Alameda", lat: 37.3923, lng: -5.994 },
-        { number: 19, name: "Colegio San José (Hijas de la Caridad)", area: "Central / Encarnación", lat: 37.3917, lng: -5.987 },
-        { number: 20, name: "Centro Santo Tomás de Aquino", area: "Central / Santa Cruz", lat: 37.3932, lng: -5.9923 },
-        { number: 21, name: "Colegio La Inmaculada (Jesuitinas)", area: "Central / Alameda", lat: 37.3971, lng: -5.9965 },
-        { number: 22, name: "Colegio Ntra. Sra. de los Reyes (Mercedarias)", area: "Central / Encarnación", lat: 37.3893, lng: -5.9893 },
-        { number: 23, name: "Colegio de Fomento Tabladilla", area: "El Porvenir / Sur", lat: 37.3729, lng: -5.9906 },
-        { number: 24, name: "Colegio de Fomento Entreolivos", area: "Los Remedios / Triana", lat: 37.4011, lng: -6.0128 },
-        { number: 25, name: "St. Mary's School", area: "Los Remedios", lat: 37.384, lng: -5.9985 },
-        { number: 26, name: "Salesianos San José (Alcalá de Guadaíra)", area: "Alcalá de Guadaíra", lat: 37.3378, lng: -5.8403 },
-        { number: 27, name: "Colegio Ntra. Sra. del Águila (Alcalá de Guadaíra)", area: "Alcalá de Guadaíra", lat: 37.3378, lng: -5.8403 },
-        { number: 28, name: "Colegio San Miguel (Alcalá de Guadaíra)", area: "Alcalá de Guadaíra", lat: 37.3382, lng: -5.839 },
-        { number: 29, name: "Colegio SAFA (Alcalá de Guadaíra)", area: "Alcalá de Guadaíra", lat: 37.3368, lng: -5.8395 },
-        { number: 30, name: "Colegio San José Obrero (Mairena del Alcor)", area: "Mairena del Alcor", lat: 37.3465, lng: -5.7507 },
-        { number: 31, name: "Colegio Ntra. Sra. del Carmen (Mairena del Alcor)", area: "Mairena del Alcor", lat: 37.3458, lng: -5.7492 },
-        { number: 32, name: "Colegio Santa María del Alcor (El Viso del Alcor)", area: "El Viso del Alcor", lat: 37.39, lng: -5.722 },
-        { number: 33, name: "Colegio San Sebastián (El Viso del Alcor)", area: "El Viso del Alcor", lat: 37.3885, lng: -5.72 },
-        { number: 34, name: "Colegio Ntra. Sra. de la Asunción (Carmona)", area: "Carmona", lat: 37.471, lng: -5.6415 },
-        { number: 35, name: "Colegio San Blas (Carmona)", area: "Carmona", lat: 37.4725, lng: -5.638 },
-        { number: 36, name: "Colegio San Eustaquio (Sanlúcar la Mayor)", area: "Sanlúcar la Mayor", lat: 37.385, lng: -6.2 },
+        { number: 1, name: "Yago School Sevilla", area: "Castilleja de la Cuesta", lat: 37.39047, lng: -6.05591 },
+        { number: 2, name: "Centro Norteamericano", area: "Central Seville", lat: 37.3867738, lng: -5.995963 },
+        { number: 3, name: "CBS, The British School of Seville", area: "Bollullos de la Mitación", lat: 37.31564, lng: -6.16884 },
+        { number: 4, name: "Highlands School Sevilla", area: "Montequinto", lat: 37.3431162, lng: -5.9069299 },
+        { number: 5, name: "St. Angela International School Sevilla", area: "Salteras / La Cartuja area", lat: 37.45912, lng: -6.05506 },
+        { number: 6, name: "Colegio Alemán de Sevilla Alberto Durero", area: "Sevilla Este", lat: 37.4034, lng: -5.926 },
+        { number: 7, name: "Colegio Internacional Almenar", area: "Dos Hermanas", lat: 37.283689, lng: -5.9226718 },
+        { number: 8, name: "Europa International School", area: "Espartinas", lat: 37.3814997, lng: -6.125652 },
+        { number: 9, name: "Sevilla Language Center", area: "Central Seville", lat: 37.399754, lng: -5.9931325 },
+        { number: 10, name: "My English School Sevilla", area: "Los Remedios", lat: 37.3742211, lng: -6.0011416 },
+        { number: 11, name: "ELI - English Language Institute", area: "Nervión / central address", lat: 37.3829853, lng: -5.9739859 },
+        { number: 12, name: "AMT Spain / AM Transnational", area: "Los Bermejales", lat: 37.3465852, lng: -5.9796283 },
+        { number: 13, name: "Colegio San Alberto Magno", area: "Sevilla Este / Nervión", lat: 37.400697, lng: -5.9260271 },
+        { number: 14, name: "Centro Cristo Rey", area: "Central Seville", lat: 37.3778021, lng: -5.9767936 },
+        { number: 15, name: "Escuela Profesional Marcelo Spínola", area: "Central Seville", lat: 37.3875448, lng: -5.9890997 },
+        { number: 16, name: "Centro Sagrada Familia de Urgel", area: "Central / San Bernardo", lat: 37.399754, lng: -5.9931325 },
+        { number: 17, name: "Colegio Calasancio Hispalense", area: "Los Remedios", lat: 37.2959256, lng: -5.9265173 },
+        { number: 18, name: "Colegio Ntra. Sra. del Carmen", area: "Central / Alameda", lat: 37.3907821, lng: -5.9982148 },
+        { number: 19, name: "Colegio San José (Hijas de la Caridad)", area: "Central / Encarnación", lat: 37.3879951, lng: -5.9889092 },
+        { number: 20, name: "Centro Santo Tomás de Aquino", area: "Central / Santa Cruz", lat: 37.38433, lng: -5.9930211 },
+        { number: 21, name: "Colegio La Inmaculada (Jesuitinas)", area: "Central / Alameda", lat: 37.3946834, lng: -5.9959183 },
+        { number: 22, name: "Colegio Ntra. Sra. de los Reyes (Mercedarias)", area: "Central / Encarnación", lat: 37.3888077, lng: -5.9995672 },
+        { number: 23, name: "Colegio de Fomento Tabladilla", area: "El Porvenir / Sur", lat: 37.3608398, lng: -5.9827581 },
+        { number: 24, name: "Colegio de Fomento Entreolivos", area: "Los Remedios / Triana", lat: 37.3829774, lng: -6.0006165 },
+        { number: 25, name: "St. Mary's School", area: "Los Remedios", lat: 37.3729783, lng: -6.000471 },
+        { number: 26, name: "Salesianos San José (Alcalá de Guadaíra)", area: "Alcalá de Guadaíra", lat: 37.3360726, lng: -5.8465069 },
+        { number: 27, name: "Colegio Ntra. Sra. del Águila (Alcalá de Guadaíra)", area: "Alcalá de Guadaíra", lat: 37.3360726, lng: -5.8465069 },
+        { number: 28, name: "Colegio San Miguel (Alcalá de Guadaíra)", area: "Alcalá de Guadaíra", lat: 37.3397709, lng: -5.8408396 },
+        { number: 29, name: "Colegio SAFA (Alcalá de Guadaíra)", area: "Alcalá de Guadaíra", lat: 37.3397709, lng: -5.8408396 },
+        { number: 30, name: "Colegio San José Obrero (Mairena del Alcor)", area: "Mairena del Alcor", lat: 37.3730933, lng: -5.7489246 },
+        { number: 31, name: "Colegio Ntra. Sra. del Carmen (Mairena del Alcor)", area: "Mairena del Alcor", lat: 37.3730933, lng: -5.7489246 },
+        { number: 32, name: "Colegio Santa María del Alcor (El Viso del Alcor)", area: "El Viso del Alcor", lat: 37.3862066, lng: -5.7220207 },
+        { number: 33, name: "Colegio San Sebastián (El Viso del Alcor)", area: "El Viso del Alcor", lat: 37.3891783, lng: -5.7224779 },
+        { number: 34, name: "Colegio Ntra. Sra. de la Asunción (Carmona)", area: "Carmona", lat: 37.470818, lng: -5.6388032 },
+        { number: 35, name: "Colegio San Blas (Carmona)", area: "Carmona", lat: 37.4754664, lng: -5.6400881 },
+        { number: 36, name: "Colegio San Eustaquio (Sanlúcar la Mayor)", area: "Sanlúcar la Mayor", lat: 37.3864113, lng: -6.2024485 },
         { number: 37, name: "English Connection Sevilla — Los Remedios", area: "Los Remedios / Calle Asunción", lat: 37.3739864, lng: -5.9973214 },
-        { number: 38, name: "English Connection Sevilla — Centro", area: "Centro", lat: 37.3891, lng: -5.9943 },
-        { number: 39, name: "English Connection Sevilla — Bermejales", area: "Bermejales", lat: 37.3489, lng: -5.981 },
-        { number: 40, name: "English Connection Sevilla — Macarena", area: "Macarena", lat: 37.4038, lng: -5.986 },
-        { number: 41, name: "English Connection Sevilla — Cerro del Águila", area: "Cerro del Águila", lat: 37.3766, lng: -5.9567 },
-        { number: 42, name: "English Connection Sevilla — Este Ciencias", area: "Sevilla Este", lat: 37.4066, lng: -5.926 },
-        { number: 43, name: "English Connection Sevilla — Este Góndolas", area: "Sevilla Este", lat: 37.4047, lng: -5.9207 },
-        { number: 44, name: "English Connection Sevilla — Gran Plaza", area: "Gran Plaza", lat: 37.3806, lng: -5.9756 },
-        { number: 45, name: "English Connection Sevilla — La Salle", area: "La Salle", lat: 37.3847, lng: -6.0113 },
-        { number: 46, name: "English Connection Sevilla — Parque Alcosa", area: "Parque Alcosa", lat: 37.413, lng: -5.913 },
-        { number: 47, name: "English Connection Sevilla — Parsi", area: "Parsi", lat: 37.3912, lng: -5.9907 },
-        { number: 48, name: "English Connection Sevilla — Pinomontano", area: "Pino Montano", lat: 37.411, lng: -5.962 },
-        { number: 49, name: "English Connection Sevilla — Reina Mercedes", area: "Reina Mercedes", lat: 37.3599, lng: -5.9853 },
-        { number: 50, name: "English Connection Sevilla — San Jerónimo", area: "San Jerónimo", lat: 37.4135, lng: -5.9988 },
-        { number: 51, name: "English Connection Sevilla — Santa Justa", area: "Santa Justa", lat: 37.391, lng: -5.9655 },
-        { number: 52, name: "English Connection Sevilla — Tharsis", area: "Tharsis", lat: 37.3723, lng: -5.957 },
-        { number: 53, name: "English Connection Sevilla — Triana", area: "Triana", lat: 37.3835, lng: -6.0117 },
-        { number: 54, name: "English Connection Sevilla — Viapol", area: "Viapol", lat: 37.369, lng: -5.9756 },
-        { number: 55, name: "Colegio San Hermenegildo", area: "Montequinto", lat: 37.28521, lng: -5.89784 },
-        { number: 56, name: "Colegio Salesiano Ntra. Sra. del Carmen", area: "Utrera", lat: 37.1813, lng: -5.7781 },
-        { number: 57, name: "Colegio CEU San Pablo Montepríncipe", area: "Bormujos", lat: 37.3699, lng: -6.0876 },
-        { number: 58, name: "Colegio Aljarafe", area: "Mairena del Aljarafe", lat: 37.345, lng: -6.065 },
-        { number: 59, name: "Colegio Huerta Santa Ana", area: "Gines", lat: 37.389, lng: -6.078 },
-        { number: 60, name: "Colegio San José", area: "La Rinconada", lat: 37.4727, lng: -5.9518 },
-        { number: 61, name: "Colegio Almenar", area: "Espartinas", lat: 37.381, lng: -6.125 },
-        { number: 62, name: "Attendis Preschool Aljarafe", area: "Espartinas", lat: 37.382, lng: -6.126 },
-        { number: 63, name: "CLIC International House Sevilla", area: "Central Seville", lat: 37.389, lng: -5.995 },
-        { number: 64, name: "Giralda Center / Spanish House Idiomas", area: "Central Seville", lat: 37.387, lng: -5.992 },
-];
+        { number: 38, name: "English Connection Sevilla — Centro", area: "Centro", lat: 37.3924070, lng: -5.9952820 },
+        { number: 39, name: "English Connection Sevilla — Bermejales", area: "Bermejales", lat: 37.3466820, lng: -5.9802040 },
+        { number: 40, name: "English Connection Sevilla — Macarena", area: "Macarena", lat: 37.4031510, lng: -5.9904800 },
+        { number: 41, name: "English Connection Sevilla — Cerro del Águila", area: "Cerro del Águila", lat: 37.3703210, lng: -5.9567240 },
+        { number: 42, name: "English Connection Sevilla — Este Ciencias", area: "Sevilla Este", lat: 37.4003340, lng: -5.9259030 },
+        { number: 43, name: "English Connection Sevilla — Este Góndolas", area: "Sevilla Este", lat: 37.4021180, lng: -5.9379560 },
+        { number: 44, name: "English Connection Sevilla — Gran Plaza", area: "Gran Plaza", lat: 37.3810910, lng: -5.9658160 },
+        { number: 45, name: "English Connection Sevilla — La Salle", area: "La Salle", lat: 37.4058030, lng: -5.9741900 },
+        { number: 46, name: "English Connection Sevilla — Parque Alcosa", area: "Parque Alcosa", lat: 37.4100770, lng: -5.9268080 },
+        { number: 47, name: "English Connection Sevilla — Parsi", area: "Parsi", lat: 37.3748480, lng: -5.9238030 },
+        { number: 48, name: "English Connection Sevilla — Pinomontano", area: "Pino Montano", lat: 37.4179230, lng: -5.9698370 },
+        { number: 49, name: "English Connection Sevilla — Reina Mercedes", area: "Reina Mercedes", lat: 37.3582440, lng: -5.9859380 },
+        { number: 50, name: "English Connection Sevilla — San Jerónimo", area: "San Jerónimo", lat: 37.4239420, lng: -5.9855480 },
+        { number: 51, name: "English Connection Sevilla — Santa Justa", area: "Santa Justa", lat: 37.3903630, lng: -5.9699100 },
+        { number: 52, name: "English Connection Sevilla — Tharsis", area: "Tharsis", lat: 37.3993660, lng: -5.9708630 },
+        { number: 53, name: "English Connection Sevilla — Triana", area: "Triana", lat: 37.3841680, lng: -6.0101440 },
+        { number: 54, name: "English Connection Sevilla — Viapol", area: "Viapol", lat: 37.3743490, lng: -5.9777550 },
+        { number: 55, name: "Colegio San Hermenegildo", area: "Montequinto", lat: 37.2836890, lng: -5.9226720 },
+        { number: 56, name: "Colegio Salesiano Ntra. Sra. del Carmen", area: "Utrera", lat: 37.1759770, lng: -5.7776080 },
+        { number: 57, name: "Colegio CEU San Pablo Montepríncipe", area: "Bormujos", lat: 37.3674070, lng: -6.0858900 },
+        { number: 58, name: "Colegio Aljarafe", area: "Mairena del Aljarafe", lat: 37.3444910, lng: -6.0606770 },
+        { number: 59, name: "Colegio Huerta Santa Ana", area: "Gines", lat: 37.3839440, lng: -6.0711900 },
+        { number: 60, name: "Colegio San José", area: "La Rinconada", lat: 37.4801180, lng: -5.9427360 },
+        { number: 61, name: "Colegio Almenar", area: "Espartinas", lat: 37.3829200, lng: -6.1177590 },
+        { number: 62, name: "Attendis Preschool Aljarafe", area: "Espartinas", lat: 37.3825710, lng: -6.1613210 },
+        { number: 63, name: "CLIC International House Sevilla", area: "Central Seville", lat: 37.3893670, lng: -5.9962490 },
+        { number: 64, name: "Giralda Center / Spanish House Idiomas", area: "Central Seville", lat: 37.392825, lng: -5.982674 },
+        { number: 65, name: "Notting Hill — Academia de Idiomas y Enseñanza", area: "Los Remedios / C. Virgen de la Estrella", lat: 37.3742203, lng: -6.0005538 },
+      ];
 
       function initializeSevilleMap() {
         const mapContainer = document.getElementById("seville-map");
