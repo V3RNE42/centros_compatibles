@@ -1,20 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <!--
+<head>
+<!--
     Responsive HTML directory for education centres in Seville.
     The page presents compatible schools and language academies in a responsive table,
     adapts URL and email columns to their real content length, and lets users copy
     email addresses to the clipboard with an instant toast notification.
   -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Education Centres in Seville Compatible with the CV</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    />
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Education Centres in Seville Compatible with the CV</title>
+<link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet"/>
+<style>
       :root {
         --bg: #f7f8fb;
         --card: #ffffff;
@@ -418,11 +416,11 @@
         }
       }
     </style>
-  </head>
-  <body>
-    <main>
-      <h1>Education Centres in Seville Compatible with the CV</h1>
-      <p>
+</head>
+<body>
+<main>
+<h1>Education Centres in Seville Compatible with the CV</h1>
+<p>
         This selection includes schools and language centres in Seville and its
         metropolitan area that match a profile as an English teacher with Level
         5 TEFL certification, secondary education experience, bilingual or
@@ -431,849 +429,473 @@
         (concertado) and private schools offering primary and secondary education
         in the metropolitan area, excluding marginal neighbourhoods.
       </p>
-      <div class="profile">
-        <strong>Compatibility criterion:</strong> priority has been given to
+<div class="profile">
+<strong>Compatibility criterion:</strong> priority has been given to
         international, bilingual, and IB-oriented schools, as well as English
         academies with native or bilingual teachers and programmes for
         teenagers, adults, schools, or companies. New additions include
         concertado and private schools across the Aljarafe, Los Alcores,
         Dos Hermanas, Utrera, and central Seville.
       </div>
-
-      <div
-        class="table-shell"
-        aria-label="Responsive table of compatible education centres in Seville"
-      >
-        <table>
-          <colgroup>
-            <col class="name-column" />
-            <col class="address-column" />
-            <col class="url-column" />
-            <col class="email-column" />
-          </colgroup>
-          <thead>
-            <tr>
-              <th>Site Name</th>
-              <th>Physical Address</th>
-              <th>Website</th>
-              <th>Email Address</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td data-label="Site Name">Yago School Sevilla</td>
-              <td data-label="Physical Address">
+<div aria-label="Responsive table of compatible education centres in Seville" class="table-shell">
+<table>
+<colgroup>
+<col class="name-column"/>
+<col class="address-column"/>
+<col class="url-column"/>
+<col class="email-column"/>
+</colgroup>
+<thead>
+<tr>
+<th>Site Name</th>
+<th>Physical Address</th>
+<th>Website</th>
+<th>Email Address</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Site Name">Yago School Sevilla</td>
+<td data-label="Physical Address">
                 Senior School, Av. Antonio Mairena, 54, Castilleja de la Cuesta,
                 41950 Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://yagoschoolsevilla.com/"
-                  target="_blank"
-                  rel="noopener"
-                  >https://yagoschoolsevilla.com/</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="secretary@yagoschool.com"
-                  >secretary@yagoschool.com</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Centro Norteamericano</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<a class="link-chip" href="https://yagoschoolsevilla.com/" rel="noopener" target="_blank">https://yagoschoolsevilla.com/</a>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="secretary@yagoschool.com" role="button" tabindex="0">secretary@yagoschool.com</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Centro Norteamericano</td>
+<td data-label="Physical Address">
                 Calle Harinas, 18, 41001 Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://centronorteamericano.com/"
-                  target="_blank"
-                  rel="noopener"
-                  >https://centronorteamericano.com/</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="hi@centronorteamericano.com"
-                  >hi@centronorteamericano.com</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">CBS, The British School of Seville</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<a class="link-chip" href="https://centronorteamericano.com/" rel="noopener" target="_blank">https://centronorteamericano.com/</a>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="hi@centronorteamericano.com" role="button" tabindex="0">hi@centronorteamericano.com</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">CBS, The British School of Seville</td>
+<td data-label="Physical Address">
                 Urb. Pinar de la Juliana, plot 40-A and B, Bollullos de la
                 Mitación, 41110 Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://colegiobs.eu/"
-                  target="_blank"
-                  rel="noopener"
-                  >https://colegiobs.eu/</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="secretaria@colegiobs.eu"
-                  >secretaria@colegiobs.eu</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Highlands School Sevilla</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<a class="link-chip" href="https://colegiobs.eu/" rel="noopener" target="_blank">https://colegiobs.eu/</a>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="secretaria@colegiobs.eu" role="button" tabindex="0">secretaria@colegiobs.eu</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Highlands School Sevilla</td>
+<td data-label="Physical Address">
                 Carretera de Utrera, km 4.5, 41089 Montequinto, Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://www.highlandssevilla.es/"
-                  target="_blank"
-                  rel="noopener"
-                  >https://highlandssevilla.es/</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="atencionfamilias@highlandssevilla.es"
-                  >atencionfamilias@highlandssevilla.es</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">
+<td data-label="Website">
+<a class="link-chip" href="https://www.highlandssevilla.es/" rel="noopener" target="_blank">https://highlandssevilla.es/</a>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="atencionfamilias@highlandssevilla.es" role="button" tabindex="0">atencionfamilias@highlandssevilla.es</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">
                 St. Angela International School Sevilla
               </td>
-              <td data-label="Physical Address">
+<td data-label="Physical Address">
                 Calle Canarias, 269, Los Llanos Business Park, Salteras-Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://saintangelainternationalschoolsevilla.com/"
-                  target="_blank"
-                  rel="noopener"
-                  >https://saintangelainternationalschoolsevilla.com/</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="workwithus@stangelainternationalschoolsevilla.com"
-                  >workwithus@stangelainternationalschoolsevilla.com</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">
+<td data-label="Website">
+<a class="link-chip" href="https://saintangelainternationalschoolsevilla.com/" rel="noopener" target="_blank">https://saintangelainternationalschoolsevilla.com/</a>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="workwithus@stangelainternationalschoolsevilla.com" role="button" tabindex="0">workwithus@stangelainternationalschoolsevilla.com</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">
                 Colegio Alemán de Sevilla Alberto Durero
               </td>
-              <td data-label="Physical Address">
+<td data-label="Physical Address">
                 Av. de Altamira s/n, corner with C. Cueva del Gato, 41020
                 Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://www.colegioalemansevilla.com/"
-                  target="_blank"
-                  rel="noopener"
-                  >https://colegioalemansevilla.com/</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="secretaria@colegioalemansevilla.com"
-                  >secretaria@colegioalemansevilla.com</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Internacional Alminar</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<a class="link-chip" href="https://www.colegioalemansevilla.com/" rel="noopener" target="_blank">https://colegioalemansevilla.com/</a>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="secretaria@colegioalemansevilla.com" role="button" tabindex="0">secretaria@colegioalemansevilla.com</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Internacional Alminar</td>
+<td data-label="Physical Address">
                 Ronda de Altair, 2, Urbanización La Motilla, 41703 Dos Hermanas,
                 Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://colegioalminar.es/"
-                  target="_blank"
-                  rel="noopener"
-                  >https://colegioalminar.es/</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="colegio@alminar.es"
-                  >colegio@alminar.es</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Europa International School</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<a class="link-chip" href="https://colegioalminar.es/" rel="noopener" target="_blank">https://colegioalminar.es/</a>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="colegio@alminar.es" role="button" tabindex="0">colegio@alminar.es</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Europa International School</td>
+<td data-label="Physical Address">
                 Carretera A-8076, km 6, 41807 Espartinas, Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://www.europaschool.org/"
-                  target="_blank"
-                  rel="noopener"
-                  >https://europaschool.org/</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="rph@europaschool.org"
-                  >rph@europaschool.org</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Sevilla Language Center</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<a class="link-chip" href="https://www.europaschool.org/" rel="noopener" target="_blank">https://europaschool.org/</a>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="rph@europaschool.org" role="button" tabindex="0">rph@europaschool.org</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Sevilla Language Center</td>
+<td data-label="Physical Address">
                 Paseo de Cristina, 3, mezzanine floor, 41001 Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://www.sevillalanguagecenter.com/"
-                  target="_blank"
-                  rel="noopener"
-                  >https://sevillalanguagecenter.com/</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="info@sevillalanguagecenter.com"
-                  >info@sevillalanguagecenter.com</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">My English School Sevilla</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<a class="link-chip" href="https://www.sevillalanguagecenter.com/" rel="noopener" target="_blank">https://sevillalanguagecenter.com/</a>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="info@sevillalanguagecenter.com" role="button" tabindex="0">info@sevillalanguagecenter.com</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">My English School Sevilla</td>
+<td data-label="Physical Address">
                 Avenida de la República Argentina, 16, 41010 Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://www.myes.school/es/cursos-de-ingles-sevilla/"
-                  target="_blank"
-                  rel="noopener"
-                  >https://myes.school/es/cursos-de-ingles-sevilla/</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="info@myes.es"
-                  >info@myes.es</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">ELI - English Language Institute</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<a class="link-chip" href="https://www.myes.school/es/cursos-de-ingles-sevilla/" rel="noopener" target="_blank">https://myes.school/es/cursos-de-ingles-sevilla/</a>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="info@myes.es" role="button" tabindex="0">info@myes.es</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">ELI - English Language Institute</td>
+<td data-label="Physical Address">
                 C/ Larra, 1, 41005 Seville; it also has several centres across
                 Seville city and the metropolitan area
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://www.eli.es/"
-                  target="_blank"
-                  rel="noopener"
-                  >https://eli.es/</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="recruitment@eli.es"
-                  >recruitment@eli.es</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">AMT Spain / AM Transnational</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<a class="link-chip" href="https://www.eli.es/" rel="noopener" target="_blank">https://eli.es/</a>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="recruitment@eli.es" role="button" tabindex="0">recruitment@eli.es</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">AMT Spain / AM Transnational</td>
+<td data-label="Physical Address">
                 Nuestra Señora de las Mercedes, 4, 41013 Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://www.amt-spain.com/en/english-academy/"
-                  target="_blank"
-                  rel="noopener"
-                  >https://amt-spain.com/en/english-academy/</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="hola@amt-spain.com"
-                  >hola@amt-spain.com</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio San Alberto Magno</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<a class="link-chip" href="https://www.amt-spain.com/en/english-academy/" rel="noopener" target="_blank">https://amt-spain.com/en/english-academy/</a>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="hola@amt-spain.com" role="button" tabindex="0">hola@amt-spain.com</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio San Alberto Magno</td>
+<td data-label="Physical Address">
                 C/ Juan de la Cueva, 4, 41009 Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://sanbertin.com"
-                  target="_blank"
-                  rel="noopener"
-                  >sanbertin.com</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="secretaria@csamsevilla.com"
-                  >secretaria@csamsevilla.com</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Centro Cristo Rey</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="secretaria@csamsevilla.com" role="button" tabindex="0">secretaria@csamsevilla.com</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Centro Cristo Rey</td>
+<td data-label="Physical Address">
                 Avda. Ramón y Cajal, 2, 41011 Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://www.cristoreysevilla.es"
-                  target="_blank"
-                  rel="noopener"
-                  >cristoreysevilla.es</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="secretaria@cristoreysevilla.es"
-                  >secretaria@cristoreysevilla.es</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Escuela Profesional Marcelo Spínola</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="secretaria@cristoreysevilla.es" role="button" tabindex="0">secretaria@cristoreysevilla.es</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Escuela Profesional Marcelo Spínola</td>
+<td data-label="Physical Address">
                 C/ Madre de Dios, 22, 41004 Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://espinola.edu.es"
-                  target="_blank"
-                  rel="noopener"
-                  >espinola.edu.es</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="info@epmarcelospinola.es"
-                  >info@epmarcelospinola.es</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Centro Sagrada Familia de Urgel</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="info@epmarcelospinola.es" role="button" tabindex="0">info@epmarcelospinola.es</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Centro Sagrada Familia de Urgel</td>
+<td data-label="Physical Address">
                 C/ Urgel, 12, 41006 Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://sagradafamiliaurgel.com"
-                  target="_blank"
-                  rel="noopener"
-                  >sagradafamiliaurgel.com</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="secretaria@sagradafamiliadeurgel.com"
-                  >secretaria@sagradafamiliadeurgel.com</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Calasancio Hispalense</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="secretaria@sagradafamiliadeurgel.com" role="button" tabindex="0">secretaria@sagradafamiliadeurgel.com</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Calasancio Hispalense</td>
+<td data-label="Physical Address">
                 C/ San Juan de la Cruz, 1, 41010 Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://calasancio.com"
-                  target="_blank"
-                  rel="noopener"
-                  >calasancio.com</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="secretaria@calasanciohispalense.es"
-                  >secretaria@calasanciohispalense.es</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Ntra. Sra. del Carmen</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="secretaria@calasanciohispalense.es" role="button" tabindex="0">secretaria@calasanciohispalense.es</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Ntra. Sra. del Carmen</td>
+<td data-label="Physical Address">
                 C/ Bailén, 32, 41001 Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://www.colegiontrasenoradelcarmensevilla.com"
-                  target="_blank"
-                  rel="noopener"
-                  >colegiontrasenoradelcarmensevilla.com</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="secretaria@carmelitassevilla.es"
-                  >secretaria@carmelitassevilla.es</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio San José (Hijas de la Caridad)</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="secretaria@carmelitassevilla.es" role="button" tabindex="0">secretaria@carmelitassevilla.es</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio San José (Hijas de la Caridad)</td>
+<td data-label="Physical Address">
                 C/ San José, 5, 41003 Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://www.sanjosesevilla.es"
-                  target="_blank"
-                  rel="noopener"
-                  >sanjosesevilla.es</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="secretaria@colegiosanjosesevilla.com"
-                  >secretaria@colegiosanjosesevilla.com</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Centro Santo Tomás de Aquino</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="secretaria@colegiosanjosesevilla.com" role="button" tabindex="0">secretaria@colegiosanjosesevilla.com</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Centro Santo Tomás de Aquino</td>
+<td data-label="Physical Address">
                 C/ Santo Tomás, 8, 41004 Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://www.santotomasdeaquinosevilla.es"
-                  target="_blank"
-                  rel="noopener"
-                  >santotomasdeaquinosevilla.es</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="secretaria@santotomasdeaquino.com"
-                  >secretaria@santotomasdeaquino.com</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio La Inmaculada (Jesuitinas)</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="secretaria@santotomasdeaquino.com" role="button" tabindex="0">secretaria@santotomasdeaquino.com</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio La Inmaculada (Jesuitinas)</td>
+<td data-label="Physical Address">
                 C/ Jesús del Gran Poder, 1, 41002 Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://www.jesuitinas-sevilla.com"
-                  target="_blank"
-                  rel="noopener"
-                  >jesuitinas-sevilla.com</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="secretaria@colegiolainmaculadasevilla.com"
-                  >secretaria@colegiolainmaculadasevilla.com</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Ntra. Sra. de los Reyes (Mercedarias)</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="secretaria@colegiolainmaculadasevilla.com" role="button" tabindex="0">secretaria@colegiolainmaculadasevilla.com</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Ntra. Sra. de los Reyes (Mercedarias)</td>
+<td data-label="Physical Address">
                 C/ Reyes, 3, 41003 Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://www.mercedarias-sevilla.com"
-                  target="_blank"
-                  rel="noopener"
-                  >mercedarias-sevilla.com</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="secretaria@colegiodelosreyes.es"
-                  >secretaria@colegiodelosreyes.es</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio de Fomento Tabladilla</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="secretaria@colegiodelosreyes.es" role="button" tabindex="0">secretaria@colegiodelosreyes.es</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio de Fomento Tabladilla</td>
+<td data-label="Physical Address">
                 Avda. de la Palmera, 58, 41012 Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://www.tabladilla.com"
-                  target="_blank"
-                  rel="noopener"
-                  >tabladilla.com</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="secretaria@tabladilla.com"
-                  >secretaria@tabladilla.com</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio de Fomento Entreolivos</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="secretaria@tabladilla.com" role="button" tabindex="0">secretaria@tabladilla.com</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio de Fomento Entreolivos</td>
+<td data-label="Physical Address">
                 C/ Párroco Don Eugenio, 18, 41015 Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://www.entreolivos.com"
-                  target="_blank"
-                  rel="noopener"
-                  >entreolivos.com</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="secretaria@entreolivos.com"
-                  >secretaria@entreolivos.com</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">St. Mary's School</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<a class="link-chip" href="https://www.entreolivos.com" rel="noopener" target="_blank">entreolivos.com</a>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="secretaria@entreolivos.com" role="button" tabindex="0">secretaria@entreolivos.com</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">St. Mary's School</td>
+<td data-label="Physical Address">
                 C/ Virgen de la Antigua, 35, 41011 Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://stmarys.es"
-                  target="_blank"
-                  rel="noopener"
-                  >stmarys.es</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="secretaria@stmaryssevilla.com"
-                  >secretaria@stmaryssevilla.com</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Salesianos San José (Alcalá de Guadaíra)</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="secretaria@stmaryssevilla.com" role="button" tabindex="0">secretaria@stmaryssevilla.com</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Salesianos San José (Alcalá de Guadaíra)</td>
+<td data-label="Physical Address">
                 C/ Ntra. Sra. del Águila, 2, 41500 Alcalá de Guadaíra, Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://salesianosalcala.com"
-                  target="_blank"
-                  rel="noopener"
-                  >salesianosalcala.com</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span
-                  class="email-chip"
-                  tabindex="0"
-                  role="button"
-                  data-email="secretaria@salesianosalcala.com"
-                  >secretaria@salesianosalcala.com</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Ntra. Sra. del Águila (Alcalá de Guadaíra)</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<a class="link-chip" href="https://salesianosalcala.com" rel="noopener" target="_blank">salesianosalcala.com</a>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="email-chip" data-email="secretaria@salesianosalcala.com" role="button" tabindex="0">secretaria@salesianosalcala.com</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Ntra. Sra. del Águila (Alcalá de Guadaíra)</td>
+<td data-label="Physical Address">
                 C/ Ntra. Sra. del Águila, 2, 41500 Alcalá de Guadaíra, Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://colegiodelaguila.es"
-                  target="_blank"
-                  rel="noopener"
-                  >colegiodelaguila.es</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio San Miguel (Alcalá de Guadaíra)</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio San Miguel (Alcalá de Guadaíra)</td>
+<td data-label="Physical Address">
                 C/ Ntra. Sra. del Águila, 6, 41500 Alcalá de Guadaíra, Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://ceipsanmiguelalcala.com"
-                  target="_blank"
-                  rel="noopener"
-                  >ceipsanmiguelalcala.com</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio SAFA (Alcalá de Guadaíra)</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio SAFA (Alcalá de Guadaíra)</td>
+<td data-label="Physical Address">
                 C/ San Agustín, s/n, 41500 Alcalá de Guadaíra, Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://safa.edu/alcala"
-                  target="_blank"
-                  rel="noopener"
-                  >safa.edu/alcala</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio San José Obrero (Mairena del Alcor)</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio San José Obrero (Mairena del Alcor)</td>
+<td data-label="Physical Address">
                 Av. de San José Obrero, s/n, 41510 Mairena del Alcor, Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://www.sanjoseobreromairena.es"
-                  target="_blank"
-                  rel="noopener"
-                  >sanjoseobreromairena.es</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Ntra. Sra. del Carmen (Mairena del Alcor)</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Ntra. Sra. del Carmen (Mairena del Alcor)</td>
+<td data-label="Physical Address">
                 C/ Carmen, 2, 41510 Mairena del Alcor, Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://carmelitasmairena.es"
-                  target="_blank"
-                  rel="noopener"
-                  >carmelitasmairena.es</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Santa María del Alcor (El Viso del Alcor)</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Santa María del Alcor (El Viso del Alcor)</td>
+<td data-label="Physical Address">
                 C/ Real, 56, 41520 El Viso del Alcor, Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="http://www.colegiosantamariadelalcor.es"
-                  target="_blank"
-                  rel="noopener"
-                  >colegiosantamariadelalcor.es</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio San Sebastián (El Viso del Alcor)</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio San Sebastián (El Viso del Alcor)</td>
+<td data-label="Physical Address">
                 C/ San Sebastián, s/n, 41520 El Viso del Alcor, Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://ceipsansebastian.com"
-                  target="_blank"
-                  rel="noopener"
-                  >ceipsansebastian.com</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Ntra. Sra. de la Asunción (Carmona)</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Ntra. Sra. de la Asunción (Carmona)</td>
+<td data-label="Physical Address">
                 C/ San Felipe, 74, 41410 Carmona, Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://www.colegioasuncioncarmona.es"
-                  target="_blank"
-                  rel="noopener"
-                  >colegioasuncioncarmona.es</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio San Blas (Carmona)</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio San Blas (Carmona)</td>
+<td data-label="Physical Address">
                 C/ San Blas, s/n, 41410 Carmona, Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://ceipsanblas.es"
-                  target="_blank"
-                  rel="noopener"
-                  >ceipsanblas.es</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio San Eustaquio (Sanlúcar la Mayor)</td>
-              <td data-label="Physical Address">
+<td data-label="Website">
+<span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
+</td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio San Eustaquio (Sanlúcar la Mayor)</td>
+<td data-label="Physical Address">
                 C/ San Eustaquio, s/n, 41800 Sanlúcar la Mayor, Seville
               </td>
-              <td data-label="Website">
-                <a
-                  class="link-chip"
-                  href="https://www.saneustaquio.es"
-                  target="_blank"
-                  rel="noopener"
-                  >saneustaquio.es</a
-                >
-              </td>
-              <td class="email-cell" data-label="Email Address">
-                <span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
-              </td>
-            </tr>
-            <!-- <tr>
+<td data-label="Website">
+<a class="link-chip" href="https://www.saneustaquio.es" rel="noopener" target="_blank">saneustaquio.es</a>
+</td>
+<td class="email-cell" data-label="Email Address">
+<span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
+</td>
+</tr>
+<!-- <tr>
               <td data-label="Site Name">
                 Colegio Internacional de Sevilla - San Francisco de Paula
               </td>
@@ -1299,11 +921,10 @@
                 >
               </td>
             </tr> -->
-          </tbody>
-        </table>
-      </div>
-
-      <p class="note">
+</tbody>
+</table>
+</div>
+<p class="note">
         Note: some centres publish contact forms or general inboxes instead of
         dedicated human-resources email addresses. Before sending a formal
         application, it is advisable to check each website for a "Work with us"
@@ -1312,323 +933,318 @@
         capital that were not previously listed. Prepared on 3 May 2026,
         expanded on 21 May 2026.
       </p>
-
-      <section class="map-section" aria-labelledby="map-title">
-        <h2 id="map-title">Map of Seville and Surrounding Area</h2>
-        <p>
+<section aria-labelledby="map-title" class="map-section">
+<h2 id="map-title">Map of Seville and Surrounding Area</h2>
+<p>
           The map below shows the numbered locations of the selected centres in
-          Seville and its metropolitan area. Markers 13&ndash;36 correspond to
+          Seville and its metropolitan area. Markers 13–36 correspond to
           the concertado and private schools added from independent research.
-          Colegio Internacional de Sevilla &ndash; San Francisco de Paula has
+          Colegio Internacional de Sevilla – San Francisco de Paula has
           been intentionally excluded.
         </p>
-        <div class="map-layout">
-          <div>
-            <div id="seville-map" aria-label="Map with numbered education centres in Seville and surrounding area"></div>
-            <p class="map-fallback">
+<div class="map-layout">
+<div>
+<div aria-label="Map with numbered education centres in Seville and surrounding area" id="seville-map"></div>
+<p class="map-fallback">
               If the map tiles do not load, please check your internet connection; the numbered legend remains available on the right.
             </p>
-          </div>
-          <ol class="map-legend" aria-label="Numbered map legend">
-            <li><span class="legend-number">1</span><span class="legend-text"><strong>Yago School Sevilla</strong><span>Castilleja de la Cuesta</span></span></li>
-            <li><span class="legend-number">2</span><span class="legend-text"><strong>Centro Norteamericano</strong><span>Central Seville</span></span></li>
-            <li><span class="legend-number">3</span><span class="legend-text"><strong>CBS, The British School of Seville</strong><span>Bollullos de la Mitación</span></span></li>
-            <li><span class="legend-number">4</span><span class="legend-text"><strong>Highlands School Sevilla</strong><span>Montequinto</span></span></li>
-            <li><span class="legend-number">5</span><span class="legend-text"><strong>St. Angela International School Sevilla</strong><span>Salteras / La Cartuja area</span></span></li>
-            <li><span class="legend-number">6</span><span class="legend-text"><strong>Colegio Alemán de Sevilla Alberto Durero</strong><span>Sevilla Este</span></span></li>
-            <li><span class="legend-number">7</span><span class="legend-text"><strong>Colegio Internacional Alminar</strong><span>Dos Hermanas</span></span></li>
-            <li><span class="legend-number">8</span><span class="legend-text"><strong>Europa International School</strong><span>Espartinas</span></span></li>
-            <li><span class="legend-number">9</span><span class="legend-text"><strong>Sevilla Language Center</strong><span>Central Seville</span></span></li>
-            <li><span class="legend-number">10</span><span class="legend-text"><strong>My English School Sevilla</strong><span>Los Remedios</span></span></li>
-            <li><span class="legend-number">11</span><span class="legend-text"><strong>ELI - English Language Institute</strong><span>Nervión / central address</span></span></li>
-            <li><span class="legend-number">12</span><span class="legend-text"><strong>AMT Spain / AM Transnational</strong><span>Los Bermejales</span></span></li>
-            <li><span class="legend-number">13</span><span class="legend-text"><strong>Colegio San Alberto Magno</strong><span>Sevilla Este / Nervión</span></span></li>
-            <li><span class="legend-number">14</span><span class="legend-text"><strong>Centro Cristo Rey</strong><span>Central Seville</span></span></li>
-            <li><span class="legend-number">15</span><span class="legend-text"><strong>Escuela Profesional Marcelo Spínola</strong><span>Central Seville</span></span></li>
-            <li><span class="legend-number">16</span><span class="legend-text"><strong>Centro Sagrada Familia de Urgel</strong><span>Central / San Bernardo</span></span></li>
-            <li><span class="legend-number">17</span><span class="legend-text"><strong>Colegio Calasancio Hispalense</strong><span>Los Remedios</span></span></li>
-            <li><span class="legend-number">18</span><span class="legend-text"><strong>Colegio Ntra. Sra. del Carmen</strong><span>Central / Alameda</span></span></li>
-            <li><span class="legend-number">19</span><span class="legend-text"><strong>Colegio San José (Hijas de la Caridad)</strong><span>Central / Encarnación</span></span></li>
-            <li><span class="legend-number">20</span><span class="legend-text"><strong>Centro Santo Tomás de Aquino</strong><span>Central / Santa Cruz</span></span></li>
-            <li><span class="legend-number">21</span><span class="legend-text"><strong>Colegio La Inmaculada (Jesuitinas)</strong><span>Central / Alameda</span></span></li>
-            <li><span class="legend-number">22</span><span class="legend-text"><strong>Colegio Ntra. Sra. de los Reyes (Mercedarias)</strong><span>Central / Encarnación</span></span></li>
-            <li><span class="legend-number">23</span><span class="legend-text"><strong>Colegio de Fomento Tabladilla</strong><span>El Porvenir / Sur</span></span></li>
-            <li><span class="legend-number">24</span><span class="legend-text"><strong>Colegio de Fomento Entreolivos</strong><span>Los Remedios / Triana</span></span></li>
-            <li><span class="legend-number">25</span><span class="legend-text"><strong>St. Mary's School</strong><span>Los Remedios</span></span></li>
-            <li><span class="legend-number">26</span><span class="legend-text"><strong>Salesianos San José (Alcalá de Guadaíra)</strong><span>Alcalá de Guadaíra</span></span></li>
-            <li><span class="legend-number">27</span><span class="legend-text"><strong>Colegio Ntra. Sra. del Águila (Alcalá de Guadaíra)</strong><span>Alcalá de Guadaíra</span></span></li>
-            <li><span class="legend-number">28</span><span class="legend-text"><strong>Colegio San Miguel (Alcalá de Guadaíra)</strong><span>Alcalá de Guadaíra</span></span></li>
-            <li><span class="legend-number">29</span><span class="legend-text"><strong>Colegio SAFA (Alcalá de Guadaíra)</strong><span>Alcalá de Guadaíra</span></span></li>
-            <li><span class="legend-number">30</span><span class="legend-text"><strong>Colegio San José Obrero (Mairena del Alcor)</strong><span>Mairena del Alcor</span></span></li>
-            <li><span class="legend-number">31</span><span class="legend-text"><strong>Colegio Ntra. Sra. del Carmen (Mairena del Alcor)</strong><span>Mairena del Alcor</span></span></li>
-            <li><span class="legend-number">32</span><span class="legend-text"><strong>Colegio Santa María del Alcor (El Viso del Alcor)</strong><span>El Viso del Alcor</span></span></li>
-            <li><span class="legend-number">33</span><span class="legend-text"><strong>Colegio San Sebastián (El Viso del Alcor)</strong><span>El Viso del Alcor</span></span></li>
-            <li><span class="legend-number">34</span><span class="legend-text"><strong>Colegio Ntra. Sra. de la Asunción (Carmona)</strong><span>Carmona</span></span></li>
-            <li><span class="legend-number">35</span><span class="legend-text"><strong>Colegio San Blas (Carmona)</strong><span>Carmona</span></span></li>
-            <li><span class="legend-number">36</span><span class="legend-text"><strong>Colegio San Eustaquio (Sanlúcar la Mayor)</strong><span>Sanlúcar la Mayor</span></span></li>
-          </ol>
-        </div>
-      </section>
-    </main>
-      <section class="map-section" aria-labelledby="fallback-title">
-        <h2 id="fallback-title">Additional Centres (Referenced but Not Fully Located)</h2>
-        <p>
+</div>
+<ol aria-label="Numbered map legend" class="map-legend">
+<li><span class="legend-number">1</span><span class="legend-text"><strong>Yago School Sevilla</strong><span>Castilleja de la Cuesta</span></span></li>
+<li><span class="legend-number">2</span><span class="legend-text"><strong>Centro Norteamericano</strong><span>Central Seville</span></span></li>
+<li><span class="legend-number">3</span><span class="legend-text"><strong>CBS, The British School of Seville</strong><span>Bollullos de la Mitación</span></span></li>
+<li><span class="legend-number">4</span><span class="legend-text"><strong>Highlands School Sevilla</strong><span>Montequinto</span></span></li>
+<li><span class="legend-number">5</span><span class="legend-text"><strong>St. Angela International School Sevilla</strong><span>Salteras / La Cartuja area</span></span></li>
+<li><span class="legend-number">6</span><span class="legend-text"><strong>Colegio Alemán de Sevilla Alberto Durero</strong><span>Sevilla Este</span></span></li>
+<li><span class="legend-number">7</span><span class="legend-text"><strong>Colegio Internacional Alminar</strong><span>Dos Hermanas</span></span></li>
+<li><span class="legend-number">8</span><span class="legend-text"><strong>Europa International School</strong><span>Espartinas</span></span></li>
+<li><span class="legend-number">9</span><span class="legend-text"><strong>Sevilla Language Center</strong><span>Central Seville</span></span></li>
+<li><span class="legend-number">10</span><span class="legend-text"><strong>My English School Sevilla</strong><span>Los Remedios</span></span></li>
+<li><span class="legend-number">11</span><span class="legend-text"><strong>ELI - English Language Institute</strong><span>Nervión / central address</span></span></li>
+<li><span class="legend-number">12</span><span class="legend-text"><strong>AMT Spain / AM Transnational</strong><span>Los Bermejales</span></span></li>
+<li><span class="legend-number">13</span><span class="legend-text"><strong>Colegio San Alberto Magno</strong><span>Sevilla Este / Nervión</span></span></li>
+<li><span class="legend-number">14</span><span class="legend-text"><strong>Centro Cristo Rey</strong><span>Central Seville</span></span></li>
+<li><span class="legend-number">15</span><span class="legend-text"><strong>Escuela Profesional Marcelo Spínola</strong><span>Central Seville</span></span></li>
+<li><span class="legend-number">16</span><span class="legend-text"><strong>Centro Sagrada Familia de Urgel</strong><span>Central / San Bernardo</span></span></li>
+<li><span class="legend-number">17</span><span class="legend-text"><strong>Colegio Calasancio Hispalense</strong><span>Los Remedios</span></span></li>
+<li><span class="legend-number">18</span><span class="legend-text"><strong>Colegio Ntra. Sra. del Carmen</strong><span>Central / Alameda</span></span></li>
+<li><span class="legend-number">19</span><span class="legend-text"><strong>Colegio San José (Hijas de la Caridad)</strong><span>Central / Encarnación</span></span></li>
+<li><span class="legend-number">20</span><span class="legend-text"><strong>Centro Santo Tomás de Aquino</strong><span>Central / Santa Cruz</span></span></li>
+<li><span class="legend-number">21</span><span class="legend-text"><strong>Colegio La Inmaculada (Jesuitinas)</strong><span>Central / Alameda</span></span></li>
+<li><span class="legend-number">22</span><span class="legend-text"><strong>Colegio Ntra. Sra. de los Reyes (Mercedarias)</strong><span>Central / Encarnación</span></span></li>
+<li><span class="legend-number">23</span><span class="legend-text"><strong>Colegio de Fomento Tabladilla</strong><span>El Porvenir / Sur</span></span></li>
+<li><span class="legend-number">24</span><span class="legend-text"><strong>Colegio de Fomento Entreolivos</strong><span>Los Remedios / Triana</span></span></li>
+<li><span class="legend-number">25</span><span class="legend-text"><strong>St. Mary's School</strong><span>Los Remedios</span></span></li>
+<li><span class="legend-number">26</span><span class="legend-text"><strong>Salesianos San José (Alcalá de Guadaíra)</strong><span>Alcalá de Guadaíra</span></span></li>
+<li><span class="legend-number">27</span><span class="legend-text"><strong>Colegio Ntra. Sra. del Águila (Alcalá de Guadaíra)</strong><span>Alcalá de Guadaíra</span></span></li>
+<li><span class="legend-number">28</span><span class="legend-text"><strong>Colegio San Miguel (Alcalá de Guadaíra)</strong><span>Alcalá de Guadaíra</span></span></li>
+<li><span class="legend-number">29</span><span class="legend-text"><strong>Colegio SAFA (Alcalá de Guadaíra)</strong><span>Alcalá de Guadaíra</span></span></li>
+<li><span class="legend-number">30</span><span class="legend-text"><strong>Colegio San José Obrero (Mairena del Alcor)</strong><span>Mairena del Alcor</span></span></li>
+<li><span class="legend-number">31</span><span class="legend-text"><strong>Colegio Ntra. Sra. del Carmen (Mairena del Alcor)</strong><span>Mairena del Alcor</span></span></li>
+<li><span class="legend-number">32</span><span class="legend-text"><strong>Colegio Santa María del Alcor (El Viso del Alcor)</strong><span>El Viso del Alcor</span></span></li>
+<li><span class="legend-number">33</span><span class="legend-text"><strong>Colegio San Sebastián (El Viso del Alcor)</strong><span>El Viso del Alcor</span></span></li>
+<li><span class="legend-number">34</span><span class="legend-text"><strong>Colegio Ntra. Sra. de la Asunción (Carmona)</strong><span>Carmona</span></span></li>
+<li><span class="legend-number">35</span><span class="legend-text"><strong>Colegio San Blas (Carmona)</strong><span>Carmona</span></span></li>
+<li><span class="legend-number">36</span><span class="legend-text"><strong>Colegio San Eustaquio (Sanlúcar la Mayor)</strong><span>Sanlúcar la Mayor</span></span></li>
+</ol>
+</div>
+</section>
+</main>
+<section aria-labelledby="fallback-title" class="map-section">
+<h2 id="fallback-title">Additional Centres (Referenced but Not Fully Located)</h2>
+<p>
           The following schools are state-subsidised (concertado) or private centres
           in the metropolitan area for which precise addresses, email contacts, or
           GPS coordinates could not be independently verified. They are listed here
           for reference; visit the website (if available) or use the Junta de
           Andalucía search tool to find contact details.
         </p>
-        <div class="table-shell" aria-label="Fallback table of additional education centres">
-          <table>
-            <colgroup>
-              <col class="name-column" />
-              <col style="width:10%" />
-              <col style="width:18%" />
-              <col class="url-column" />
-            </colgroup>
-            <thead>
-              <tr>
-                <th>Site Name</th>
-                <th>Type</th>
-                <th>Town</th>
-                <th>Website</th>
-              </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <td data-label="Site Name">Colegio Ntra. Sra. del Carmen (HH. Carmelitas)</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Dos Hermanas</td>
-              <td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio La Milagrosa</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Dos Hermanas</td>
-              <td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio San José</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Dos Hermanas</td>
-              <td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Santa María del Valle</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Dos Hermanas</td>
-              <td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Ntra. Sra. de la Paz</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Dos Hermanas</td>
-              <td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio San Alberto Magno</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Dos Hermanas</td>
-              <td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio La Unión</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Montequinto (Dos Hermanas)</td>
-              <td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio San Hermenegildo</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Montequinto (Dos Hermanas)</td>
-              <td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Salesiano Ntra. Sra. del Carmen</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Utrera</td>
-              <td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio San José (Hermanas de la Cruz)</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Utrera</td>
-              <td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio SAFA</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Utrera</td>
-              <td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Ntra. Sra. de la Asunción</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Utrera</td>
-              <td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio San José</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">La Rinconada</td>
-              <td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Ntra. Sra. del Rosario</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">La Rinconada</td>
-              <td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Ntra. Sra. de la Esperanza</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Los Palacios</td>
-              <td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio San José</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Los Palacios</td>
-              <td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Ntra. Sra. del Rosario</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Bormujos</td>
-              <td data-label="Website"><a class="link-chip" href="https://colegionrosariobormujos.es" target="_blank" rel="noopener">colegionrosariobormujos.es</a></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio San José</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Bormujos</td>
-              <td data-label="Website"><a class="link-chip" href="https://sanjosebormujos.com" target="_blank" rel="noopener">sanjosebormujos.com</a></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio CEU San Pablo Montepríncipe</td>
-              <td data-label="Type">Privado</td>
-              <td data-label="Town">Bormujos</td>
-              <td data-label="Website"><a class="link-chip" href="https://ceuandalucia.com" target="_blank" rel="noopener">ceuandalucia.com</a></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Ntra. Sra. de la Estrella</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Camas</td>
-              <td data-label="Website"><a class="link-chip" href="https://colegioestrellacamas.com" target="_blank" rel="noopener">colegioestrellacamas.com</a></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio San José</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Camas</td>
-              <td data-label="Website"><a class="link-chip" href="https://www.sanjosecamas.com" target="_blank" rel="noopener">sanjosecamas.com</a></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio San José</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Castilleja de la Cuesta</td>
-              <td data-label="Website"><a class="link-chip" href="https://sanjosecastilleja.es" target="_blank" rel="noopener">sanjosecastilleja.es</a></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio San José</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Coria del Río</td>
-              <td data-label="Website"><a class="link-chip" href="https://sanjosecoria.es" target="_blank" rel="noopener">sanjosecoria.es</a></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Ntra. Sra. del Rocío</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Coria del Río</td>
-              <td data-label="Website"><a class="link-chip" href="https://www.colegiorociocoria.com" target="_blank" rel="noopener">colegiorociocoria.com</a></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Ntra. Sra. del Carmen</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Espartinas</td>
-              <td data-label="Website"><a class="link-chip" href="https://colegiocarmenespartinas.com" target="_blank" rel="noopener">colegiocarmenespartinas.com</a></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Alminar</td>
-              <td data-label="Type">Privado</td>
-              <td data-label="Town">Espartinas</td>
-              <td data-label="Website"><a class="link-chip" href="https://www.colegioalminar.com" target="_blank" rel="noopener">colegioalminar.com</a></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Aljarafe</td>
-              <td data-label="Type">Privado</td>
-              <td data-label="Town">Espartinas</td>
-              <td data-label="Website"><a class="link-chip" href="https://colegioaljarafe.com" target="_blank" rel="noopener">colegioaljarafe.com</a></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio San José del Valle</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Gines</td>
-              <td data-label="Website"><a class="link-chip" href="https://colegiosanjosedelvalle.com" target="_blank" rel="noopener">colegiosanjosedelvalle.com</a></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Juan Pablo II</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Gines</td>
-              <td data-label="Website"><a class="link-chip" href="https://colegiojuanpabloiigines.com" target="_blank" rel="noopener">colegiojuanpabloiigines.com</a></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio San José</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Mairena del Aljarafe</td>
-              <td data-label="Website"><a class="link-chip" href="https://colegiosanjose-mairena.com" target="_blank" rel="noopener">colegiosanjose-mairena.com</a></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio San Ignacio del Viar</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Mairena del Aljarafe</td>
-              <td data-label="Website"><a class="link-chip" href="https://sanignaciodelviar.com" target="_blank" rel="noopener">sanignaciodelviar.com</a></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Internacional Europa</td>
-              <td data-label="Type">Privado</td>
-              <td data-label="Town">Mairena del Aljarafe</td>
-              <td data-label="Website"><a class="link-chip" href="https://www.colegiointernacionaleuropa.com" target="_blank" rel="noopener">colegiointernacionaleuropa.com</a></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio San Juan de Dios</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">San Juan de Aznalfarache</td>
-              <td data-label="Website"><a class="link-chip" href="https://sjd-sjuan.com" target="_blank" rel="noopener">sjd-sjuan.com</a></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Ntra. Sra. de los Remedios</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">San Juan de Aznalfarache</td>
-              <td data-label="Website"><a class="link-chip" href="https://colegioremedios.es" target="_blank" rel="noopener">colegioremedios.es</a></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Ntra. Sra. del Carmen</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Tomares</td>
-              <td data-label="Website"><a class="link-chip" href="https://www.carmentomares.com" target="_blank" rel="noopener">carmentomares.com</a></td>
-            </tr>
-            <tr>
-              <td data-label="Site Name">Colegio Ntra. Sra. de la Concepción</td>
-              <td data-label="Type">Concertado</td>
-              <td data-label="Town">Valencina</td>
-              <td data-label="Website"><a class="link-chip" href="https://www.colegioconcepcionvalencina.es" target="_blank" rel="noopener">colegioconcepcionvalencina.es</a></td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="note">
+<div aria-label="Fallback table of additional education centres" class="table-shell">
+<table>
+<colgroup>
+<col class="name-column"/>
+<col style="width:10%"/>
+<col style="width:18%"/>
+<col class="url-column"/>
+</colgroup>
+<thead>
+<tr>
+<th>Site Name</th>
+<th>Type</th>
+<th>Town</th>
+<th>Website</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Site Name">Colegio Ntra. Sra. del Carmen (HH. Carmelitas)</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Dos Hermanas</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio La Milagrosa</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Dos Hermanas</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio San José</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Dos Hermanas</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Santa María del Valle</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Dos Hermanas</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Ntra. Sra. de la Paz</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Dos Hermanas</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio San Alberto Magno</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Dos Hermanas</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio La Unión</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Montequinto (Dos Hermanas)</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio San Hermenegildo</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Montequinto (Dos Hermanas)</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Salesiano Ntra. Sra. del Carmen</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Utrera</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio San José (Hermanas de la Cruz)</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Utrera</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio SAFA</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Utrera</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Ntra. Sra. de la Asunción</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Utrera</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio San José</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">La Rinconada</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Ntra. Sra. del Rosario</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">La Rinconada</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Ntra. Sra. de la Esperanza</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Los Palacios</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio San José</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Los Palacios</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Ntra. Sra. del Rosario</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Bormujos</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio San José</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Bormujos</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio CEU San Pablo Montepríncipe</td>
+<td data-label="Type">Privado</td>
+<td data-label="Town">Bormujos</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Ntra. Sra. de la Estrella</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Camas</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio San José</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Camas</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio San José</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Castilleja de la Cuesta</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio San José</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Coria del Río</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Ntra. Sra. del Rocío</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Coria del Río</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Ntra. Sra. del Carmen</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Espartinas</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Alminar</td>
+<td data-label="Type">Privado</td>
+<td data-label="Town">Espartinas</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Aljarafe</td>
+<td data-label="Type">Privado</td>
+<td data-label="Town">Espartinas</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio San José del Valle</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Gines</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Juan Pablo II</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Gines</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio San José</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Mairena del Aljarafe</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio San Ignacio del Viar</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Mairena del Aljarafe</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Internacional Europa</td>
+<td data-label="Type">Privado</td>
+<td data-label="Town">Mairena del Aljarafe</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio San Juan de Dios</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">San Juan de Aznalfarache</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Ntra. Sra. de los Remedios</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">San Juan de Aznalfarache</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Ntra. Sra. del Carmen</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Tomares</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span></td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Ntra. Sra. de la Concepción</td>
+<td data-label="Type">Concertado</td>
+<td data-label="Town">Valencina</td>
+<td data-label="Website"><span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="note">
           Data for these centres was obtained via independent web research on 21 May 2026.
           Where no website is listed, no public-facing site was found during the research
           phase. To verify, consult the official directory at
-          <a href="https://www.juntadeandalucia.es/educacion/portals/web/ced/centros" target="_blank" rel="noopener">Junta de Andalucía</a>.
+          <a href="https://www.juntadeandalucia.es/educacion/portals/web/ced/centros" rel="noopener" target="_blank">Junta de Andalucía</a>.
         </p>
-      </section>
-
-
-    <div id="toast" class="toast" role="status" aria-live="polite"></div>
-
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-    <script>
+</section>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
       const toastElement = document.getElementById("toast");
       let toastTimeoutId = null;
 
@@ -1764,5 +1380,5 @@
         });
       });
     </script>
-  </body>
+</body>
 </html>
