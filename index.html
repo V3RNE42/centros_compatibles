@@ -11,7 +11,11 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Education Centres in Seville Compatible with the CV</title>
-<link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet"/>
+<link href="leaflet.css" rel="stylesheet"/>
+<!-- Preconnect tile server for faster map rendering -->
+<link href="https://a.basemaps.cartocdn.com" rel="preconnect"/>
+<link href="https://b.basemaps.cartocdn.com" rel="preconnect"/>
+<link href="https://c.basemaps.cartocdn.com" rel="preconnect"/>
 <style>
       :root {
         --bg: #f7f8fb;
@@ -1449,7 +1453,7 @@
         </p>
 </section>
 <div aria-live="polite" class="toast" id="toast" role="status"></div>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="leaflet.js"></script>
 <script>
       const toastElement = document.getElementById("toast");
       let toastTimeoutId = null;
@@ -1777,9 +1781,10 @@
           scrollWheelZoom: false,
         }).setView([37.374, -6.015], 11);
 
-        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
           maxZoom: 19,
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/">CARTO</a>',
+          subdomains: "abc",
         }).addTo(map);
 
         // Hide loading indicator once the first tiles load
@@ -1813,7 +1818,7 @@
         map.fitBounds(markerBounds, { padding: [32, 32] });
       }
 
-      window.addEventListener("load", initializeSevilleMap);
+      initializeSevilleMap();
 
       document.querySelectorAll(".email-chip").forEach((emailChip) => {
         emailChip.addEventListener("click", () => {
