@@ -263,6 +263,78 @@
         overflow: hidden;
         background: #edf2f7;
         box-shadow: 0 4px 16px rgba(16, 24, 40, 0.06);
+        position: relative;
+      }
+
+      .map-loader {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #edf2f7;
+        z-index: 9999;
+        border-radius: 14px;
+        transition: opacity 0.5s ease;
+      }
+      .map-loader.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+      .map-loader-track {
+        width: 200px;
+        height: 6px;
+        background: #d0d7e2;
+        border-radius: 3px;
+        overflow: hidden;
+        position: relative;
+      }
+      .map-loader-bar {
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(90deg, var(--accent), #4a9eff);
+        border-radius: 3px;
+        transform: translateX(-100%);
+        animation: loader-fill 2s ease-in-out infinite;
+      }
+      .map-loader-thrower {
+        position: absolute;
+        top: 50%;
+        width: 14px;
+        height: 14px;
+        background: var(--accent-dark);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        animation: loader-throw 2s ease-in-out infinite;
+        box-shadow: 0 0 8px rgba(31, 111, 235, 0.5);
+      }
+      .map-loader-text {
+        margin-top: 18px;
+        font-size: 0.9rem;
+        color: var(--muted);
+        letter-spacing: 0.02em;
+      }
+      .map-loader-text::after {
+        content: '';
+        animation: loader-dots 1.5s steps(4, end) infinite;
+      }
+      @keyframes loader-fill {
+        0%   { transform: translateX(-100%); }
+        50%  { transform: translateX(-40%); }
+        100% { transform: translateX(100%); }
+      }
+      @keyframes loader-throw {
+        0%   { left: 0%; }
+        50%  { left: 60%; }
+        100% { left: 100%; }
+      }
+      @keyframes loader-dots {
+        0%   { content: ''; }
+        25%  { content: '.'; }
+        50%  { content: '..'; }
+        75%  { content: '...'; }
+        100% { content: ''; }
       }
 
       .map-legend {
@@ -1078,7 +1150,15 @@
         </p>
 <div class="map-layout">
 <div>
-<div aria-label="Map with numbered education centres in Seville and surrounding area" id="seville-map"></div>
+<div aria-label="Map with numbered education centres in Seville and surrounding area" id="seville-map">
+  <div class="map-loader" id="map-loader">
+    <div class="map-loader-track">
+      <div class="map-loader-bar"></div>
+      <div class="map-loader-thrower"></div>
+    </div>
+    <span class="map-loader-text">Loading map</span>
+  </div>
+</div>
 <p class="map-fallback">
               If the map tiles do not load, please check your internet connection; the numbered legend remains available on the right.
             </p>
@@ -1701,6 +1781,16 @@
           maxZoom: 19,
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         }).addTo(map);
+
+        // Hide loading indicator once the first tiles load
+        let loaderHidden = false;
+        map.on("tileload", () => {
+          if (!loaderHidden) {
+            loaderHidden = true;
+            const loader = document.getElementById("map-loader");
+            if (loader) loader.classList.add("is-hidden");
+          }
+        });
 
         const markerBounds = [];
 
