@@ -583,18 +583,20 @@
         box-shadow: 0 4px 16px rgba(16, 24, 40, 0.08);
       }
       .card-number {
-        flex-shrink: 0;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 32px;
-        height: 32px;
+        width: 22px;
+        height: 22px;
         border-radius: 999px;
         background: var(--accent);
         color: #ffffff;
         font-weight: 700;
-        font-size: 0.9rem;
+        font-size: 0.75rem;
         line-height: 1;
+        margin-right: 5px;
+        vertical-align: middle;
+        flex-shrink: 0;
       }
       .card-body {
         flex: 1;
@@ -712,9 +714,8 @@
 <h2 id="cards-title">All Centres — Numbered List</h2>
 <div class="cards-grid">
 <div class="school-card">
-  <div class="card-number">1</div>
   <div class="card-body">
-    <div class="card-name">Yago School Sevilla</div>
+    <div class="card-name"><span class="card-number">1</span> Yago School Sevilla</div>
     <div class="card-addr">Senior School, Av. Antonio Mairena, 54, Castilleja de la Cuesta,
                 41950 Seville</div>
     <div class="card-links">
@@ -724,9 +725,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">2</div>
   <div class="card-body">
-    <div class="card-name">Centro Norteamericano</div>
+    <div class="card-name"><span class="card-number">2</span> Centro Norteamericano</div>
     <div class="card-addr">Calle Harinas, 18, 41001 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://centronorteamericano.com/" rel="noopener" target="_blank">https://centronorteamericano.com/</a>
@@ -735,9 +735,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">3</div>
   <div class="card-body">
-    <div class="card-name">CBS, The British School of Seville</div>
+    <div class="card-name"><span class="card-number">3</span> CBS, The British School of Seville</div>
     <div class="card-addr">Urb. Pinar de la Juliana, plot 40-A and B, Bollullos de la
                 Mitación, 41110 Seville</div>
     <div class="card-links">
@@ -747,9 +746,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">4</div>
   <div class="card-body">
-    <div class="card-name">Highlands School Sevilla</div>
+    <div class="card-name"><span class="card-number">4</span> Highlands School Sevilla</div>
     <div class="card-addr">Carretera de Utrera, km 4.5, 41089 Montequinto, Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://www.highlandssevilla.es/" rel="noopener" target="_blank">https://highlandssevilla.es/</a>
@@ -758,9 +756,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">5</div>
   <div class="card-body">
-    <div class="card-name">St. Angela International School Sevilla</div>
+    <div class="card-name"><span class="card-number">5</span> St. Angela International School Sevilla</div>
     <div class="card-addr">Calle Canarias, 269, Los Llanos Business Park, Salteras-Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://saintangelainternationalschoolsevilla.com/" rel="noopener" target="_blank">https://saintangelainternationalschoolsevilla.com/</a>
@@ -769,9 +766,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">6</div>
   <div class="card-body">
-    <div class="card-name">Colegio Alemán de Sevilla Alberto Durero</div>
+    <div class="card-name"><span class="card-number">6</span> Colegio Alemán de Sevilla Alberto Durero</div>
     <div class="card-addr">Av. de Altamira s/n, corner with C. Cueva del Gato, 41020
                 Seville</div>
     <div class="card-links">
@@ -781,9 +777,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">7</div>
   <div class="card-body">
-    <div class="card-name">Colegio Internacional Almenar</div>
+    <div class="card-name"><span class="card-number">7</span> Colegio Internacional Almenar</div>
     <div class="card-addr">Ronda de Altair, 2, Urbanización La Motilla, 41703 Dos Hermanas,
                 Seville</div>
     <div class="card-links">
@@ -793,9 +788,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">8</div>
   <div class="card-body">
-    <div class="card-name">Europa International School</div>
+    <div class="card-name"><span class="card-number">8</span> Europa International School</div>
     <div class="card-addr">Carretera A-8076, km 6, 41807 Espartinas, Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://www.europaschool.org/" rel="noopener" target="_blank">https://europaschool.org/</a>
@@ -804,9 +798,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">9</div>
   <div class="card-body">
-    <div class="card-name">Sevilla Language Center</div>
+    <div class="card-name"><span class="card-number">9</span> Sevilla Language Center</div>
     <div class="card-addr">Paseo de Cristina, 3, mezzanine floor, 41001 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://www.sevillalanguagecenter.com/" rel="noopener" target="_blank">https://sevillalanguagecenter.com/</a>
@@ -815,9 +808,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">10</div>
   <div class="card-body">
-    <div class="card-name">My English School Sevilla</div>
+    <div class="card-name"><span class="card-number">10</span> My English School Sevilla</div>
     <div class="card-addr">Avenida de la República Argentina, 16, 41010 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://www.myes.school/es/cursos-de-ingles-sevilla/" rel="noopener" target="_blank">https://myes.school/es/cursos-de-ingles-sevilla/</a>
@@ -826,9 +818,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">11</div>
   <div class="card-body">
-    <div class="card-name">ELI - English Language Institute</div>
+    <div class="card-name"><span class="card-number">11</span> ELI - English Language Institute</div>
     <div class="card-addr">C/ Larra, 1, 41005 Seville; it also has several centres across
                 Seville city and the metropolitan area</div>
     <div class="card-links">
@@ -838,9 +829,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">12</div>
   <div class="card-body">
-    <div class="card-name">AMT Spain / AM Transnational</div>
+    <div class="card-name"><span class="card-number">12</span> AMT Spain / AM Transnational</div>
     <div class="card-addr">Nuestra Señora de las Mercedes, 4, 41013 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://www.amt-spain.com/en/english-academy/" rel="noopener" target="_blank">https://amt-spain.com/en/english-academy/</a>
@@ -849,9 +839,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">13</div>
   <div class="card-body">
-    <div class="card-name">Colegio San Alberto Magno</div>
+    <div class="card-name"><span class="card-number">13</span> Colegio San Alberto Magno</div>
     <div class="card-addr">C/ Juan de la Cueva, 4, 41009 Seville</div>
     <div class="card-links">
       <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
@@ -860,9 +849,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">14</div>
   <div class="card-body">
-    <div class="card-name">Centro Cristo Rey</div>
+    <div class="card-name"><span class="card-number">14</span> Centro Cristo Rey</div>
     <div class="card-addr">Avda. Ramón y Cajal, 2, 41011 Seville</div>
     <div class="card-links">
       <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
@@ -871,9 +859,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">15</div>
   <div class="card-body">
-    <div class="card-name">Escuela Profesional Marcelo Spínola</div>
+    <div class="card-name"><span class="card-number">15</span> Escuela Profesional Marcelo Spínola</div>
     <div class="card-addr">C/ Madre de Dios, 22, 41004 Seville</div>
     <div class="card-links">
       <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
@@ -882,9 +869,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">16</div>
   <div class="card-body">
-    <div class="card-name">Centro Sagrada Familia de Urgel</div>
+    <div class="card-name"><span class="card-number">16</span> Centro Sagrada Familia de Urgel</div>
     <div class="card-addr">C/ Urgel, 12, 41006 Seville</div>
     <div class="card-links">
       <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
@@ -893,9 +879,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">17</div>
   <div class="card-body">
-    <div class="card-name">Colegio Calasancio Hispalense</div>
+    <div class="card-name"><span class="card-number">17</span> Colegio Calasancio Hispalense</div>
     <div class="card-addr">C/ San Juan de la Cruz, 1, 41010 Seville</div>
     <div class="card-links">
       <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
@@ -904,9 +889,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">18</div>
   <div class="card-body">
-    <div class="card-name">Colegio Ntra. Sra. del Carmen</div>
+    <div class="card-name"><span class="card-number">18</span> Colegio Ntra. Sra. del Carmen</div>
     <div class="card-addr">C/ Bailén, 32, 41001 Seville</div>
     <div class="card-links">
       <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
@@ -915,9 +899,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">19</div>
   <div class="card-body">
-    <div class="card-name">Colegio San José (Hijas de la Caridad)</div>
+    <div class="card-name"><span class="card-number">19</span> Colegio San José (Hijas de la Caridad)</div>
     <div class="card-addr">C/ San José, 5, 41003 Seville</div>
     <div class="card-links">
       <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
@@ -926,9 +909,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">20</div>
   <div class="card-body">
-    <div class="card-name">Centro Santo Tomás de Aquino</div>
+    <div class="card-name"><span class="card-number">20</span> Centro Santo Tomás de Aquino</div>
     <div class="card-addr">C/ Santo Tomás, 8, 41004 Seville</div>
     <div class="card-links">
       <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
@@ -937,9 +919,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">21</div>
   <div class="card-body">
-    <div class="card-name">Colegio La Inmaculada (Jesuitinas)</div>
+    <div class="card-name"><span class="card-number">21</span> Colegio La Inmaculada (Jesuitinas)</div>
     <div class="card-addr">C/ Jesús del Gran Poder, 1, 41002 Seville</div>
     <div class="card-links">
       <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
@@ -948,9 +929,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">22</div>
   <div class="card-body">
-    <div class="card-name">Colegio Ntra. Sra. de los Reyes (Mercedarias)</div>
+    <div class="card-name"><span class="card-number">22</span> Colegio Ntra. Sra. de los Reyes (Mercedarias)</div>
     <div class="card-addr">C/ Bailén, 32, 41001 Seville</div>
     <div class="card-links">
       <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
@@ -959,9 +939,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">23</div>
   <div class="card-body">
-    <div class="card-name">Colegio de Fomento Tabladilla</div>
+    <div class="card-name"><span class="card-number">23</span> Colegio de Fomento Tabladilla</div>
     <div class="card-addr">Avda. de la Palmera, 58, 41012 Seville</div>
     <div class="card-links">
       <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
@@ -970,9 +949,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">24</div>
   <div class="card-body">
-    <div class="card-name">Colegio de Fomento Entreolivos</div>
+    <div class="card-name"><span class="card-number">24</span> Colegio de Fomento Entreolivos</div>
     <div class="card-addr">C/ Párroco Don Eugenio, 18, 41015 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://www.entreolivos.com" rel="noopener" target="_blank">entreolivos.com</a>
@@ -981,9 +959,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">25</div>
   <div class="card-body">
-    <div class="card-name">St. Mary's School</div>
+    <div class="card-name"><span class="card-number">25</span> St. Mary's School</div>
     <div class="card-addr">C/ Virgen de la Antigua, 35, 41011 Seville</div>
     <div class="card-links">
       <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
@@ -992,9 +969,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">26</div>
   <div class="card-body">
-    <div class="card-name">Salesianos San José (Alcalá de Guadaíra)</div>
+    <div class="card-name"><span class="card-number">26</span> Salesianos San José (Alcalá de Guadaíra)</div>
     <div class="card-addr">C/ Ntra. Sra. del Águila, 2, 41500 Alcalá de Guadaíra, Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://salesianosalcala.com" rel="noopener" target="_blank">salesianosalcala.com</a>
@@ -1003,9 +979,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">27</div>
   <div class="card-body">
-    <div class="card-name">Colegio Ntra. Sra. del Águila (Alcalá de Guadaíra)</div>
+    <div class="card-name"><span class="card-number">27</span> Colegio Ntra. Sra. del Águila (Alcalá de Guadaíra)</div>
     <div class="card-addr">C/ Bailén, 32, 41001 Seville</div>
     <div class="card-links">
       <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
@@ -1014,9 +989,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">28</div>
   <div class="card-body">
-    <div class="card-name">Colegio San Miguel (Alcalá de Guadaíra)</div>
+    <div class="card-name"><span class="card-number">28</span> Colegio San Miguel (Alcalá de Guadaíra)</div>
     <div class="card-addr">C/ Ntra. Sra. del Águila, 6, 41500 Alcalá de Guadaíra, Seville</div>
     <div class="card-links">
       <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
@@ -1025,9 +999,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">29</div>
   <div class="card-body">
-    <div class="card-name">Colegio SAFA (Alcalá de Guadaíra)</div>
+    <div class="card-name"><span class="card-number">29</span> Colegio SAFA (Alcalá de Guadaíra)</div>
     <div class="card-addr">C/ San Agustín, s/n, 41500 Alcalá de Guadaíra, Seville</div>
     <div class="card-links">
       <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
@@ -1036,9 +1009,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">30</div>
   <div class="card-body">
-    <div class="card-name">Colegio San José Obrero (Mairena del Alcor)</div>
+    <div class="card-name"><span class="card-number">30</span> Colegio San José Obrero (Mairena del Alcor)</div>
     <div class="card-addr">Av. de San José Obrero, s/n, 41510 Mairena del Alcor, Seville</div>
     <div class="card-links">
       <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
@@ -1047,9 +1019,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">31</div>
   <div class="card-body">
-    <div class="card-name">Colegio Ntra. Sra. del Carmen (Mairena del Alcor)</div>
+    <div class="card-name"><span class="card-number">31</span> Colegio Ntra. Sra. del Carmen (Mairena del Alcor)</div>
     <div class="card-addr">C/ Bailén, 32, 41001 Seville</div>
     <div class="card-links">
       <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
@@ -1058,9 +1029,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">32</div>
   <div class="card-body">
-    <div class="card-name">Colegio Santa María del Alcor (El Viso del Alcor)</div>
+    <div class="card-name"><span class="card-number">32</span> Colegio Santa María del Alcor (El Viso del Alcor)</div>
     <div class="card-addr">C/ Real, 56, 41520 El Viso del Alcor, Seville</div>
     <div class="card-links">
       <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
@@ -1069,9 +1039,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">33</div>
   <div class="card-body">
-    <div class="card-name">Colegio San Sebastián (El Viso del Alcor)</div>
+    <div class="card-name"><span class="card-number">33</span> Colegio San Sebastián (El Viso del Alcor)</div>
     <div class="card-addr">C/ San Sebastián, s/n, 41520 El Viso del Alcor, Seville</div>
     <div class="card-links">
       <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
@@ -1080,9 +1049,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">34</div>
   <div class="card-body">
-    <div class="card-name">Colegio Ntra. Sra. de la Asunción (Carmona)</div>
+    <div class="card-name"><span class="card-number">34</span> Colegio Ntra. Sra. de la Asunción (Carmona)</div>
     <div class="card-addr">C/ Bailén, 32, 41001 Seville</div>
     <div class="card-links">
       <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
@@ -1091,9 +1059,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">35</div>
   <div class="card-body">
-    <div class="card-name">Colegio San Blas (Carmona)</div>
+    <div class="card-name"><span class="card-number">35</span> Colegio San Blas (Carmona)</div>
     <div class="card-addr">C/ San Blas, s/n, 41410 Carmona, Seville</div>
     <div class="card-links">
       <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
@@ -1102,9 +1069,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">36</div>
   <div class="card-body">
-    <div class="card-name">Colegio San Eustaquio (Sanlúcar la Mayor)</div>
+    <div class="card-name"><span class="card-number">36</span> Colegio San Eustaquio (Sanlúcar la Mayor)</div>
     <div class="card-addr">C/ San Eustaquio, s/n, 41800 Sanlúcar la Mayor, Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://www.saneustaquio.es" rel="noopener" target="_blank">saneustaquio.es</a>
@@ -1113,9 +1079,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">37</div>
   <div class="card-body">
-    <div class="card-name">English Connection Sevilla — Los Remedios</div>
+    <div class="card-name"><span class="card-number">37</span> English Connection Sevilla — Los Remedios</div>
     <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
@@ -1124,9 +1089,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">38</div>
   <div class="card-body">
-    <div class="card-name">English Connection Sevilla — Centro</div>
+    <div class="card-name"><span class="card-number">38</span> English Connection Sevilla — Centro</div>
     <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
@@ -1135,9 +1099,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">39</div>
   <div class="card-body">
-    <div class="card-name">English Connection Sevilla — Bermejales</div>
+    <div class="card-name"><span class="card-number">39</span> English Connection Sevilla — Bermejales</div>
     <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
@@ -1146,9 +1109,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">40</div>
   <div class="card-body">
-    <div class="card-name">English Connection Sevilla — Macarena</div>
+    <div class="card-name"><span class="card-number">40</span> English Connection Sevilla — Macarena</div>
     <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
@@ -1157,9 +1119,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">41</div>
   <div class="card-body">
-    <div class="card-name">English Connection Sevilla — Cerro del Águila</div>
+    <div class="card-name"><span class="card-number">41</span> English Connection Sevilla — Cerro del Águila</div>
     <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
@@ -1168,9 +1129,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">42</div>
   <div class="card-body">
-    <div class="card-name">English Connection Sevilla — Este Ciencias</div>
+    <div class="card-name"><span class="card-number">42</span> English Connection Sevilla — Este Ciencias</div>
     <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
@@ -1179,9 +1139,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">43</div>
   <div class="card-body">
-    <div class="card-name">English Connection Sevilla — Este Góndolas</div>
+    <div class="card-name"><span class="card-number">43</span> English Connection Sevilla — Este Góndolas</div>
     <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
@@ -1190,9 +1149,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">44</div>
   <div class="card-body">
-    <div class="card-name">English Connection Sevilla — Gran Plaza</div>
+    <div class="card-name"><span class="card-number">44</span> English Connection Sevilla — Gran Plaza</div>
     <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
@@ -1201,9 +1159,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">45</div>
   <div class="card-body">
-    <div class="card-name">English Connection Sevilla — La Salle</div>
+    <div class="card-name"><span class="card-number">45</span> English Connection Sevilla — La Salle</div>
     <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
@@ -1212,9 +1169,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">46</div>
   <div class="card-body">
-    <div class="card-name">English Connection Sevilla — Parque Alcosa</div>
+    <div class="card-name"><span class="card-number">46</span> English Connection Sevilla — Parque Alcosa</div>
     <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
@@ -1223,9 +1179,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">47</div>
   <div class="card-body">
-    <div class="card-name">English Connection Sevilla — Parsi</div>
+    <div class="card-name"><span class="card-number">47</span> English Connection Sevilla — Parsi</div>
     <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
@@ -1234,9 +1189,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">48</div>
   <div class="card-body">
-    <div class="card-name">English Connection Sevilla — Pinomontano</div>
+    <div class="card-name"><span class="card-number">48</span> English Connection Sevilla — Pinomontano</div>
     <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
@@ -1245,9 +1199,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">49</div>
   <div class="card-body">
-    <div class="card-name">English Connection Sevilla — Reina Mercedes</div>
+    <div class="card-name"><span class="card-number">49</span> English Connection Sevilla — Reina Mercedes</div>
     <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
@@ -1256,9 +1209,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">50</div>
   <div class="card-body">
-    <div class="card-name">English Connection Sevilla — San Jerónimo</div>
+    <div class="card-name"><span class="card-number">50</span> English Connection Sevilla — San Jerónimo</div>
     <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
@@ -1267,9 +1219,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">51</div>
   <div class="card-body">
-    <div class="card-name">English Connection Sevilla — Santa Justa</div>
+    <div class="card-name"><span class="card-number">51</span> English Connection Sevilla — Santa Justa</div>
     <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
@@ -1278,9 +1229,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">52</div>
   <div class="card-body">
-    <div class="card-name">English Connection Sevilla — Tharsis</div>
+    <div class="card-name"><span class="card-number">52</span> English Connection Sevilla — Tharsis</div>
     <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
@@ -1289,9 +1239,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">53</div>
   <div class="card-body">
-    <div class="card-name">English Connection Sevilla — Triana</div>
+    <div class="card-name"><span class="card-number">53</span> English Connection Sevilla — Triana</div>
     <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
@@ -1300,9 +1249,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">54</div>
   <div class="card-body">
-    <div class="card-name">English Connection Sevilla — Viapol</div>
+    <div class="card-name"><span class="card-number">54</span> English Connection Sevilla — Viapol</div>
     <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
@@ -1311,9 +1259,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">55</div>
   <div class="card-body">
-    <div class="card-name">Colegio San Hermenegildo</div>
+    <div class="card-name"><span class="card-number">55</span> Colegio San Hermenegildo</div>
     <div class="card-addr">C/ Camino de los Frailes, s/n, 41702 Dos Hermanas</div>
     <div class="card-links">
       <a class="link-chip" href="https://colegiosanhermenegildo.org" rel="noopener" target="_blank">colegiosanhermenegildo.org</a>
@@ -1322,9 +1269,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">56</div>
   <div class="card-body">
-    <div class="card-name">Colegio Salesiano Ntra. Sra. del Carmen</div>
+    <div class="card-name"><span class="card-number">56</span> Colegio Salesiano Ntra. Sra. del Carmen</div>
     <div class="card-addr">Avda. San Juan Bosco, 13, 41710 Utrera</div>
     <div class="card-links">
       <a class="link-chip" href="https://utrera.salesianos.edu" rel="noopener" target="_blank">utrera.salesianos.edu</a>
@@ -1333,9 +1279,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">57</div>
   <div class="card-body">
-    <div class="card-name">Colegio CEU San Pablo Montepríncipe</div>
+    <div class="card-name"><span class="card-number">57</span> Colegio CEU San Pablo Montepríncipe</div>
     <div class="card-addr">C/ Maimónides, s/n, 41930 Bormujos</div>
     <div class="card-links">
       <a class="link-chip" href="https://colegioceusevilla.es" rel="noopener" target="_blank">colegioceusevilla.es</a>
@@ -1344,9 +1289,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">58</div>
   <div class="card-body">
-    <div class="card-name">Colegio Aljarafe</div>
+    <div class="card-name"><span class="card-number">58</span> Colegio Aljarafe</div>
     <div class="card-addr">Ctra. San Juan a Palomares, 68, 41927 Mairena del Aljarafe</div>
     <div class="card-links">
       <a class="link-chip" href="https://colegioaljarafe.es" rel="noopener" target="_blank">colegioaljarafe.es</a>
@@ -1355,9 +1299,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">59</div>
   <div class="card-body">
-    <div class="card-name">Colegio Huerta Santa Ana</div>
+    <div class="card-name"><span class="card-number">59</span> Colegio Huerta Santa Ana</div>
     <div class="card-addr">Avda. Europa 44, 41960 Gines</div>
     <div class="card-links">
       <a class="link-chip" href="https://huertana.es" rel="noopener" target="_blank">huertana.es</a>
@@ -1366,9 +1309,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">60</div>
   <div class="card-body">
-    <div class="card-name">Colegio San José</div>
+    <div class="card-name"><span class="card-number">60</span> Colegio San José</div>
     <div class="card-addr">C/ San José, 5, 41003 Seville</div>
     <div class="card-links">
       <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
@@ -1377,9 +1319,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">61</div>
   <div class="card-body">
-    <div class="card-name">Colegio Almenar</div>
+    <div class="card-name"><span class="card-number">61</span> Colegio Almenar</div>
     <div class="card-addr">C/ Torre del Oro, 3, 41807 Espartinas</div>
     <div class="card-links">
       <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
@@ -1388,9 +1329,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">62</div>
   <div class="card-body">
-    <div class="card-name">Attendis Preschool Aljarafe</div>
+    <div class="card-name"><span class="card-number">62</span> Attendis Preschool Aljarafe</div>
     <div class="card-addr">C/ Garnacha 1, 41807 Espartinas</div>
     <div class="card-links">
       <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
@@ -1399,9 +1339,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">63</div>
   <div class="card-body">
-    <div class="card-name">CLIC International House Sevilla</div>
+    <div class="card-name"><span class="card-number">63</span> CLIC International House Sevilla</div>
     <div class="card-addr">C/ Albareda, 19, 41001 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://clic.es/seville/" rel="noopener" target="_blank">clic.es/seville/</a>
@@ -1410,9 +1349,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">64</div>
   <div class="card-body">
-    <div class="card-name">Giralda Center / Spanish House Idiomas</div>
+    <div class="card-name"><span class="card-number">64</span> Giralda Center / Spanish House Idiomas</div>
     <div class="card-addr">C/ Gonzalo Bilbao, 29, Local 3, 41003 Seville</div>
     <div class="card-links">
       <a class="link-chip" href="https://www.giraldacenter.com" rel="noopener" target="_blank">giraldacenter.com</a>
@@ -1421,9 +1359,8 @@
   </div>
 </div>
 <div class="school-card">
-  <div class="card-number">65</div>
   <div class="card-body">
-    <div class="card-name">Notting Hill — Academia de Idiomas y Enseñanza</div>
+    <div class="card-name"><span class="card-number">65</span> Notting Hill — Academia de Idiomas y Enseñanza</div>
     <div class="card-addr">C/ Virgen de la Estrella, 10, 41011 Seville (Los Remedios)</div>
     <div class="card-links">
       <a class="link-chip" href="https://www.nottinghillacademia.com/" target="_blank" rel="noopener">nottinghillacademia.com</a>
