@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!--
+    Responsive HTML directory for education centres in Seville.
+    The page presents compatible schools and language academies in a responsive table,
+    adapts URL and email columns to their real content length, and lets users copy
+    email addresses to the clipboard with an instant toast notification.
+  -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Education Centres in Seville Compatible with the CV</title>
+<link href="leaflet.css" rel="stylesheet"/>
+<link href="favicon.ico" rel="icon" sizes="16x16"/>
+<link href="favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<!-- Preconnect tile server for faster map rendering -->
+<link href="https://a.basemaps.cartocdn.com" rel="preconnect"/>
+<link href="https://b.basemaps.cartocdn.com" rel="preconnect"/>
+<link href="https://c.basemaps.cartocdn.com" rel="preconnect"/>
+<style>
+      :root {
+        --bg: #f7f8fb;
+        --card: #ffffff;
+        --text: #1f2937;
+        --muted: #5b6472;
+        --line: #d7dce5;
+        --head: #0f3763;
+        --accent: #1f6feb;
+        --accent-dark: #174ea6;
+        --success: #0f7a43;
+        --success-bg: #eaf8f0;
+        --shadow: 0 8px 28px rgba(16, 24, 40, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: clamp(14px, 3vw, 32px);
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.5;
+      }
+
+      main {
+        width: min(100%, 1320px);
+        margin: 0 auto;
+        background: var(--card);
+        padding: clamp(18px, 3vw, 30px);
+        border-radius: 14px;
+        box-shadow: var(--shadow);
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        color: var(--head);
+        font-size: clamp(1.45rem, 3vw, 2rem);
+        line-height: 1.2;
+      }
+
+      p {
+        margin: 0 0 18px;
+        color: var(--muted);
+      }
+
+      .profile {
+        border-left: 4px solid var(--accent);
+        padding: 12px 16px;
+        margin: 18px 0 24px;
+        background: #f0f6ff;
+        color: #22324a;
+        border-radius: 0 10px 10px 0;
+      }
+
+      .table-shell {
+        width: 100%;
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: #ffffff;
+      }
+
+      table {
+        width: 100%;
+        min-width: 980px;
+        border-collapse: collapse;
+        table-layout: auto;
+        font-size: 0.95rem;
+      }
+
+      col.name-column {
+        width: 24%;
+      }
+
+      col.address-column {
+        width: 34%;
+      }
+
+      col.url-column,
+      col.email-column {
+        width: 1%;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid var(--line);
+        padding: 12px 14px;
+        vertical-align: top;
+        text-align: left;
+      }
+
+      th:not(:last-child),
+      td:not(:last-child) {
+        border-right: 1px solid var(--line);
+      }
+
+      th {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background: var(--head);
+        color: #ffffff;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      tbody tr:nth-child(even) {
+        background: #f7f9fc;
+      }
+
+      tbody tr:hover {
+        background: #eef5ff;
+      }
+
+      tbody tr:last-child td {
+        border-bottom: 0;
+      }
+
+      td:nth-child(3),
+      td:nth-child(4) {
+        width: 1%;
+        white-space: nowrap;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:focus-visible {
+        text-decoration: underline;
+      }
+
+      .link-chip,
+      .email-chip {
+        display: inline-flex;
+        align-items: center;
+        max-width: 100%;
+        padding: 6px 9px;
+        margin: 2px 4px 2px 0;
+        border: 1px solid #c9ddff;
+        border-radius: 999px;
+        background: #f8fbff;
+        font-size: 0.9rem;
+        line-height: 1.2;
+        white-space: nowrap;
+      }
+
+      .email-chip {
+        cursor: pointer;
+        color: var(--accent-dark);
+        user-select: none;
+        transition:
+          background 140ms ease,
+          border-color 140ms ease,
+          transform 140ms ease;
+      }
+
+      .email-chip:hover,
+      .email-chip:focus-visible {
+        background: #eaf2ff;
+        border-color: var(--accent);
+        outline: none;
+        transform: translateY(-1px);
+      }
+
+      .email-cell {
+        cursor: pointer;
+      }
+
+      .email-cell:focus-within {
+        outline: 2px solid rgba(31, 111, 235, 0.35);
+        outline-offset: -2px;
+      }
+
+      .note {
+        margin-top: 18px;
+        font-size: 0.88rem;
+        color: var(--muted);
+      }
+
+      .toast {
+        position: fixed;
+        right: clamp(14px, 3vw, 28px);
+        bottom: clamp(14px, 3vw, 28px);
+        z-index: 9999;
+        max-width: min(420px, calc(100vw - 28px));
+        padding: 13px 16px;
+        border-radius: 12px;
+        background: #102a43;
+        color: #ffffff;
+        box-shadow: 0 12px 34px rgba(16, 42, 67, 0.28);
+        font-size: 0.95rem;
+        opacity: 0;
+        transform: translateY(16px);
+        pointer-events: none;
+        transition:
+          opacity 180ms ease,
+          transform 180ms ease;
+      }
+
+      .toast.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .toast.is-success {
+        background: var(--success);
+      }
+
+      .toast.is-error {
+        background: #a61b1b;
+      }
+
+      .map-section {
+        margin-top: 30px;
+        padding-top: 24px;
+        border-top: 1px solid var(--line);
+      }
+
+      .map-section h2 {
+        margin: 0 0 10px;
+        color: var(--head);
+        font-size: clamp(1.25rem, 2.4vw, 1.65rem);
+        line-height: 1.25;
+      }
+
+      .map-section p {
+        margin-bottom: 16px;
+      }
+
+
+
+      #seville-map {
+        min-height: 520px;
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        overflow: hidden;
+        background: #edf2f7;
+        box-shadow: 0 4px 16px rgba(16, 24, 40, 0.06);
+        position: relative;
+      }
+
+      .map-loader {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #edf2f7;
+        z-index: 9999;
+        border-radius: 14px;
+        transition: opacity 0.5s ease;
+      }
+      .map-loader.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+      .map-loader-track {
+        width: 200px;
+        height: 6px;
+        background: #d0d7e2;
+        border-radius: 3px;
+        overflow: hidden;
+        position: relative;
+      }
+      .map-loader-bar {
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(90deg, var(--accent), #4a9eff);
+        border-radius: 3px;
+        transform: translateX(-100%);
+        animation: loader-fill 2s ease-in-out infinite;
+      }
+      .map-loader-thrower {
+        position: absolute;
+        top: 50%;
+        width: 14px;
+        height: 14px;
+        background: var(--accent-dark);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        animation: loader-throw 2s ease-in-out infinite;
+        box-shadow: 0 0 8px rgba(31, 111, 235, 0.5);
+      }
+      .map-loader-text {
+        margin-top: 18px;
+        font-size: 0.9rem;
+        color: var(--muted);
+        letter-spacing: 0.02em;
+      }
+      .map-loader-text::after {
+        content: '';
+        animation: loader-dots 1.5s steps(4, end) infinite;
+      }
+      @keyframes loader-fill {
+        0%   { transform: translateX(-100%); }
+        50%  { transform: translateX(-40%); }
+        100% { transform: translateX(100%); }
+      }
+      @keyframes loader-throw {
+        0%   { left: 0%; }
+        50%  { left: 60%; }
+        100% { left: 100%; }
+      }
+      @keyframes loader-dots {
+        0%   { content: ''; }
+        25%  { content: '.'; }
+        50%  { content: '..'; }
+        75%  { content: '...'; }
+        100% { content: ''; }
+      }
+
+
+
+      .map-legend li {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        gap: 10px;
+        align-items: start;
+        padding: 9px 0;
+        border-bottom: 1px solid #eef1f6;
+        color: var(--text);
+      }
+
+      .map-legend li:last-child {
+        border-bottom: 0;
+      }
+
+      .legend-number,
+      .map-marker-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        border-radius: 999px;
+        background: var(--accent);
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 0.86rem;
+        line-height: 1;
+      }
+
+      .legend-text strong {
+        display: block;
+        color: var(--head);
+        line-height: 1.25;
+      }
+
+      .legend-text span {
+        display: block;
+        margin-top: 2px;
+        color: var(--muted);
+        font-size: 0.86rem;
+        line-height: 1.35;
+      }
+
+      .map-marker-number {
+        width: 32px;
+        height: 32px;
+        border: 2px solid #ffffff;
+        box-shadow: 0 2px 10px rgba(15, 55, 99, 0.35);
+      }
+
+
+
+      @media (max-width: 760px) {
+        main {
+          padding: 16px;
+        }
+        .table-shell {
+          overflow: visible;
+          border: 0;
+          background: transparent;
+        }
+        table,
+        thead,
+        tbody,
+        tr,
+        th,
+        td {
+          display: block;
+          width: 100%;
+        }
+        table {
+          min-width: 0;
+          font-size: 0.94rem;
+        }
+        colgroup,
+        thead {
+          display: none;
+        }
+        tbody tr {
+          margin: 0 0 16px;
+          border: 1px solid var(--line);
+          border-radius: 12px;
+          overflow: hidden;
+          background: #ffffff;
+          box-shadow: 0 4px 14px rgba(16, 24, 40, 0.05);
+        }
+        tbody tr:nth-child(even) {
+          background: #ffffff;
+        }
+        td {
+          display: grid;
+          grid-template-columns: minmax(112px, 34%) 1fr;
+          gap: 12px;
+          border-right: 0 !important;
+          border-bottom: 1px solid var(--line);
+          white-space: normal !important;
+          overflow-wrap: anywhere;
+        }
+        td::before {
+          content: attr(data-label);
+          font-weight: 700;
+          color: var(--head);
+        }
+        td:last-child {
+          border-bottom: 0;
+        }
+        .link-chip,
+        .email-chip {
+          white-space: normal;
+          overflow-wrap: anywhere;
+          word-break: break-word;
+          border-radius: 10px;
+        }
+        .cards-grid {
+          grid-template-columns: 1fr;
+          gap: 10px;
+        }
+        #seville-map {
+          min-height: 420px;
+        }
+        .card-links .link-chip,
+        .card-links .email-chip {
+          white-space: normal;
+          overflow-wrap: anywhere;
+          word-break: break-word;
+        }
+      }
+    
+      .map-section {
+        margin-top: 0;
+        padding-top: 24px;
+        border-top: 1px solid var(--line);
+      }
+      .map-section h2 {
+        margin: 0 0 10px;
+        color: var(--head);
+        font-size: clamp(1.25rem, 2.4vw, 1.65rem);
+        line-height: 1.25;
+      }
+      .map-section p {
+        margin-bottom: 16px;
+      }
+
+      /* Map — full width, no sidebar */
+      #seville-map {
+        min-height: 520px;
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        overflow: hidden;
+        background: #edf2f7;
+        box-shadow: 0 4px 16px rgba(16, 24, 40, 0.06);
+        position: relative;
+      }
+
+      .map-loader {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #edf2f7;
+        z-index: 9999;
+        border-radius: 14px;
+        transition: opacity 0.5s ease;
+      }
+      .map-loader.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+      .map-loader-track {
+        width: 200px;
+        height: 6px;
+        background: #d0d7e2;
+        border-radius: 3px;
+        overflow: hidden;
+        position: relative;
+      }
+      .map-loader-bar {
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(90deg, var(--accent), #4a9eff);
+        border-radius: 3px;
+        transform: translateX(-100%);
+        animation: loader-fill 2s ease-in-out infinite;
+      }
+      .map-loader-thrower {
+        position: absolute;
+        top: 50%;
+        width: 14px;
+        height: 14px;
+        background: var(--accent-dark);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        animation: loader-throw 2s ease-in-out infinite;
+        box-shadow: 0 0 8px rgba(31, 111, 235, 0.5);
+      }
+      .map-loader-text {
+        margin-top: 18px;
+        font-size: 0.9rem;
+        color: var(--muted);
+        letter-spacing: 0.02em;
+      }
+      @keyframes loader-fill {
+        0%   { transform: translateX(-100%); }
+        50%  { transform: translateX(-40%); }
+        100% { transform: translateX(100%); }
+      }
+      @keyframes loader-throw {
+        0%   { left: 0%; }
+        50%  { left: 60%; }
+        100% { left: 100%; }
+      }
+
+      .map-fallback {
+        margin-top: 10px;
+        font-size: 0.86rem;
+        color: var(--muted);
+      }
+
+      /* ── Card Grid ── */
+      .cards-section {
+        margin-top: 0;
+        padding-top: 16px;
+      }
+      .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 12px;
+      }
+      .school-card {
+        display: flex;
+        gap: 12px;
+        padding: 14px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: #ffffff;
+        box-shadow: 0 2px 8px rgba(16, 24, 40, 0.04);
+        transition: box-shadow 0.15s ease;
+      }
+      .school-card:hover {
+        box-shadow: 0 4px 16px rgba(16, 24, 40, 0.08);
+      }
+      .card-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 22px;
+        height: 22px;
+        border-radius: 999px;
+        background: var(--accent);
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 0.75rem;
+        line-height: 1;
+        margin-right: 5px;
+        vertical-align: middle;
+        flex-shrink: 0;
+      }
+      .card-body {
+        flex: 1;
+        min-width: 0;
+      }
+      .card-name {
+        font-weight: 700;
+        color: var(--head);
+        font-size: 0.95rem;
+        line-height: 1.3;
+        margin-bottom: 4px;
+      }
+      .card-addr {
+        font-size: 0.85rem;
+        color: var(--muted);
+        line-height: 1.35;
+        margin-bottom: 8px;
+      }
+      .card-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        align-items: center;
+      }
+      .card-links .link-chip,
+      .card-links .email-chip {
+        display: inline-flex;
+        align-items: center;
+        max-width: 100%;
+        padding: 5px 10px;
+        border: 1px solid #c9ddff;
+        border-radius: 999px;
+        background: #f8fbff;
+        font-size: 0.82rem;
+        line-height: 1.2;
+        white-space: nowrap;
+      }
+      .card-links .link-chip { color: var(--accent); text-decoration: none; }
+      .card-links .link-chip:hover { background: #eaf2ff; }
+      .card-links .email-chip {
+        cursor: pointer;
+        color: var(--accent-dark);
+        user-select: none;
+        transition: background 140ms ease, border-color 140ms ease;
+      }
+      .card-links .email-chip:hover {
+        background: #eaf2ff;
+        border-color: var(--accent);
+      }
+
+      @media (max-width: 760px) {
+        .cards-grid {
+          grid-template-columns: 1fr;
+          gap: 10px;
+        }
+        #seville-map {
+          min-height: 420px;
+        }
+        .card-links .link-chip,
+        .card-links .email-chip {
+          white-space: normal;
+          overflow-wrap: anywhere;
+          word-break: break-word;
+        }
+      }
+
+    </style>
+</head>
+<body>
+<main>
+<h1>Education Centres in Seville Compatible with the CV</h1>
+<p>
+        This selection includes schools and language centres in Seville and its
+        metropolitan area that match a profile as an English teacher with Level
+        5 TEFL certification, secondary education experience, bilingual or
+        international education, IB curriculum exposure, and intercultural
+        competence. The list has been expanded to include all state-subsidised
+        (concertado) and private schools offering primary and secondary education
+        in the metropolitan area, excluding marginal neighbourhoods.
+      </p>
+<div class="profile">
+<strong>Compatibility criterion:</strong> priority has been given to
+        international, bilingual, and IB-oriented schools, as well as English
+        academies with native or bilingual teachers and programmes for
+        teenagers, adults, schools, or companies. New additions include
+        concertado and private schools across the Aljarafe, Los Alcores,
+        Dos Hermanas, Utrera, and central Seville.
+      </div>
+<section aria-labelledby="map-title" class="map-section">
+<h2 id="map-title">Map of Seville and Surrounding Area</h2>
+<p>
+          The map below shows the numbered locations of the selected centres in
+          Seville and its metropolitan area. Markers 13–36 correspond to
+          the concertado and private schools added from independent research.
+          Colegio Internacional de Sevilla – San Francisco de Paula has
+          been intentionally excluded.
+        </p>
+<div class="map-layout-full">
+<div id="seville-map">
+  <div class="map-loader" id="map-loader">
+    <div class="map-loader-track">
+      <div class="map-loader-bar"></div>
+      <div class="map-loader-thrower"></div>
+    </div>
+    <span class="map-loader-text">Loading map</span>
+  </div>
+</div>
+<p class="map-fallback">
+  If the map tiles do not load, please check your internet connection; the numbered list remains available below.
+</p>
+</div>
+</section>
+
+<section aria-labelledby="cards-title" class="cards-section">
+<h2 id="cards-title">All Centres — Numbered List</h2>
+<div class="cards-grid">
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">1</span> AMT Spain / AM Transnational</div>
+    <div class="card-addr">Nuestra Señora de las Mercedes, 4, 41013 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://www.amt-spain.com/en/english-academy/" rel="noopener" target="_blank">https://amt-spain.com/en/english-academy/</a>
+      <span class="email-chip" data-email="hola@amt-spain.com" role="button" tabindex="0">hola@amt-spain.com</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">2</span> CBS, The British School of Seville</div>
+    <div class="card-addr">Urb. Pinar de la Juliana, plot 40-A and B, Bollullos de la
+                Mitación, 41110 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://colegiobs.eu/" rel="noopener" target="_blank">https://colegiobs.eu/</a>
+      <span class="email-chip" data-email="secretaria@colegiobs.eu" role="button" tabindex="0">secretaria@colegiobs.eu</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">3</span> Centro Norteamericano</div>
+    <div class="card-addr">Calle Harinas, 18, 41001 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://centronorteamericano.com/" rel="noopener" target="_blank">https://centronorteamericano.com/</a>
+      <span class="email-chip" data-email="hi@centronorteamericano.com" role="button" tabindex="0">hi@centronorteamericano.com</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">4</span> CLIC International House Sevilla</div>
+    <div class="card-addr">C/ Albareda, 19, 41001 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://clic.es/seville/" rel="noopener" target="_blank">clic.es/seville/</a>
+      <span class="email-chip" data-email="booking@clic.es" role="button" tabindex="0">booking@clic.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">5</span> Colegio Alemán de Sevilla Alberto Durero</div>
+    <div class="card-addr">Av. de Altamira s/n, corner with C. Cueva del Gato, 41020
+                Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://www.colegioalemansevilla.com/" rel="noopener" target="_blank">https://colegioalemansevilla.com/</a>
+      <span class="email-chip" data-email="secretaria@colegioalemansevilla.com" role="button" tabindex="0">secretaria@colegioalemansevilla.com</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">6</span> Colegio CEU San Pablo Montepríncipe</div>
+    <div class="card-addr">C/ Maimónides, s/n, 41930 Bormujos</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://colegioceusevilla.es" rel="noopener" target="_blank">colegioceusevilla.es</a>
+      <span class="email-chip" data-email="direccion.colegio@colegioceusevilla.es" role="button" tabindex="0">direccion.colegio@colegioceusevilla.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">7</span> Colegio de Fomento Entreolivos</div>
+    <div class="card-addr">C/ Párroco Don Eugenio, 18, 41015 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://www.entreolivos.com" rel="noopener" target="_blank">entreolivos.com</a>
+      <span class="email-chip" data-email="secretaria@entreolivos.com" role="button" tabindex="0">secretaria@entreolivos.com</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">8</span> Colegio Huerta Santa Ana</div>
+    <div class="card-addr">Avda. Europa 44, 41960 Gines</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://huertana.es" rel="noopener" target="_blank">huertana.es</a>
+      <span class="email-chip" data-email="secretaria@huertana.es" role="button" tabindex="0">secretaria@huertana.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">9</span> Colegio Internacional Almenar</div>
+    <div class="card-addr">Ronda de Altair, 2, Urbanización La Motilla, 41703 Dos Hermanas,
+                Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://colegioalminar.es/" rel="noopener" target="_blank">https://colegioalminar.es/</a>
+      <span class="email-chip" data-email="colegio@alminar.es" role="button" tabindex="0">colegio@alminar.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">10</span> Colegio Salesiano Ntra. Sra. del Carmen</div>
+    <div class="card-addr">Avda. San Juan Bosco, 13, 41710 Utrera</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://utrera.salesianos.edu" rel="noopener" target="_blank">utrera.salesianos.edu</a>
+      <span class="email-chip" data-email="secretaria.utrera@salesianos.edu" role="button" tabindex="0">secretaria.utrera@salesianos.edu</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">11</span> Colegio San Hermenegildo</div>
+    <div class="card-addr">C/ Camino de los Frailes, s/n, 41702 Dos Hermanas</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://colegiosanhermenegildo.org" rel="noopener" target="_blank">colegiosanhermenegildo.org</a>
+      <span class="email-chip" data-email="sanhermenegildotitular@colegiosamigonianos.org" role="button" tabindex="0">sanhermenegildotitular@colegiosamigonianos.org</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">12</span> ELI - English Language Institute</div>
+    <div class="card-addr">C/ Larra, 1, 41005 Seville; it also has several centres across
+                Seville city and the metropolitan area</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://www.eli.es/" rel="noopener" target="_blank">https://eli.es/</a>
+      <span class="email-chip" data-email="recruitment@eli.es" role="button" tabindex="0">recruitment@eli.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">13</span> English Connection Sevilla — Bermejales</div>
+    <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
+      <span class="email-chip" tabindex="0" role="button" data-email="sevilla.losremedios@englishconnection.es">sevilla.losremedios@englishconnection.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">14</span> English Connection Sevilla — Centro</div>
+    <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
+      <span class="email-chip" tabindex="0" role="button" data-email="sevilla.losremedios@englishconnection.es">sevilla.losremedios@englishconnection.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">15</span> English Connection Sevilla — Cerro del Águila</div>
+    <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
+      <span class="email-chip" tabindex="0" role="button" data-email="sevilla.losremedios@englishconnection.es">sevilla.losremedios@englishconnection.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">16</span> English Connection Sevilla — Este Ciencias</div>
+    <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
+      <span class="email-chip" tabindex="0" role="button" data-email="sevilla.losremedios@englishconnection.es">sevilla.losremedios@englishconnection.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">17</span> English Connection Sevilla — Este Góndolas</div>
+    <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
+      <span class="email-chip" tabindex="0" role="button" data-email="sevilla.losremedios@englishconnection.es">sevilla.losremedios@englishconnection.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">18</span> English Connection Sevilla — Gran Plaza</div>
+    <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
+      <span class="email-chip" tabindex="0" role="button" data-email="sevilla.losremedios@englishconnection.es">sevilla.losremedios@englishconnection.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">19</span> English Connection Sevilla — La Salle</div>
+    <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
+      <span class="email-chip" tabindex="0" role="button" data-email="sevilla.losremedios@englishconnection.es">sevilla.losremedios@englishconnection.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">20</span> English Connection Sevilla — Los Remedios</div>
+    <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
+      <span class="email-chip" tabindex="0" role="button" data-email="sevilla.losremedios@englishconnection.es">sevilla.losremedios@englishconnection.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">21</span> English Connection Sevilla — Macarena</div>
+    <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
+      <span class="email-chip" tabindex="0" role="button" data-email="sevilla.losremedios@englishconnection.es">sevilla.losremedios@englishconnection.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">22</span> English Connection Sevilla — Parque Alcosa</div>
+    <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
+      <span class="email-chip" tabindex="0" role="button" data-email="sevilla.losremedios@englishconnection.es">sevilla.losremedios@englishconnection.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">23</span> English Connection Sevilla — Parsi</div>
+    <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
+      <span class="email-chip" tabindex="0" role="button" data-email="sevilla.losremedios@englishconnection.es">sevilla.losremedios@englishconnection.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">24</span> English Connection Sevilla — Pinomontano</div>
+    <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
+      <span class="email-chip" tabindex="0" role="button" data-email="sevilla.losremedios@englishconnection.es">sevilla.losremedios@englishconnection.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">25</span> English Connection Sevilla — Reina Mercedes</div>
+    <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
+      <span class="email-chip" tabindex="0" role="button" data-email="sevilla.losremedios@englishconnection.es">sevilla.losremedios@englishconnection.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">26</span> English Connection Sevilla — San Jerónimo</div>
+    <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
+      <span class="email-chip" tabindex="0" role="button" data-email="sevilla.losremedios@englishconnection.es">sevilla.losremedios@englishconnection.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">27</span> English Connection Sevilla — Santa Justa</div>
+    <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
+      <span class="email-chip" tabindex="0" role="button" data-email="sevilla.losremedios@englishconnection.es">sevilla.losremedios@englishconnection.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">28</span> English Connection Sevilla — Tharsis</div>
+    <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
+      <span class="email-chip" tabindex="0" role="button" data-email="sevilla.losremedios@englishconnection.es">sevilla.losremedios@englishconnection.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">29</span> English Connection Sevilla — Triana</div>
+    <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
+      <span class="email-chip" tabindex="0" role="button" data-email="sevilla.losremedios@englishconnection.es">sevilla.losremedios@englishconnection.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">30</span> English Connection Sevilla — Viapol</div>
+    <div class="card-addr">Calle Asunción, 59, 41011 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://englishconnection.es/academia-ingles/sevilla/" target="_blank" rel="noopener">englishconnection.es</a>
+      <span class="email-chip" tabindex="0" role="button" data-email="sevilla.losremedios@englishconnection.es">sevilla.losremedios@englishconnection.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">31</span> Europa International School</div>
+    <div class="card-addr">Carretera A-8076, km 6, 41807 Espartinas, Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://www.europaschool.org/" rel="noopener" target="_blank">https://europaschool.org/</a>
+      <span class="email-chip" data-email="rph@europaschool.org" role="button" tabindex="0">rph@europaschool.org</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">32</span> Highlands School Sevilla</div>
+    <div class="card-addr">Carretera de Utrera, km 4.5, 41089 Montequinto, Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://www.highlandssevilla.es/" rel="noopener" target="_blank">https://highlandssevilla.es/</a>
+      <span class="email-chip" data-email="atencionfamilias@highlandssevilla.es" role="button" tabindex="0">atencionfamilias@highlandssevilla.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">33</span> My English School Sevilla</div>
+    <div class="card-addr">Avenida de la República Argentina, 16, 41010 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://www.myes.school/es/cursos-de-ingles-sevilla/" rel="noopener" target="_blank">https://myes.school/es/cursos-de-ingles-sevilla/</a>
+      <span class="email-chip" data-email="info@myes.es" role="button" tabindex="0">info@myes.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">34</span> Notting Hill — Academia de Idiomas y Enseñanza</div>
+    <div class="card-addr">C/ Virgen de la Estrella, 10, 41011 Seville (Los Remedios)</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://www.nottinghillacademia.com/" target="_blank" rel="noopener">nottinghillacademia.com</a>
+      <span class="email-chip" tabindex="0" role="button" data-email="nottingsevillahill@gmail.com">nottingsevillahill@gmail.com</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">35</span> Salesianos San José (Alcalá de Guadaíra)</div>
+    <div class="card-addr">C/ Ntra. Sra. del Águila, 2, 41500 Alcalá de Guadaíra, Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://salesianosalcala.com" rel="noopener" target="_blank">salesianosalcala.com</a>
+      <span class="email-chip" data-email="secretaria@salesianosalcala.com" role="button" tabindex="0">secretaria@salesianosalcala.com</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">36</span> Sevilla Language Center</div>
+    <div class="card-addr">Paseo de Cristina, 3, mezzanine floor, 41001 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://www.sevillalanguagecenter.com/" rel="noopener" target="_blank">https://sevillalanguagecenter.com/</a>
+      <span class="email-chip" data-email="info@sevillalanguagecenter.com" role="button" tabindex="0">info@sevillalanguagecenter.com</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">37</span> St. Angela International School Sevilla</div>
+    <div class="card-addr">Calle Canarias, 269, Los Llanos Business Park, Salteras-Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://saintangelainternationalschoolsevilla.com/" rel="noopener" target="_blank">https://saintangelainternationalschoolsevilla.com/</a>
+      <span class="email-chip" data-email="workwithus@stangelainternationalschoolsevilla.com" role="button" tabindex="0">workwithus@stangelainternationalschoolsevilla.com</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">38</span> Yago School Sevilla</div>
+    <div class="card-addr">Senior School, Av. Antonio Mairena, 54, Castilleja de la Cuesta,
+                41950 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://yagoschoolsevilla.com/" rel="noopener" target="_blank">https://yagoschoolsevilla.com/</a>
+      <span class="email-chip" data-email="secretary@yagoschool.com" role="button" tabindex="0">secretary@yagoschool.com</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">39</span> Centro Cristo Rey</div>
+    <div class="card-addr">Avda. Ramón y Cajal, 2, 41011 Seville</div>
+    <div class="card-links">
+      <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+      <span class="email-chip" data-email="secretaria@cristoreysevilla.es" role="button" tabindex="0">secretaria@cristoreysevilla.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">40</span> Centro Sagrada Familia de Urgel</div>
+    <div class="card-addr">C/ Urgel, 12, 41006 Seville</div>
+    <div class="card-links">
+      <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+      <span class="email-chip" data-email="secretaria@sagradafamiliadeurgel.com" role="button" tabindex="0">secretaria@sagradafamiliadeurgel.com</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">41</span> Centro Santo Tomás de Aquino</div>
+    <div class="card-addr">C/ Santo Tomás, 8, 41004 Seville</div>
+    <div class="card-links">
+      <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+      <span class="email-chip" data-email="secretaria@santotomasdeaquino.com" role="button" tabindex="0">secretaria@santotomasdeaquino.com</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">42</span> Colegio Almenar</div>
+    <div class="card-addr">C/ Torre del Oro, 3, 41807 Espartinas</div>
+    <div class="card-links">
+      <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+      <span class="email-chip" data-email="centroalmenar@gmail.com" role="button" tabindex="0">centroalmenar@gmail.com</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">43</span> Colegio Calasancio Hispalense</div>
+    <div class="card-addr">C/ San Juan de la Cruz, 1, 41010 Seville</div>
+    <div class="card-links">
+      <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+      <span class="email-chip" data-email="secretaria@calasanciohispalense.es" role="button" tabindex="0">secretaria@calasanciohispalense.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">44</span> Colegio de Fomento Tabladilla</div>
+    <div class="card-addr">Avda. de la Palmera, 58, 41012 Seville</div>
+    <div class="card-links">
+      <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+      <span class="email-chip" data-email="secretaria@tabladilla.com" role="button" tabindex="0">secretaria@tabladilla.com</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">45</span> Colegio La Inmaculada (Jesuitinas)</div>
+    <div class="card-addr">C/ Jesús del Gran Poder, 1, 41002 Seville</div>
+    <div class="card-links">
+      <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+      <span class="email-chip" data-email="secretaria@colegiolainmaculadasevilla.com" role="button" tabindex="0">secretaria@colegiolainmaculadasevilla.com</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">46</span> Colegio Ntra. Sra. de la Asunción (Carmona)</div>
+    <div class="card-addr">C/ Bailén, 32, 41001 Seville</div>
+    <div class="card-links">
+      <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+      <span class="email-chip" data-email="secretaria@carmelitassevilla.es" role="button" tabindex="0">secretaria@carmelitassevilla.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">47</span> Colegio Ntra. Sra. de los Reyes (Mercedarias)</div>
+    <div class="card-addr">C/ Bailén, 32, 41001 Seville</div>
+    <div class="card-links">
+      <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+      <span class="email-chip" data-email="secretaria@carmelitassevilla.es" role="button" tabindex="0">secretaria@carmelitassevilla.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">48</span> Colegio Ntra. Sra. del Carmen</div>
+    <div class="card-addr">C/ Bailén, 32, 41001 Seville</div>
+    <div class="card-links">
+      <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+      <span class="email-chip" data-email="secretaria@carmelitassevilla.es" role="button" tabindex="0">secretaria@carmelitassevilla.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">49</span> Colegio Ntra. Sra. del Carmen (Mairena del Alcor)</div>
+    <div class="card-addr">C/ Bailén, 32, 41001 Seville</div>
+    <div class="card-links">
+      <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+      <span class="email-chip" data-email="secretaria@carmelitassevilla.es" role="button" tabindex="0">secretaria@carmelitassevilla.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">50</span> Colegio Ntra. Sra. del Águila (Alcalá de Guadaíra)</div>
+    <div class="card-addr">C/ Bailén, 32, 41001 Seville</div>
+    <div class="card-links">
+      <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+      <span class="email-chip" data-email="secretaria@carmelitassevilla.es" role="button" tabindex="0">secretaria@carmelitassevilla.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">51</span> Colegio San Alberto Magno</div>
+    <div class="card-addr">C/ Juan de la Cueva, 4, 41009 Seville</div>
+    <div class="card-links">
+      <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+      <span class="email-chip" data-email="secretaria@csamsevilla.com" role="button" tabindex="0">secretaria@csamsevilla.com</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">52</span> Colegio San José</div>
+    <div class="card-addr">C/ San José, 5, 41003 Seville</div>
+    <div class="card-links">
+      <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+      <span class="email-chip" data-email="secretaria@colegiosanjosesevilla.com" role="button" tabindex="0">secretaria@colegiosanjosesevilla.com</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">53</span> Colegio San José (Hijas de la Caridad)</div>
+    <div class="card-addr">C/ San José, 5, 41003 Seville</div>
+    <div class="card-links">
+      <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+      <span class="email-chip" data-email="secretaria@colegiosanjosesevilla.com" role="button" tabindex="0">secretaria@colegiosanjosesevilla.com</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">54</span> Escuela Profesional Marcelo Spínola</div>
+    <div class="card-addr">C/ Madre de Dios, 22, 41004 Seville</div>
+    <div class="card-links">
+      <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+      <span class="email-chip" data-email="info@epmarcelospinola.es" role="button" tabindex="0">info@epmarcelospinola.es</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">55</span> St. Mary's School</div>
+    <div class="card-addr">C/ Virgen de la Antigua, 35, 41011 Seville</div>
+    <div class="card-links">
+      <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+      <span class="email-chip" data-email="secretaria@stmaryssevilla.com" role="button" tabindex="0">secretaria@stmaryssevilla.com</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">56</span> Attendis Preschool Aljarafe</div>
+    <div class="card-addr">C/ Garnacha 1, 41807 Espartinas</div>
+    <div class="card-links">
+      <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+      <span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">57</span> Colegio SAFA (Alcalá de Guadaíra)</div>
+    <div class="card-addr">C/ San Agustín, s/n, 41500 Alcalá de Guadaíra, Seville</div>
+    <div class="card-links">
+      <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+      <span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">58</span> Colegio San Blas (Carmona)</div>
+    <div class="card-addr">C/ San Blas, s/n, 41410 Carmona, Seville</div>
+    <div class="card-links">
+      <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+      <span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">59</span> Colegio San José Obrero (Mairena del Alcor)</div>
+    <div class="card-addr">Av. de San José Obrero, s/n, 41510 Mairena del Alcor, Seville</div>
+    <div class="card-links">
+      <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+      <span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">60</span> Colegio San Miguel (Alcalá de Guadaíra)</div>
+    <div class="card-addr">C/ Ntra. Sra. del Águila, 6, 41500 Alcalá de Guadaíra, Seville</div>
+    <div class="card-links">
+      <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+      <span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">61</span> Colegio San Sebastián (El Viso del Alcor)</div>
+    <div class="card-addr">C/ San Sebastián, s/n, 41520 El Viso del Alcor, Seville</div>
+    <div class="card-links">
+      <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+      <span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">62</span> Colegio Santa María del Alcor (El Viso del Alcor)</div>
+    <div class="card-addr">C/ Real, 56, 41520 El Viso del Alcor, Seville</div>
+    <div class="card-links">
+      <span class="link-chip" style="background:#f7f8fb;color:#999;border-color:#ddd;cursor:default;">no website found</span>
+      <span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">63</span> Colegio Aljarafe</div>
+    <div class="card-addr">Ctra. San Juan a Palomares, 68, 41927 Mairena del Aljarafe</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://colegioaljarafe.es" rel="noopener" target="_blank">colegioaljarafe.es</a>
+      <span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">64</span> Colegio San Eustaquio (Sanlúcar la Mayor)</div>
+    <div class="card-addr">C/ San Eustaquio, s/n, 41800 Sanlúcar la Mayor, Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://www.saneustaquio.es" rel="noopener" target="_blank">saneustaquio.es</a>
+      <span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
+    </div>
+  </div>
+</div>
+<div class="school-card">
+  <div class="card-body">
+    <div class="card-name"><span class="card-number">65</span> Giralda Center / Spanish House Idiomas</div>
+    <div class="card-addr">C/ Gonzalo Bilbao, 29, Local 3, 41003 Seville</div>
+    <div class="card-links">
+      <a class="link-chip" href="https://www.giraldacenter.com" rel="noopener" target="_blank">giraldacenter.com</a>
+      <span class="link-chip" style="background: #f0f0f0; color: #999; border-color: #ddd; cursor: default;">contact via website</span>
+    </div>
+  </div>
+</div>
+</div>
+</section></main>
+<section aria-labelledby="fallback-title" class="map-section">
+<h2 id="fallback-title">Additional Centres — Concertados (Referenced but Not Fully Located)</h2>
+<p>
+          The following schools are state-subsidised (concertado) or private centres
+          in the metropolitan area for which precise addresses, email contacts, or
+          GPS coordinates could not be independently verified. They are listed here
+          for reference; visit the website (if available) or use the Junta de
+          Andalucía search tool to find contact details.
+        </p>
+<div aria-label="Fallback table of additional education centres" class="table-shell">
+<table>
+<colgroup>
+<col class="name-column"/>
+<col style="width:28%"/>
+</colgroup>
+<thead>
+<tr>
+<th>Site Name</th>
+<th>Town</th>
+</tr>
+</thead>
+<tbody>
+<!-- ========== INVESTIGACIÓN 27 AGENTES (21 May 2026): ninguna de estas entradas fue localizada con datos verificables ========== -->
+<!--
+<tr><td data-label="Site Name">Colegio Ntra. Sra. del Carmen (HH. Carmelitas)</td><td data-label="Town">Dos Hermanas</td></tr>
+<tr><td data-label="Site Name">Colegio La Milagrosa</td><td data-label="Town">Dos Hermanas</td></tr>
+<tr><td data-label="Site Name">Colegio San José</td><td data-label="Town">Dos Hermanas</td></tr>
+<tr><td data-label="Site Name">Colegio Santa María del Valle</td><td data-label="Town">Dos Hermanas</td></tr>
+<tr><td data-label="Site Name">Colegio Ntra. Sra. de la Paz</td><td data-label="Town">Dos Hermanas</td></tr>
+<tr><td data-label="Site Name">Colegio La Unión</td><td data-label="Town">Montequinto (Dos Hermanas)</td></tr>
+<tr><td data-label="Site Name">Colegio San José (Hermanas de la Cruz)</td><td data-label="Town">Utrera</td></tr>
+<tr><td data-label="Site Name">Colegio SAFA</td><td data-label="Town">Utrera</td></tr>
+<tr><td data-label="Site Name">Colegio Ntra. Sra. de la Asunción</td><td data-label="Town">Utrera</td></tr>
+<tr><td data-label="Site Name">Colegio Ntra. Sra. del Rosario</td><td data-label="Town">La Rinconada</td></tr>
+<tr><td data-label="Site Name">Colegio Ntra. Sra. de la Esperanza</td><td data-label="Town">Los Palacios</td></tr>
+<tr><td data-label="Site Name">Colegio San José</td><td data-label="Town">Los Palacios</td></tr>
+<tr><td data-label="Site Name">Colegio Ntra. Sra. del Rosario</td><td data-label="Town">Bormujos</td></tr>
+<tr><td data-label="Site Name">Colegio San José</td><td data-label="Town">Bormujos</td></tr>
+<tr><td data-label="Site Name">Colegio Ntra. Sra. de la Estrella</td><td data-label="Town">Camas</td></tr>
+<tr><td data-label="Site Name">Colegio San José</td><td data-label="Town">Camas</td></tr>
+<tr><td data-label="Site Name">Colegio San José</td><td data-label="Town">Castilleja de la Cuesta</td></tr>
+<tr><td data-label="Site Name">Colegio San José</td><td data-label="Town">Coria del Río</td></tr>
+<tr><td data-label="Site Name">Colegio Ntra. Sra. del Rocío</td><td data-label="Town">Coria del Río</td></tr>
+<tr><td data-label="Site Name">Colegio Ntra. Sra. del Carmen</td><td data-label="Town">Espartinas</td></tr>
+<tr><td data-label="Site Name">Colegio Juan Pablo II</td><td data-label="Town">Gines</td></tr>
+<tr><td data-label="Site Name">Colegio San José</td><td data-label="Town">Mairena del Aljarafe</td></tr>
+<tr><td data-label="Site Name">Colegio San Ignacio del Viar</td><td data-label="Town">Mairena del Aljarafe</td></tr>
+<tr><td data-label="Site Name">Colegio San Juan de Dios</td><td data-label="Town">San Juan de Aznalfarache</td></tr>
+<tr><td data-label="Site Name">Colegio Ntra. Sra. de los Remedios</td><td data-label="Town">San Juan de Aznalfarache</td></tr>
+<tr><td data-label="Site Name">Colegio Ntra. Sra. del Carmen</td><td data-label="Town">Tomares</td></tr>
+<tr><td data-label="Site Name">Colegio Ntra. Sra. de la Concepción</td><td data-label="Town">Valencina</td></tr>
+-->
+<!-- ========== RESCATES: entidades reales cercanas encontradas durante la investigación ========== -->
+<tr>
+<td data-label="Site Name">Nuestra Señora de la Compasión <em>(rescatado — entidad real en Dos Hermanas, la más cercana a "Ntra. Sra. de la Paz")</em></td>
+<td data-label="Town">Dos Hermanas</td>
+</tr>
+<tr>
+<td data-label="Site Name">Sagrada Familia <em>(rescatado — existe en Utrera pero NO es SAFA, pertenece a los Hermanos de la Sagrada Familia de Belley)</em></td>
+<td data-label="Town">Utrera</td>
+</tr>
+<tr>
+<td data-label="Site Name">Colegio Santa María del Valle <em>(rescatado — existe en Mairena del Aljarafe con web y datos completos)</em></td>
+<td data-label="Town">Mairena del Aljarafe</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="note">
+          Data for these centres was obtained via independent web research on 21 May 2026.
+          Where no website is listed, no public-facing site was found during the research
+          phase. To verify, consult the official directory at
+          <a href="https://www.juntadeandalucia.es/educacion/portals/web/ced/centros" rel="noopener" target="_blank">Junta de Andalucía</a>.
+        </p>
+</section>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+<script src="leaflet.js"></script>
+<script>
+      const toastElement = document.getElementById("toast");
+      let toastTimeoutId = null;
+
+      function showToast(message, type = "success") {
+        toastElement.textContent = message;
+        toastElement.className = `toast is-visible is-${type}`;
+        window.clearTimeout(toastTimeoutId);
+        toastTimeoutId = window.setTimeout(() => {
+          toastElement.classList.remove("is-visible");
+        }, 2200);
+      }
+
+      async function copyEmailToClipboard(emailAddress) {
+        try {
+          if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(emailAddress);
+          } else {
+            const temporaryInput = document.createElement("textarea");
+            temporaryInput.value = emailAddress;
+            temporaryInput.setAttribute("readonly", "");
+            temporaryInput.style.position = "fixed";
+            temporaryInput.style.left = "-9999px";
+            document.body.appendChild(temporaryInput);
+            temporaryInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(temporaryInput);
+          }
+
+          showToast(
+            `Email address copied to clipboard: ${emailAddress}`,
+            "success",
+          );
+        } catch (error) {
+          console.error("Clipboard copy failed:", error);
+          showToast(
+            "Could not copy the email address. Please copy it manually.",
+            "error",
+          );
+        }
+      }
+
+
+
+      const mapLocations = [
+        { number: 1, name: "AMT Spain / AM Transnational", area: "Los Bermejales", lat: 37.3465852, lng: -5.9796283 },
+        { number: 2, name: "CBS, The British School of Seville", area: "Bollullos de la Mitación", lat: 37.31564, lng: -6.16884 },
+        { number: 3, name: "Centro Norteamericano", area: "Central Seville", lat: 37.3867738, lng: -5.995963 },
+        { number: 4, name: "CLIC International House Sevilla", area: "Central Seville", lat: 37.389367, lng: -5.996249 },
+        { number: 5, name: "Colegio Alemán de Sevilla Alberto Durero", area: "Sevilla Este", lat: 37.4034, lng: -5.926 },
+        { number: 6, name: "Colegio CEU San Pablo Montepríncipe", area: "Bormujos", lat: 37.367407, lng: -6.08589 },
+        { number: 7, name: "Colegio de Fomento Entreolivos", area: "Los Remedios / Triana", lat: 37.3829774, lng: -6.0006165 },
+        { number: 8, name: "Colegio Huerta Santa Ana", area: "Gines", lat: 37.383944, lng: -6.07119 },
+        { number: 9, name: "Colegio Internacional Almenar", area: "Dos Hermanas", lat: 37.283689, lng: -5.9226718 },
+        { number: 10, name: "Colegio Salesiano Ntra. Sra. del Carmen", area: "Utrera", lat: 37.175977, lng: -5.777608 },
+        { number: 11, name: "Colegio San Hermenegildo", area: "Montequinto", lat: 37.283689, lng: -5.922672 },
+        { number: 12, name: "ELI - English Language Institute", area: "Nervión / central address", lat: 37.3829853, lng: -5.9739859 },
+        { number: 13, name: "English Connection Sevilla — Bermejales", area: "Bermejales", lat: 37.346682, lng: -5.980204 },
+        { number: 14, name: "English Connection Sevilla — Centro", area: "Centro", lat: 37.392407, lng: -5.995282 },
+        { number: 15, name: "English Connection Sevilla — Cerro del Águila", area: "Cerro del Águila", lat: 37.370321, lng: -5.956724 },
+        { number: 16, name: "English Connection Sevilla — Este Ciencias", area: "Sevilla Este", lat: 37.400334, lng: -5.925903 },
+        { number: 17, name: "English Connection Sevilla — Este Góndolas", area: "Sevilla Este", lat: 37.402118, lng: -5.937956 },
+        { number: 18, name: "English Connection Sevilla — Gran Plaza", area: "Gran Plaza", lat: 37.381091, lng: -5.965816 },
+        { number: 19, name: "English Connection Sevilla — La Salle", area: "La Salle", lat: 37.405803, lng: -5.97419 },
+        { number: 20, name: "English Connection Sevilla — Los Remedios", area: "Los Remedios / Calle Asunción", lat: 37.3739864, lng: -5.9973214 },
+        { number: 21, name: "English Connection Sevilla — Macarena", area: "Macarena", lat: 37.403151, lng: -5.99048 },
+        { number: 22, name: "English Connection Sevilla — Parque Alcosa", area: "Parque Alcosa", lat: 37.410077, lng: -5.926808 },
+        { number: 23, name: "English Connection Sevilla — Parsi", area: "Parsi", lat: 37.374848, lng: -5.923803 },
+        { number: 24, name: "English Connection Sevilla — Pinomontano", area: "Pino Montano", lat: 37.417923, lng: -5.969837 },
+        { number: 25, name: "English Connection Sevilla — Reina Mercedes", area: "Reina Mercedes", lat: 37.358244, lng: -5.985938 },
+        { number: 26, name: "English Connection Sevilla — San Jerónimo", area: "San Jerónimo", lat: 37.423942, lng: -5.985548 },
+        { number: 27, name: "English Connection Sevilla — Santa Justa", area: "Santa Justa", lat: 37.390363, lng: -5.96991 },
+        { number: 28, name: "English Connection Sevilla — Tharsis", area: "Tharsis", lat: 37.399366, lng: -5.970863 },
+        { number: 29, name: "English Connection Sevilla — Triana", area: "Triana", lat: 37.384168, lng: -6.010144 },
+        { number: 30, name: "English Connection Sevilla — Viapol", area: "Viapol", lat: 37.374349, lng: -5.977755 },
+        { number: 31, name: "Europa International School", area: "Espartinas", lat: 37.3814997, lng: -6.125652 },
+        { number: 32, name: "Highlands School Sevilla", area: "Montequinto", lat: 37.3431162, lng: -5.9069299 },
+        { number: 33, name: "My English School Sevilla", area: "Los Remedios", lat: 37.3742211, lng: -6.0011416 },
+        { number: 34, name: "Notting Hill — Academia de Idiomas y Enseñanza", area: "Los Remedios / C. Virgen de la Estrella", lat: 37.3742203, lng: -6.0005538 },
+        { number: 35, name: "Salesianos San José (Alcalá de Guadaíra)", area: "Alcalá de Guadaíra", lat: 37.3360726, lng: -5.8465069 },
+        { number: 36, name: "Sevilla Language Center", area: "Central Seville", lat: 37.399754, lng: -5.9931325 },
+        { number: 37, name: "St. Angela International School Sevilla", area: "Salteras / La Cartuja area", lat: 37.45912, lng: -6.05506 },
+        { number: 38, name: "Yago School Sevilla", area: "Castilleja de la Cuesta", lat: 37.39047, lng: -6.05591 },
+        { number: 39, name: "Centro Cristo Rey", area: "Central Seville", lat: 37.3778021, lng: -5.9767936 },
+        { number: 40, name: "Centro Sagrada Familia de Urgel", area: "Central / San Bernardo", lat: 37.399754, lng: -5.9931325 },
+        { number: 41, name: "Centro Santo Tomás de Aquino", area: "Central / Santa Cruz", lat: 37.38433, lng: -5.9930211 },
+        { number: 42, name: "Colegio Almenar", area: "Espartinas", lat: 37.38292, lng: -6.117759 },
+        { number: 43, name: "Colegio Calasancio Hispalense", area: "Los Remedios", lat: 37.2959256, lng: -5.9265173 },
+        { number: 44, name: "Colegio de Fomento Tabladilla", area: "El Porvenir / Sur", lat: 37.3608398, lng: -5.9827581 },
+        { number: 45, name: "Colegio La Inmaculada (Jesuitinas)", area: "Central / Alameda", lat: 37.3946834, lng: -5.9959183 },
+        { number: 46, name: "Colegio Ntra. Sra. de la Asunción (Carmona)", area: "Carmona", lat: 37.470818, lng: -5.6388032 },
+        { number: 47, name: "Colegio Ntra. Sra. de los Reyes (Mercedarias)", area: "Central / Encarnación", lat: 37.3888077, lng: -5.9995672 },
+        { number: 48, name: "Colegio Ntra. Sra. del Carmen", area: "Central / Alameda", lat: 37.3907821, lng: -5.9982148 },
+        { number: 49, name: "Colegio Ntra. Sra. del Carmen (Mairena del Alcor)", area: "Mairena del Alcor", lat: 37.3730933, lng: -5.7489246 },
+        { number: 50, name: "Colegio Ntra. Sra. del Águila (Alcalá de Guadaíra)", area: "Alcalá de Guadaíra", lat: 37.3360726, lng: -5.8465069 },
+        { number: 51, name: "Colegio San Alberto Magno", area: "Sevilla Este / Nervión", lat: 37.400697, lng: -5.9260271 },
+        { number: 52, name: "Colegio San José", area: "La Rinconada", lat: 37.480118, lng: -5.942736 },
+        { number: 53, name: "Colegio San José (Hijas de la Caridad)", area: "Central / Encarnación", lat: 37.3879951, lng: -5.9889092 },
+        { number: 54, name: "Escuela Profesional Marcelo Spínola", area: "Central Seville", lat: 37.3875448, lng: -5.9890997 },
+        { number: 55, name: "St. Mary's School", area: "Los Remedios", lat: 37.3729783, lng: -6.000471 },
+        { number: 56, name: "Attendis Preschool Aljarafe", area: "Espartinas", lat: 37.382571, lng: -6.161321 },
+        { number: 57, name: "Colegio SAFA (Alcalá de Guadaíra)", area: "Alcalá de Guadaíra", lat: 37.3397709, lng: -5.8408396 },
+        { number: 58, name: "Colegio San Blas (Carmona)", area: "Carmona", lat: 37.4754664, lng: -5.6400881 },
+        { number: 59, name: "Colegio San José Obrero (Mairena del Alcor)", area: "Mairena del Alcor", lat: 37.3730933, lng: -5.7489246 },
+        { number: 60, name: "Colegio San Miguel (Alcalá de Guadaíra)", area: "Alcalá de Guadaíra", lat: 37.3397709, lng: -5.8408396 },
+        { number: 61, name: "Colegio San Sebastián (El Viso del Alcor)", area: "El Viso del Alcor", lat: 37.3891783, lng: -5.7224779 },
+        { number: 62, name: "Colegio Santa María del Alcor (El Viso del Alcor)", area: "El Viso del Alcor", lat: 37.3862066, lng: -5.7220207 },
+        { number: 63, name: "Colegio Aljarafe", area: "Mairena del Aljarafe", lat: 37.344491, lng: -6.060677 },
+        { number: 64, name: "Colegio San Eustaquio (Sanlúcar la Mayor)", area: "Sanlúcar la Mayor", lat: 37.3864113, lng: -6.2024485 },
+        { number: 65, name: "Giralda Center / Spanish House Idiomas", area: "Central Seville", lat: 37.392825, lng: -5.982674 }
+    ];
+
+      function initializeSevilleMap() {
+        const mapContainer = document.getElementById("seville-map");
+
+        if (!mapContainer || typeof L === "undefined") {
+          console.warn("Leaflet is not available, so the map could not be initialized.");
+          return;
+        }
+
+        const map = L.map(mapContainer, {
+          scrollWheelZoom: false,
+        }).setView([37.374, -6.015], 11);
+
+        const tileLayer = L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+          maxZoom: 19,
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/">CARTO</a>',
+          subdomains: "abc",
+        });
+
+        // Hide loading indicator — listen BEFORE tiles start loading
+        let loaderHidden = false;
+        function hideLoader() {
+          if (!loaderHidden) {
+            loaderHidden = true;
+            const loader = document.getElementById("map-loader");
+            if (loader) loader.classList.add("is-hidden");
+          }
+        }
+        map.on("tileload", hideLoader);
+        map.on("tileerror", hideLoader);
+
+        tileLayer.addTo(map);
+
+        // Safety net: if tiles somehow loaded before listener, hide instantly
+        setTimeout(hideLoader, 3000);
+
+        const markerBounds = [];
+
+        mapLocations.forEach((location) => {
+          const numberedIcon = L.divIcon({
+            className: "",
+            html: `<span class="map-marker-number">${location.number}</span>`,
+            iconSize: [32, 32],
+            iconAnchor: [16, 16],
+            popupAnchor: [0, -18],
+          });
+
+          L.marker([location.lat, location.lng], { icon: numberedIcon })
+            .addTo(map)
+            .bindPopup(`<strong>${location.number}. ${location.name}</strong><br>${location.area}`);
+
+          markerBounds.push([location.lat, location.lng]);
+        });
+
+        map.fitBounds(markerBounds, { padding: [32, 32] });
+      }
+
+      initializeSevilleMap();
+
+      document.querySelectorAll(".email-chip").forEach((emailChip) => {
+        emailChip.addEventListener("click", () => {
+          copyEmailToClipboard(emailChip.dataset.email);
+        });
+
+        emailChip.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            copyEmailToClipboard(emailChip.dataset.email);
+          }
+        });
+      });
+    </script>
+</body>
+</html>
