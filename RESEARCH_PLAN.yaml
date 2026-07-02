@@ -1,0 +1,218 @@
+# =============================================================================
+# RESEARCH_PLAN.yaml — Investigación de centros educativos (Sevilla)
+# Instrucciones para equipo de agentes autónomos
+# =============================================================================
+# Prioridad: P0 sin ambos → P1 sin teléfono → P2 sin web
+# Archivo objetivo: index.html (70 centros)
+# Repo: https://github.com/V3RNE42/centros_compatibles
+# =============================================================================
+
+project:
+  name: centros_compatibles
+  description: >
+    Tablero HTML con 70 centros educativos de Sevilla y área metropolitana,
+    compatibles con perfil de teacher de inglés (TEFL Nivel 5).
+    Cada centro tiene card con nombre, dirección, teléfono, web y email.
+  target_file: index.html
+  repo: https://github.com/V3RNE42/centros_compatibles
+
+card_structure: |
+  <div class="school-card">
+    <div class="card-body">
+      <div class="card-name"><span class="card-number">N</span> Nombre</div>
+      <div class="card-phone"><strong>📞</strong> 954XXXXXX</div>
+      <div class="card-addr">Dirección</div>
+      <div class="card-links">
+        <a class="link-chip" href="URL">URL</a>        (o "no website found")
+        <span class="email-chip" data-email="...">...</span>
+      </div>
+    </div>
+  </div>
+
+status:
+  total: 70
+  complete: 41          # tienen teléfono + web
+  missing_only_phone: 2  # #7, #35
+  missing_only_web: 27   # #39-#54, #55-#60, #64, #65, #68-#70
+  missing_both: 0
+
+priority:
+  - level: P0
+    label: "Sin ambos (teléfono + web)"
+    count: 0
+    action: "saltar — no hay centros en esta categoría"
+  - level: P1
+    label: "Sin teléfono"
+    count: 2
+    action: "investigar primero — sin teléfono no hay contacto directo"
+    centers:
+      - numero: 7
+        nombre: "Col. de Fomento Entreolivos"
+        direccion: "C/ Párroco Don Eugenio, 18, 41015 Seville"
+        tiene_web: true
+        tiene_telefono: false
+      - numero: 35
+        nombre: "Salesianos San José (Alcalá de Guadaíra)"
+        direccion: "C/ Ntra. Sra. del Águila, 2, 41500 Alcalá de Guadaíra"
+        tiene_web: true
+        tiene_telefono: false
+  - level: P2
+    label: "Sin web"
+    count: 27
+    action: "investigar después — mejorar el directorio"
+    centers:
+      - { numero: 39, nombre: "Centro Cristo Rey", direccion: "Avda. Ramón y Cajal, 2, 41011 Seville" }
+      - { numero: 40, nombre: "Centro Sagrada Familia de Urgel", direccion: "C/ Urgel, 12, 41006 Seville" }
+      - { numero: 41, nombre: "Centro Santo Tomás de Aquino", direccion: "C/ Santo Tomás, 8, 41004 Seville" }
+      - { numero: 42, nombre: "Col. Almenar", direccion: "C/ Torre del Oro, 3, 41807 Espartinas" }
+      - { numero: 43, nombre: "Col. Calasancio Hispalense", direccion: "C/ San Juan de la Cruz, 1, 41010 Seville" }
+      - { numero: 44, nombre: "Col. de Fomento Tabladilla", direccion: "Avda. de la Palmera, 58, 41012 Seville" }
+      - { numero: 45, nombre: "Col. La Inmaculada (Jesuitinas)", direccion: "C/ Jesús del Gran Poder, 1, 41002 Seville" }
+      - { numero: 46, nombre: "Col. Ntra. Sra. de la Asunción (Carmona)", direccion: "C/ Bailén, 32, 41001 Seville" }
+      - { numero: 47, nombre: "Col. Ntra. Sra. de los Reyes (Mercedarias)", direccion: "C/ Calatrava, 38, 41003 Sevilla" }
+      - { numero: 48, nombre: "Col. Ntra. Sra. del Carmen", direccion: "C/ Bailén, 32, 41001 Seville" }
+      - { numero: 49, nombre: "Col. Ntra. Sra. del Carmen (Mairena del Alcor)", direccion: "C/ Bailén, 32, 41001 Seville" }
+      - { numero: 50, nombre: "Col. Ntra. Sra. del Águila (Alcalá de Guadaíra)", direccion: "C/ Mairena, 36-38, 41500 Alcalá" }
+      - { numero: 51, nombre: "Col. San Alberto Magno", direccion: "C/ Juan de la Cueva, 4, 41009 Seville" }
+      - { numero: 52, nombre: "Col. San José", direccion: "C/ San José, 5, 41003 Seville" }
+      - { numero: 53, nombre: "Col. San José (Hijas de la Caridad)", direccion: "C/ San José, 5, 41003 Seville" }
+      - { numero: 54, nombre: "St. Mary's School", direccion: "C/ Virgen de la Antigua, 35, 41011 Seville" }
+      - { numero: 55, nombre: "Col. SAFA (Alcalá de Guadaíra)", direccion: "C/ San Agustín, s/n, 41500 Alcalá" }
+      - { numero: 56, nombre: "Col. San Blas (Carmona)", direccion: "C/ San Blas, s/n, 41410 Carmona" }
+      - { numero: 57, nombre: "Col. San José Obrero (Mairena del Alcor)", direccion: "Av. San José Obrero, s/n, 41510 Mairena" }
+      - { numero: 58, nombre: "Col. San Miguel (Alcalá de Guadaíra)", direccion: "C/ Ntra. Sra. del Águila, 6, 41500 Alcalá" }
+      - { numero: 59, nombre: "Col. San Sebastián (El Viso del Alcor)", direccion: "C/ San Sebastián, s/n, 41520 El Viso" }
+      - { numero: 60, nombre: "Col. Santa María del Alcor (El Viso del Alcor)", direccion: "C/ Real, 56, 41520 El Viso" }
+      - { numero: 64, nombre: "Nuestra Señora de la Compasión", direccion: "Avda. de Sevilla, 10, 41702 Dos Hermanas" }
+      - { numero: 65, nombre: "Sagrada Familia (Utrera)", direccion: "C/ Virgen de Consolación, 12, 41710 Utrera" }
+      - { numero: 68, nombre: "Colegio San Francisco De Paula", direccion: "C/ Santa Ángela De La Cruz, 11, 41003 Seville" }
+      - { numero: 69, nombre: "Centro San Francisco Solano De La Aurora", direccion: "C/ Virgen Del Valle, 46, 41011 Seville" }
+      - { numero: 70, nombre: "Liceo Francés", direccion: "C/ Torneo, 167, 41200 Seville" }
+
+research_methodology:
+  sources_priority:
+    - name: "Junta de Andalucía — Buscador de Centros"
+      url: "https://www.juntadeandalucia.es/educacion/portals/web/ced/centros"
+      description: "Fuente oficial. Búsqueda por nombre, localidad o código de centro."
+      weight: 1.0  # máxima prioridad
+
+    - name: "Web propia del centro / congregación"
+      description: >
+        Google: 'nombre del centro Sevilla' o 'nombre [localidad]'.
+        Si pertenece a congregación (Salesianos, Carmelitas, Jesuitinas, SAFA),
+        buscar en el listado de centros de la congregación.
+      weight: 0.9
+
+    - name: "Directorio Micole"
+      url: "https://www.micole.net/"
+      description: "Directorio de colegios en España con datos actualizados."
+      weight: 0.7
+
+    - name: "BuscoColegio"
+      url: "https://www.buscocolegio.com/"
+      description: "Directorio alternativo."
+      weight: 0.7
+
+    - name: "Google Maps"
+      description: "A menudo tiene web y teléfono actualizados."
+      weight: 0.6
+
+    - name: "Redes sociales y prensa local"
+      description: "Facebook, Instagram, ABC Sevilla, Diario de Sevilla."
+      weight: 0.4  # sólo como último recurso
+
+  validation_rules:
+    - "La web debe ser del centro REAL, no de una congregación genérica"
+    - "El teléfono debe ser del centro específico, no de una centralita"
+    - "Si hay datos contradictorios: Junta de Andalucía > web propia > directorios"
+    - "Si no se encuentra tras 3 fuentes distintas: marcar NO ENCONTRADO"
+    - "Verificar que las URLs cargan (no 404, no redirección genérica)"
+
+  notes_on_duplicates:
+    - "#52 y #53 (Col. San José) comparten teléfono 954218353 — confirmar si es el mismo centro"
+    - "#46-#50 (Carmelitas) comparten dirección C/ Bailén 32 — confirmar que son distintos"
+    - "Varios centros de congregaciones pueden compartir email de secretaría"
+
+agent_architecture:
+  phase_1:
+    name: "Investigación paralela"
+    max_agents: 4
+    description: >
+      Cada agente recibe un lote de centros (7-8) y busca los datos faltantes.
+      Cada centro se investiga de forma independiente.
+    per_agent_output: see section "output_format" below
+
+  phase_2:
+    name: "Integración y parcheo"
+    agents: 1
+    description: >
+      Agente integrador recoge resultados, resuelve conflictos,
+      genera YAML consolidado e instrucciones de parcheo para index.html.
+
+output_format:
+  description: "Cada agente devuelve resultados en este formato exacto"
+  schema:
+    resultados:
+      - numero: 7
+        nombre: "Col. de Fomento Entreolivos"
+        datos_previos:
+          telefono: null
+          web: "https://www.entreolivos.com"
+        datos_encontrados:
+          telefono:
+            valor: "954XXXXXX"
+            fuente: "https://www.juntadeandalucia.es/..."
+            confianza: "alta"   # alta | media | baja
+            metodo: "búsqueda en buscador de centros Junta Andalucía"
+          web: null   # ya tenía web, no se investiga
+        notas: "Encontrado en Junta Andalucía"
+
+      - numero: 39
+        nombre: "Centro Cristo Rey"
+        datos_previos:
+          telefono: "954271430"
+          web: null    # "no website found"
+        datos_encontrados:
+          telefono: null   # ya tenía, no se investiga
+          web:
+            valor: "https://www.ejemplo.com"
+            fuente: "Google search"
+            confianza: "alta"
+            metodo: "Google → resultado orgánico → web oficial"
+        notas: ""
+
+  confianza_criteria:
+    alta: "Fuente primaria oficial (web del centro, Junta de Andalucía)"
+    media: "Fuente secundaria fiable (Micole, BuscoColegio, Google Maps)"
+    baja: "Red social no oficial, fuente no contrastada, rumor"
+
+feedback_loop:
+  steps:
+    - "Revisar cada resultado: ¿algún dato parece incorrecto?"
+    - "Verificar que las URLs encontradas realmente cargan y corresponden al centro"
+    - "Si dos centros comparten teléfono, confirmar que es correcto"
+    - "Para direcciones duplicadas, confirmar que son centros distintos"
+    - "Auto-evaluación: 'Mi conclusión para el centro X es [dato]. Certeza: alta/media/baja porque [razón].'"
+
+deliverables:
+  - file: findings.yaml
+    description: "Resultados completos de la investigación (todos los centros)"
+    format: "Ver output_format.schema"
+
+  - file: patches.yaml
+    description: "Instrucciones para aplicar cambios al index.html"
+    format:
+      patches:
+        - numero: 7
+          campo: "phone"
+          accion: "insertar"
+          contenido: "<strong>📞</strong> 954XXXXXX"
+          posicion: "después de card-name"
+        - numero: 39
+          campo: "web"
+          accion: "reemplazar"
+          buscar: "no website found"
+          reemplazar: "https://www.ejemplo.com"
+
+  - file: summary.txt
+    description: "Resumen ejecutivo: completados, no encontrados, requieren verificación manual"
