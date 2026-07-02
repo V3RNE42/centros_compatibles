@@ -2,7 +2,7 @@
 # RESEARCH_PLAN.yaml — Investigación de centros educativos (Sevilla)
 # Instrucciones para equipo de agentes autónomos
 # =============================================================================
-# Prioridad: P0 sin ambos → P1 sin teléfono → P2 sin web
+# Prioridad: P0 sin ambos (email + web) → P1 sin email → P2 sin web
 # Archivo objetivo: index.html (70 centros)
 # Repo: https://github.com/V3RNE42/centros_compatibles
 # =============================================================================
@@ -23,43 +23,48 @@ card_structure: |
       <div class="card-phone"><strong>📞</strong> 954XXXXXX</div>
       <div class="card-addr">Dirección</div>
       <div class="card-links">
-        <a class="link-chip" href="URL">URL</a>        (o "no website found")
+        <a class="link-chip" href="URL">URL</a>
         <span class="email-chip" data-email="...">...</span>
+        (cuando no hay email: "contact via website")
       </div>
     </div>
   </div>
 
 status:
   total: 70
-  complete: 41          # tienen teléfono + web
-  missing_only_phone: 2  # #7, #35
-  missing_only_web: 27   # #39-#54, #55-#60, #64, #65, #68-#70
-  missing_both: 0
+  complete: 39            # tienen email + web
+  missing_only_email: 4   # #61, #62, #63, #67
+  missing_only_web: 18    # #39-#54, #64, #65
+  missing_both: 9         # #55-#60, #68, #69, #70
 
 priority:
   - level: P0
-    label: "Sin ambos (teléfono + web)"
-    count: 0
-    action: "saltar — no hay centros en esta categoría"
-  - level: P1
-    label: "Sin teléfono"
-    count: 2
-    action: "investigar primero — sin teléfono no hay contacto directo"
+    label: "Sin AMBOS (email + web)"
+    count: 9
+    action: "investigar primero — sin email ni web son los más difíciles de contactar"
     centers:
-      - numero: 7
-        nombre: "Col. de Fomento Entreolivos"
-        direccion: "C/ Párroco Don Eugenio, 18, 41015 Seville"
-        tiene_web: true
-        tiene_telefono: false
-      - numero: 35
-        nombre: "Salesianos San José (Alcalá de Guadaíra)"
-        direccion: "C/ Ntra. Sra. del Águila, 2, 41500 Alcalá de Guadaíra"
-        tiene_web: true
-        tiene_telefono: false
+      - { numero: 55, nombre: "Col. SAFA (Alcalá de Guadaíra)", direccion: "C/ San Agustín, s/n, 41500 Alcalá" }
+      - { numero: 56, nombre: "Col. San Blas (Carmona)", direccion: "C/ San Blas, s/n, 41410 Carmona" }
+      - { numero: 57, nombre: "Col. San José Obrero (Mairena del Alcor)", direccion: "Av. San José Obrero, s/n, 41510 Mairena" }
+      - { numero: 58, nombre: "Col. San Miguel (Alcalá de Guadaíra)", direccion: "C/ Ntra. Sra. del Águila, 6, 41500 Alcalá" }
+      - { numero: 59, nombre: "Col. San Sebastián (El Viso del Alcor)", direccion: "C/ San Sebastián, s/n, 41520 El Viso" }
+      - { numero: 60, nombre: "Col. Santa María del Alcor (El Viso del Alcor)", direccion: "C/ Real, 56, 41520 El Viso" }
+      - { numero: 68, nombre: "Colegio San Francisco De Paula", direccion: "C/ Santa Ángela De La Cruz, 11, 41003 Seville" }
+      - { numero: 69, nombre: "Centro San Francisco Solano De La Aurora", direccion: "C/ Virgen Del Valle, 46, 41011 Seville" }
+      - { numero: 70, nombre: "Liceo Francés", direccion: "C/ Torneo, 167, 41200 Seville" }
+  - level: P1
+    label: "Sin email (tienen web)"
+    count: 4
+    action: "investigar después — tienen web pero no email directo"
+    centers:
+      - { numero: 61, nombre: "Col. Aljarafe", direccion: "Ctra. San Juan a Palomares, 68, 41927 Mairena del Aljarafe" }
+      - { numero: 62, nombre: "Col. San Eustaquio (Sanlúcar la Mayor)", direccion: "C/ San Eustaquio, s/n, 41800 Sanlúcar la Mayor" }
+      - { numero: 63, nombre: "Giralda Center / Spanish House Idiomas", direccion: "C/ Gonzalo Bilbao, 29, Local 3, 41003 Seville" }
+      - { numero: 67, nombre: "Colegio La Luna", direccion: "Avenida de La Ciencia, 73, 41020 Seville" }
   - level: P2
-    label: "Sin web"
-    count: 27
-    action: "investigar después — mejorar el directorio"
+    label: "Sin web (tienen email)"
+    count: 18
+    action: "investigar al final — ya tienen email, falta web"
     centers:
       - { numero: 39, nombre: "Centro Cristo Rey", direccion: "Avda. Ramón y Cajal, 2, 41011 Seville" }
       - { numero: 40, nombre: "Centro Sagrada Familia de Urgel", direccion: "C/ Urgel, 12, 41006 Seville" }
@@ -77,35 +82,29 @@ priority:
       - { numero: 52, nombre: "Col. San José", direccion: "C/ San José, 5, 41003 Seville" }
       - { numero: 53, nombre: "Col. San José (Hijas de la Caridad)", direccion: "C/ San José, 5, 41003 Seville" }
       - { numero: 54, nombre: "St. Mary's School", direccion: "C/ Virgen de la Antigua, 35, 41011 Seville" }
-      - { numero: 55, nombre: "Col. SAFA (Alcalá de Guadaíra)", direccion: "C/ San Agustín, s/n, 41500 Alcalá" }
-      - { numero: 56, nombre: "Col. San Blas (Carmona)", direccion: "C/ San Blas, s/n, 41410 Carmona" }
-      - { numero: 57, nombre: "Col. San José Obrero (Mairena del Alcor)", direccion: "Av. San José Obrero, s/n, 41510 Mairena" }
-      - { numero: 58, nombre: "Col. San Miguel (Alcalá de Guadaíra)", direccion: "C/ Ntra. Sra. del Águila, 6, 41500 Alcalá" }
-      - { numero: 59, nombre: "Col. San Sebastián (El Viso del Alcor)", direccion: "C/ San Sebastián, s/n, 41520 El Viso" }
-      - { numero: 60, nombre: "Col. Santa María del Alcor (El Viso del Alcor)", direccion: "C/ Real, 56, 41520 El Viso" }
       - { numero: 64, nombre: "Nuestra Señora de la Compasión", direccion: "Avda. de Sevilla, 10, 41702 Dos Hermanas" }
       - { numero: 65, nombre: "Sagrada Familia (Utrera)", direccion: "C/ Virgen de Consolación, 12, 41710 Utrera" }
-      - { numero: 68, nombre: "Colegio San Francisco De Paula", direccion: "C/ Santa Ángela De La Cruz, 11, 41003 Seville" }
-      - { numero: 69, nombre: "Centro San Francisco Solano De La Aurora", direccion: "C/ Virgen Del Valle, 46, 41011 Seville" }
-      - { numero: 70, nombre: "Liceo Francés", direccion: "C/ Torneo, 167, 41200 Seville" }
 
 research_methodology:
+  data_to_find:
+    - email: "dirección de email de contacto del centro (para P0 y P1)"
+    - web: "URL del sitio web oficial del centro (para P0 y P2)"
+
   sources_priority:
+    - name: "Página web del centro (si tiene)"
+      description: >
+        Buscar sección 'Contacto' o 'Contact us'.
+        En webs de congregaciones, buscar el centro concreto en su listado.
+      weight: 1.0
+
     - name: "Junta de Andalucía — Buscador de Centros"
       url: "https://www.juntadeandalucia.es/educacion/portals/web/ced/centros"
       description: "Fuente oficial. Búsqueda por nombre, localidad o código de centro."
-      weight: 1.0  # máxima prioridad
-
-    - name: "Web propia del centro / congregación"
-      description: >
-        Google: 'nombre del centro Sevilla' o 'nombre [localidad]'.
-        Si pertenece a congregación (Salesianos, Carmelitas, Jesuitinas, SAFA),
-        buscar en el listado de centros de la congregación.
-      weight: 0.9
+      weight: 0.95
 
     - name: "Directorio Micole"
       url: "https://www.micole.net/"
-      description: "Directorio de colegios en España con datos actualizados."
+      description: "Directorio de colegios con datos de contacto."
       weight: 0.7
 
     - name: "BuscoColegio"
@@ -114,33 +113,35 @@ research_methodology:
       weight: 0.7
 
     - name: "Google Maps"
-      description: "A menudo tiene web y teléfono actualizados."
+      description: "A menudo tiene email y web en la ficha del centro."
       weight: 0.6
 
     - name: "Redes sociales y prensa local"
-      description: "Facebook, Instagram, ABC Sevilla, Diario de Sevilla."
-      weight: 0.4  # sólo como último recurso
+      description: "Facebook, Instagram, artículos de prensa (ABC Sevilla, Diario de Sevilla)."
+      weight: 0.4
 
   validation_rules:
-    - "La web debe ser del centro REAL, no de una congregación genérica"
-    - "El teléfono debe ser del centro específico, no de una centralita"
-    - "Si hay datos contradictorios: Junta de Andalucía > web propia > directorios"
+    - "El email debe ser del centro REAL, no genérico de la congregación"
+    - "La web debe cargar y mostrar contenido del centro (no 404, no portal genérico)"
+    - "Si hay datos contradictorios: web propia > Junta Andalucía > directorios"
     - "Si no se encuentra tras 3 fuentes distintas: marcar NO ENCONTRADO"
-    - "Verificar que las URLs cargan (no 404, no redirección genérica)"
+    - "Emails 'info@...' o 'contacto@...' valen si son del centro"
 
   notes_on_duplicates:
-    - "#52 y #53 (Col. San José) comparten teléfono 954218353 — confirmar si es el mismo centro"
-    - "#46-#50 (Carmelitas) comparten dirección C/ Bailén 32 — confirmar que son distintos"
-    - "Varios centros de congregaciones pueden compartir email de secretaría"
+    - "#46-#50 (Carmelitas) comparten email secretaria@carmelitassevilla.es — verificar si tienen emails propios"
+    - "#52 y #53 (Col. San José) comparten email y teléfono — confirmar si son sedes del mismo centro"
+    - "#55-#60 (SAFA, San Blas, etc.) tienen 'contact via website' — buscar email directo"
+    - "#68 Colegio San Francisco De Paula aparece como 'intencionadamente excluido' en el texto, pero está listado"
 
 agent_architecture:
   phase_1:
     name: "Investigación paralela"
     max_agents: 4
     description: >
-      Cada agente recibe un lote de centros (7-8) y busca los datos faltantes.
-      Cada centro se investiga de forma independiente.
-    per_agent_output: see section "output_format" below
+      Cada agente recibe un lote de centros y busca emails y/o webs según lo que falte.
+      P0 (ambos) y P1 (solo email) se reparten entre los primeros agentes.
+      P2 (solo web) se reparte después.
+    batch_size: 7..9
 
   phase_2:
     name: "Integración y parcheo"
@@ -153,45 +154,48 @@ output_format:
   description: "Cada agente devuelve resultados en este formato exacto"
   schema:
     resultados:
-      - numero: 7
-        nombre: "Col. de Fomento Entreolivos"
+      - numero: 55
+        nombre: "Col. SAFA (Alcalá de Guadaíra)"
         datos_previos:
-          telefono: null
-          web: "https://www.entreolivos.com"
+          email: null             # "contact via website"
+          web: null               # "no website found"
         datos_encontrados:
-          telefono:
-            valor: "954XXXXXX"
-            fuente: "https://www.juntadeandalucia.es/..."
-            confianza: "alta"   # alta | media | baja
-            metodo: "búsqueda en buscador de centros Junta Andalucía"
-          web: null   # ya tenía web, no se investiga
-        notas: "Encontrado en Junta Andalucía"
-
-      - numero: 39
-        nombre: "Centro Cristo Rey"
-        datos_previos:
-          telefono: "954271430"
-          web: null    # "no website found"
-        datos_encontrados:
-          telefono: null   # ya tenía, no se investiga
+          email:
+            valor: "safa.alcala@salesianos.edu"
+            fuente: "https://www.salesianosalcala.com/contacto"
+            confianza: "alta"     # alta | media | baja
+            metodo: "buscar web del centro → sección contacto"
           web:
-            valor: "https://www.ejemplo.com"
+            valor: "https://www.salesianosalcala.com"
             fuente: "Google search"
             confianza: "alta"
-            metodo: "Google → resultado orgánico → web oficial"
+            metodo: "Google → resultado orgánico"
+        notas: ""
+
+      - numero: 61
+        nombre: "Col. Aljarafe"
+        datos_previos:
+          email: null             # "contact via website"
+          web: "https://colegioaljarafe.es"
+        datos_encontrados:
+          email:
+            valor: "secretaria@colegioaljarafe.es"
+            fuente: "https://colegioaljarafe.es/contacto"
+            confianza: "alta"
+            metodo: "navegar web del centro → sección contacto"
+          web: null               # ya tenía web, no se investiga
         notas: ""
 
   confianza_criteria:
-    alta: "Fuente primaria oficial (web del centro, Junta de Andalucía)"
+    alta: "Fuente primaria oficial (web del centro, sección contacto, Junta de Andalucía)"
     media: "Fuente secundaria fiable (Micole, BuscoColegio, Google Maps)"
-    baja: "Red social no oficial, fuente no contrastada, rumor"
+    baja: "Red social no oficial, foro, fuente no contrastada"
 
 feedback_loop:
   steps:
-    - "Revisar cada resultado: ¿algún dato parece incorrecto?"
-    - "Verificar que las URLs encontradas realmente cargan y corresponden al centro"
-    - "Si dos centros comparten teléfono, confirmar que es correcto"
-    - "Para direcciones duplicadas, confirmar que son centros distintos"
+    - "Revisar cada resultado: ¿el email parece de contacto real o genérico?"
+    - "Verificar que las URLs encontradas cargan y corresponden al centro"
+    - "Si dos centros comparten email, confirmar si es correcto (congregaciones)"
     - "Auto-evaluación: 'Mi conclusión para el centro X es [dato]. Certeza: alta/media/baja porque [razón].'"
 
 deliverables:
@@ -203,16 +207,19 @@ deliverables:
     description: "Instrucciones para aplicar cambios al index.html"
     format:
       patches:
-        - numero: 7
-          campo: "phone"
-          accion: "insertar"
-          contenido: "<strong>📞</strong> 954XXXXXX"
-          posicion: "después de card-name"
-        - numero: 39
+        - numero: 55
+          campo: "email"
+          accion: "reemplazar"
+          buscar: "contact via website"
+          reemplazar: "safa.alcala@salesianos.edu"
+        - numero: 55
           campo: "web"
           accion: "reemplazar"
           buscar: "no website found"
-          reemplazar: "https://www.ejemplo.com"
+          reemplazar: "https://www.salesianosalcala.com"
 
   - file: summary.txt
-    description: "Resumen ejecutivo: completados, no encontrados, requieren verificación manual"
+    description: "Resumen ejecutivo"
+    content: >
+      Centros investigados, completados, no encontrados,
+      y aquellos que requieren verificación manual.
