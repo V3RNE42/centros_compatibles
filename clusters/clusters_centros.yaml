@@ -1,0 +1,128 @@
+# Clústers de centros — Centros Compatibles
+# Centros que pertenecen a la misma agrupación/orden/red en diferentes ubicaciones
+
+clusters:
+  - id: english_connection
+    name: "English Connection Sevilla"
+    tipo: "Franquicia academias de inglés"
+    centros:
+      - "13 — English Connection Sevilla — Bermejales"
+      - "14 — English Connection Sevilla — Centro"
+      - "15 — English Connection Sevilla — Cerro del Águila"
+      - "16 — English Connection Sevilla — Este Ciencias"
+      - "17 — English Connection Sevilla — Este Góndolas"
+      - "18 — English Connection Sevilla — Gran Plaza"
+      - "19 — English Connection Sevilla — La Salle"
+      - "20 — English Connection Sevilla — Los Remedios"
+      - "21 — English Connection Sevilla — Macarena"
+      - "22 — English Connection Sevilla — Parque Alcosa"
+      - "23 — English Connection Sevilla — Parsi"
+      - "24 — English Connection Sevilla — Pinomontano"
+      - "25 — English Connection Sevilla — Reina Mercedes"
+      - "26 — English Connection Sevilla — San Jerónimo"
+      - "27 — English Connection Sevilla — Santa Justa"
+      - "28 — English Connection Sevilla — Tharsis"
+      - "29 — English Connection Sevilla — Triana"
+      - "30 — English Connection Sevilla — Viapol"
+
+  - id: carmelitas
+    name: "Carmelitas (Comparten email @carmelitassevilla.es)"
+    tipo: "Orden religiosa — Carmelitas"
+    notas: "Los 5 centros comparten el email secretaria@carmelitassevilla.es, lo que indica gestión unificada"
+    centros:
+      - "46 — Col. Ntra. Sra. de la Asunción (Carmona)"
+      - "47 — Col. Ntra. Sra. de los Reyes (Mercedarias)"
+      - "48 — Col. Ntra. Sra. del Carmen"
+      - "49 — Col. Ntra. Sra. del Carmen (Mairena del Alcor)"
+      - "50 — Col. Ntra. Sra. del Águila (Alcalá de Guadaíra)"
+
+  - id: salesianos
+    name: "Salesianos"
+    tipo: "Orden religiosa — Salesianos (dominio salesianos.edu)"
+    centros:
+      - "10 — Col. Salesiano Ntra. Sra. del Carmen (Utrera)"
+      - "35 — Salesianos San José (Alcalá de Guadaíra)"
+      - "50 — Col. Ntra. Sra. del Águila (Alcalá de Guadaíra)"
+
+  - id: colegios_fomento
+    name: "Colegios de Fomento"
+    tipo: "Red educativa — Fomento de Centros de Enseñanza (Opus Dei)"
+    centros:
+      - "7 — Col. de Fomento Entreolivos"
+      - "44 — Col. de Fomento Tabladilla"
+
+  - id: sagrada_familia
+    name: "Colegios Sagrada Familia (Hermanos de la Sagrada Familia de Belley)"
+    tipo: "Orden religiosa — Hermanos de la Sagrada Familia"
+    nota: "No confundir con SAFA (Salesianos) que son otra cosa"
+    centros:
+      - "40 — Centro Sagrada Familia de Urgel"
+      - "65 — Sagrada Familia (Utrera)"
+
+  - id: colegios_san_jose
+    name: "Colegios San José"
+    tipo: "Misma dirección y teléfono — posiblemente mismo centro en dos listados"
+    nota: "#52 y #53 comparten exactamente la misma dirección (C/ San José, 5) y teléfono (954218353). Podrían ser el mismo centro o dos entidades en el mismo edificio."
+    centros:
+      - "52 — Col. San José (SSCC — Sagrados Corazones)"
+      - "53 — Col. San José (Hijas de la Caridad)"
+
+  - id: amigonianos
+    name: "Colegios Amigonianos"
+    tipo: "Orden religiosa — Padres Amigonianos"
+    nota: "El #11 usa email con dominio colegiosamigonianos.org"
+    centros:
+      - "11 — Col. San Hermenegildo"
+
+  - id: safa
+    name: "SAFA — Sagrada Familia (Salesianos)"
+    tipo: "Red educativa salesiana — SAFA"
+    nota: "Solo aparece un SAFA en la lista (#55). En la sección de centros no localizados había otro SAFA en Utrera."
+    centros:
+      - "55 — Col. SAFA (Alcalá de Guadaíra)"
+
+  - id: colegio_aleman
+    name: "Colegio Alemán"
+    tipo: "Centro único — Colegio Alemán Alberto Durero"
+    nota: "Centro único de la red de colegios alemanes en Sevilla"
+    centros:
+      - "5 — Col. Alemán de Sevilla Alberto Durero"
+
+# Centros individuales (sin clúster, cada uno es su propia entidad independiente)
+individuales:
+  - "1 — AMT Spain / AM Transnational"
+  - "2 — CBS, The British School of Seville"
+  - "3 — Centro Norteamericano"
+  - "4 — CLIC International House Sevilla"
+  - "6 — Col. CEU San Pablo Montepríncipe"
+  - "8 — Col. Huerta Santa Ana"
+  - "9 — Col. Internacional Almenar"
+  - "12 — ELI - English Language Institute"
+  - "31 — Europa International School"
+  - "32 — Highlands School Sevilla"
+  - "33 — My English School Sevilla"
+  - "34 — Notting Hill — Academia de Idiomas"
+  - "36 — Sevilla Language Center"
+  - "37 — St. Angela International School Sevilla"
+  - "38 — Yago School Sevilla"
+  - "39 — Centro Cristo Rey"
+  - "41 — Centro Santo Tomás de Aquino"
+  - "42 — Col. Almenar"
+  - "43 — Col. Calasancio Hispalense"
+  - "45 — Col. La Inmaculada (Jesuitinas)"
+  - "51 — Col. San Alberto Magno"
+  - "54 — St. Mary's School"
+  - "56 — Col. San Blas (Carmona)"
+  - "57 — Col. San José Obrero (Mairena del Alcor)"
+  - "58 — Col. San Miguel (Alcalá de Guadaíra)"
+  - "59 — Col. San Sebastián (El Viso del Alcor)"
+  - "60 — Col. Santa María del Alcor (El Viso del Alcor)"
+  - "61 — Col. Aljarafe"
+  - "62 — Col. San Eustaquio (Sanlúcar la Mayor)"
+  - "63 — Giralda Center / Spanish House Idiomas"
+  - "64 — Nuestra Señora de la Compasión"
+  - "66 — Santa María del Valle"
+  - "67 — Colegio La Luna"
+  - "68 — Colegio San Francisco De Paula"
+  - "69 — Centro San Francisco Solano De La Aurora"
+  - "70 — Liceo Francés"
