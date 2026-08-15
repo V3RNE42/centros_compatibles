@@ -306,13 +306,17 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
+    "n_fuentes_independientes": 3,
     "direccion_completa": "C/ Albareda, 19, 41001 Sevilla",
     "nombre_normalizado": "clic international house sevilla",
     "telefono": "954502131",
     "web": "https://clic.es/seville/",
     "email": "booking@clic.es",
-    "municipio": "Sevilla"
+    "municipio": "Sevilla",
+    "flags": [
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2"
+    ]
   },
   {
     "numero": 9,
@@ -1479,16 +1483,18 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 2,
+    "n_fuentes_independientes": 3,
     "direccion_completa": "C/ Larra, 1, 41005 Sevilla; it also has several centres across\n                Sevilla city and the metropolitan area",
     "nombre_normalizado": "eli english language institute",
     "telefono": "954675667",
     "web": "https://www.eli.es/",
     "email": "recruitment@eli.es",
     "flags": [
-      "CONFIRMADO_2DA_FUENTE"
+      "CONFIRMADO_2DA_FUENTE",
+      "CONFIRMADO_FASE2"
     ],
-    "municipio": "Sevilla"
+    "municipio": "Sevilla",
+    "cp": "41704"
   },
   {
     "numero": 39,
@@ -1520,13 +1526,17 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
+    "n_fuentes_independientes": 2,
     "direccion_completa": "Paseo de Europa, 14b, 41012 Sevilla",
     "nombre_normalizado": "english connection sevilla bermejales",
     "telefono": "638273132",
     "web": "https://englishconnection.es/academia-ingles/sevilla/",
     "email": "sevilla.losremedios@englishconnection.es",
-    "municipio": "Sevilla"
+    "municipio": "Sevilla",
+    "cp": "41012",
+    "flags": [
+      "CONFIRMADO_FASE2"
+    ]
   },
   {
     "numero": 40,
@@ -2790,9 +2800,47 @@
         ]
       }
     ],
+    "n_fuentes_independientes": 2,
+    "flags": [
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 72
+  },
+  {
+    "id": "sev-9187",
+    "nombre": "Academia de Enseñanza Méndez Núñez",
+    "nombre_raw": "Academia de Enseñanza Méndez Núñez",
+    "nombre_normalizado": "academia de ensenanza mendez nunez",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "Méndez Núñez",
+    "direccion_completa": "Méndez Núñez",
+    "lat": 41.653305,
+    "lng": -0.8786721,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "SEVILLACERT_LANGUAGECERT",
+    "fuentes": [
+      {
+        "source": "SEVILLACERT_LANGUAGECERT",
+        "source_url": "https://sevillacert.com/centros-preparadores-languagecert-en-sevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "direccion"
+        ]
+      }
+    ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 72
+    "certificadoras": [
+      "LanguageCert"
+    ],
+    "numero": 73
   },
   {
     "id": "sev-9172",
@@ -2824,7 +2872,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 73
+    "numero": 74
   },
   {
     "id": "sev-9153",
@@ -2858,7 +2906,7 @@
     "flags": [
       "EMAIL_PLANTILLA_LIMPIADO"
     ],
-    "numero": 74
+    "numero": 75
   },
   {
     "id": "sev-9070",
@@ -2889,9 +2937,80 @@
         ]
       }
     ],
+    "n_fuentes_independientes": 3,
+    "flags": [
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 76
+  },
+  {
+    "id": "sev-9183",
+    "nombre": "Aprobalia",
+    "nombre_raw": "Aprobalia",
+    "nombre_normalizado": "aprobalia",
+    "municipio": "Tomares",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": null,
+    "lat": 37.3746003,
+    "lng": -6.0446529,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "OSM_LOCAL",
+    "fuentes": [
+      {
+        "source": "OSM_LOCAL",
+        "source_url": "geofabrik:andalucia-latest.osm.pbf",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat"
+        ]
+      }
+    ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 75
+    "numero": 77
+  },
+  {
+    "id": "sev-9186",
+    "nombre": "ATENTOS AIAE",
+    "nombre_raw": "ATENTOS AIAE",
+    "nombre_normalizado": "atentos aiae",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": null,
+    "lat": null,
+    "lng": null,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "SEVILLACERT_LANGUAGECERT",
+    "fuentes": [
+      {
+        "source": "SEVILLACERT_LANGUAGECERT",
+        "source_url": "https://sevillacert.com/centros-preparadores-languagecert-en-sevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "certificadoras": [
+      "LanguageCert"
+    ],
+    "numero": 78
   },
   {
     "id": "sev-9132",
@@ -2923,7 +3042,42 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 76
+    "numero": 79
+  },
+  {
+    "id": "sev-9170",
+    "nombre": "Bus Idiomas",
+    "nombre_raw": "Bus Idiomas",
+    "nombre_normalizado": "bus idiomas",
+    "municipio": "Sevilla",
+    "cp": "41010",
+    "direccion": "Calle Salado, 11-Local 13",
+    "direccion_completa": "Calle Salado, 11-Local 13",
+    "lat": 37.3789455,
+    "lng": -6.0009432,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "OVERPASS_MUN",
+    "fuentes": [
+      {
+        "source": "OVERPASS_MUN",
+        "source_url": "https://overpass-api.de",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "direccion"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 2,
+    "flags": [
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 80
   },
   {
     "id": "sev-9107",
@@ -2955,9 +3109,11 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
-    "flags": [],
-    "numero": 77
+    "n_fuentes_independientes": 2,
+    "flags": [
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 81
   },
   {
     "id": "sev-9096",
@@ -2988,9 +3144,11 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
-    "flags": [],
-    "numero": 78
+    "n_fuentes_independientes": 2,
+    "flags": [
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 82
   },
   {
     "id": "sev-9175",
@@ -3024,7 +3182,7 @@
     "flags": [
       "EMAIL_PLANTILLA_LIMPIADO"
     ],
-    "numero": 79
+    "numero": 83
   },
   {
     "id": "sev-9141",
@@ -3056,7 +3214,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 80
+    "numero": 84
   },
   {
     "id": "sev-9156",
@@ -3090,7 +3248,7 @@
     "flags": [
       "EMAIL_PLANTILLA_LIMPIADO"
     ],
-    "numero": 81
+    "numero": 85
   },
   {
     "id": "sev-9161",
@@ -3122,7 +3280,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 82
+    "numero": 86
   },
   {
     "id": "sev-9166",
@@ -3154,7 +3312,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 83
+    "numero": 87
   },
   {
     "id": "sev-9133",
@@ -3186,7 +3344,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 84
+    "numero": 88
   },
   {
     "id": "sev-9147",
@@ -3218,7 +3376,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 85
+    "numero": 89
   },
   {
     "id": "sev-9101",
@@ -3249,9 +3407,12 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
-    "flags": [],
-    "numero": 86
+    "n_fuentes_independientes": 3,
+    "flags": [
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 90
   },
   {
     "id": "sev-9094",
@@ -3285,7 +3446,43 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 87
+    "numero": 91
+  },
+  {
+    "id": "sev-9188",
+    "nombre": "Coucke's Academy",
+    "nombre_raw": "Coucke's Academy",
+    "nombre_normalizado": "coucke s academy",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "Avenida San Francisco Javier 24, Edificio Sevilla 1",
+    "direccion_completa": "Avenida San Francisco Javier 24, Edificio Sevilla 1",
+    "lat": null,
+    "lng": null,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "SEVILLACERT_LANGUAGECERT",
+    "fuentes": [
+      {
+        "source": "SEVILLACERT_LANGUAGECERT",
+        "source_url": "https://sevillacert.com/centros-preparadores-languagecert-en-sevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "direccion"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "certificadoras": [
+      "LanguageCert"
+    ],
+    "numero": 92
   },
   {
     "id": "sev-9144",
@@ -3317,7 +3514,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 88
+    "numero": 93
   },
   {
     "id": "sev-9158",
@@ -3349,7 +3546,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 89
+    "numero": 94
   },
   {
     "id": "sev-9143",
@@ -3381,7 +3578,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 90
+    "numero": 95
   },
   {
     "id": "sev-9151",
@@ -3413,7 +3610,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 91
+    "numero": 96
   },
   {
     "id": "sev-9136",
@@ -3445,7 +3642,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 92
+    "numero": 97
   },
   {
     "id": "sev-9154",
@@ -3479,7 +3676,7 @@
     "flags": [
       "DUPLICADO_FUSIONADO"
     ],
-    "numero": 93
+    "numero": 98
   },
   {
     "id": "sev-9074",
@@ -3510,9 +3707,11 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
-    "flags": [],
-    "numero": 94
+    "n_fuentes_independientes": 2,
+    "flags": [
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 99
   },
   {
     "id": "sev-9148",
@@ -3546,7 +3745,7 @@
     "flags": [
       "EMAIL_PLANTILLA_LIMPIADO"
     ],
-    "numero": 95
+    "numero": 100
   },
   {
     "id": "sev-9134",
@@ -3578,7 +3777,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 96
+    "numero": 101
   },
   {
     "id": "sev-9145",
@@ -3610,7 +3809,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 97
+    "numero": 102
   },
   {
     "id": "sev-9078",
@@ -3641,11 +3840,13 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 2,
+    "n_fuentes_independientes": 4,
     "flags": [
-      "CONFIRMADO_2DA_FUENTE"
+      "CONFIRMADO_2DA_FUENTE",
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2"
     ],
-    "numero": 98
+    "numero": 103
   },
   {
     "id": "sev-9176",
@@ -3677,7 +3878,45 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 99
+    "numero": 104
+  },
+  {
+    "id": "sev-9173",
+    "nombre": "English Connection",
+    "nombre_raw": "English Connection",
+    "nombre_normalizado": "english connection",
+    "municipio": "Sevilla",
+    "cp": "41007",
+    "direccion": "Calle Sinai, 30",
+    "direccion_completa": "Calle Sinai, 30",
+    "lat": 37.4623542,
+    "lng": -5.6571886,
+    "telefono": "+34 627 98 12 80",
+    "web": "https://englishconnection.es/academia-ingles/Mairena/",
+    "email": "mairena@englishconnection.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "OVERPASS_MUN",
+    "fuentes": [
+      {
+        "source": "OVERPASS_MUN",
+        "source_url": "https://overpass-api.de",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "direccion"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 5,
+    "flags": [
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 105
   },
   {
     "id": "sev-9152",
@@ -3709,7 +3948,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 100
+    "numero": 106
   },
   {
     "id": "sev-9077",
@@ -3740,9 +3979,11 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
-    "flags": [],
-    "numero": 101
+    "n_fuentes_independientes": 2,
+    "flags": [
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 107
   },
   {
     "id": "sev-9104",
@@ -3777,7 +4018,7 @@
     "flags": [
       "CONFIRMADO_2DA_FUENTE"
     ],
-    "numero": 102
+    "numero": 108
   },
   {
     "id": "sev-9163",
@@ -3809,7 +4050,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 103
+    "numero": 109
   },
   {
     "id": "sev-9103",
@@ -3840,9 +4081,11 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
-    "flags": [],
-    "numero": 104
+    "n_fuentes_independientes": 2,
+    "flags": [
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 110
   },
   {
     "id": "sev-9075",
@@ -3873,11 +4116,13 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 2,
+    "n_fuentes_independientes": 4,
     "flags": [
-      "CONFIRMADO_2DA_FUENTE"
+      "CONFIRMADO_2DA_FUENTE",
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2"
     ],
-    "numero": 105
+    "numero": 111
   },
   {
     "id": "sev-9073",
@@ -3908,11 +4153,13 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 2,
+    "n_fuentes_independientes": 4,
     "flags": [
-      "CONFIRMADO_2DA_FUENTE"
+      "CONFIRMADO_2DA_FUENTE",
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2"
     ],
-    "numero": 106
+    "numero": 112
   },
   {
     "id": "sev-9086",
@@ -3945,9 +4192,11 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
-    "flags": [],
-    "numero": 107
+    "n_fuentes_independientes": 2,
+    "flags": [
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 113
   },
   {
     "id": "sev-9093",
@@ -3980,9 +4229,12 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
-    "flags": [],
-    "numero": 108
+    "n_fuentes_independientes": 3,
+    "flags": [
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 114
   },
   {
     "id": "sev-9088",
@@ -4013,12 +4265,14 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 2,
+    "n_fuentes_independientes": 4,
     "flags": [
       "CONFIRMADO_2DA_FUENTE",
-      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO",
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2"
     ],
-    "numero": 109
+    "numero": 115
   },
   {
     "id": "sev-9162",
@@ -4052,7 +4306,7 @@
     "flags": [
       "EMAIL_INCOHERENTE_WEB_LIMPIADO"
     ],
-    "numero": 110
+    "numero": 116
   },
   {
     "id": "sev-9185",
@@ -4090,7 +4344,7 @@
     "flags": [
       "EMAIL_INCOHERENTE_WEB_LIMPIADO"
     ],
-    "numero": 111
+    "numero": 117
   },
   {
     "id": "sev-9187",
@@ -4128,7 +4382,7 @@
     "flags": [
       "EMAIL_INCOHERENTE_WEB_LIMPIADO"
     ],
-    "numero": 112
+    "numero": 118
   },
   {
     "id": "sev-9189",
@@ -4166,7 +4420,7 @@
     "flags": [
       "EMAIL_INCOHERENTE_WEB_LIMPIADO"
     ],
-    "numero": 113
+    "numero": 119
   },
   {
     "id": "sev-9071",
@@ -4181,7 +4435,7 @@
     "lng": -5.9961772,
     "telefono": "+34 675 45 93 67",
     "web": "https://helendoron.es",
-    "email": null,
+    "email": "losremedios@helendoron.com",
     "marca_id": null,
     "estado": "ACTIVO",
     "confianza": "BAJA",
@@ -4199,11 +4453,13 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
+    "n_fuentes_independientes": 3,
     "flags": [
-      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO",
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2"
     ],
-    "numero": 114
+    "numero": 120
   },
   {
     "id": "sev-9188",
@@ -4241,7 +4497,7 @@
     "flags": [
       "EMAIL_INCOHERENTE_WEB_LIMPIADO"
     ],
-    "numero": 115
+    "numero": 121
   },
   {
     "id": "sev-9182",
@@ -4279,7 +4535,7 @@
     "flags": [
       "EMAIL_INCOHERENTE_WEB_LIMPIADO"
     ],
-    "numero": 116
+    "numero": 122
   },
   {
     "id": "sev-9184",
@@ -4317,7 +4573,7 @@
     "flags": [
       "EMAIL_INCOHERENTE_WEB_LIMPIADO"
     ],
-    "numero": 117
+    "numero": 123
   },
   {
     "id": "sev-9183",
@@ -4355,7 +4611,7 @@
     "flags": [
       "EMAIL_INCOHERENTE_WEB_LIMPIADO"
     ],
-    "numero": 118
+    "numero": 124
   },
   {
     "id": "sev-9186",
@@ -4393,7 +4649,7 @@
     "flags": [
       "EMAIL_INCOHERENTE_WEB_LIMPIADO"
     ],
-    "numero": 119
+    "numero": 125
   },
   {
     "id": "sev-9105",
@@ -4426,7 +4682,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 120
+    "numero": 126
   },
   {
     "id": "sev-9098",
@@ -4458,9 +4714,12 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
-    "flags": [],
-    "numero": 121
+    "n_fuentes_independientes": 3,
+    "flags": [
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 127
   },
   {
     "id": "sev-9072",
@@ -4493,9 +4752,12 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
-    "flags": [],
-    "numero": 122
+    "n_fuentes_independientes": 3,
+    "flags": [
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 128
   },
   {
     "id": "sev-9109",
@@ -4528,9 +4790,11 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
-    "flags": [],
-    "numero": 123
+    "n_fuentes_independientes": 2,
+    "flags": [
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 129
   },
   {
     "id": "sev-9168",
@@ -4562,7 +4826,40 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 124
+    "numero": 130
+  },
+  {
+    "id": "sev-9185",
+    "nombre": "Jr English School",
+    "nombre_raw": "Jr English School",
+    "nombre_normalizado": "jr english school",
+    "municipio": null,
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": null,
+    "lat": 37.5144109,
+    "lng": -6.0249886,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "OSM_LOCAL",
+    "fuentes": [
+      {
+        "source": "OSM_LOCAL",
+        "source_url": "geofabrik:andalucia-latest.osm.pbf",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 131
   },
   {
     "id": "sev-9080",
@@ -4595,7 +4892,72 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 125
+    "numero": 132
+  },
+  {
+    "id": "sev-9169",
+    "nombre": "Kids&Us",
+    "nombre_raw": "Kids&Us",
+    "nombre_normalizado": "kids us",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": null,
+    "lat": 37.3784966,
+    "lng": -5.998516,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "OVERPASS_MUN",
+    "fuentes": [
+      {
+        "source": "OVERPASS_MUN",
+        "source_url": "https://overpass-api.de",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 133
+  },
+  {
+    "id": "sev-9182",
+    "nombre": "Kids&Us",
+    "nombre_raw": "Kids&Us",
+    "nombre_normalizado": "kids us",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": null,
+    "lat": 37.3784966,
+    "lng": -5.998516,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "OSM_LOCAL",
+    "fuentes": [
+      {
+        "source": "OSM_LOCAL",
+        "source_url": "geofabrik:andalucia-latest.osm.pbf",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 134
   },
   {
     "id": "sev-9178",
@@ -4627,7 +4989,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 126
+    "numero": 135
   },
   {
     "id": "sev-9179",
@@ -4659,7 +5021,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 127
+    "numero": 136
   },
   {
     "id": "sev-9177",
@@ -4691,7 +5053,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 128
+    "numero": 137
   },
   {
     "id": "sev-9180",
@@ -4723,7 +5085,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 129
+    "numero": 138
   },
   {
     "id": "sev-9181",
@@ -4755,7 +5117,43 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 130
+    "numero": 139
+  },
+  {
+    "id": "sev-9189",
+    "nombre": "Learning Centre",
+    "nombre_raw": "Learning Centre",
+    "nombre_normalizado": "learning centre",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "C. Escoberos",
+    "direccion_completa": "C. Escoberos",
+    "lat": 37.4023575,
+    "lng": -5.9909027,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "SEVILLACERT_LANGUAGECERT",
+    "fuentes": [
+      {
+        "source": "SEVILLACERT_LANGUAGECERT",
+        "source_url": "https://sevillacert.com/centros-preparadores-languagecert-en-sevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "direccion"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "certificadoras": [
+      "LanguageCert"
+    ],
+    "numero": 140
   },
   {
     "id": "sev-9128",
@@ -4788,7 +5186,78 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 131
+    "numero": 141
+  },
+  {
+    "id": "sev-9190",
+    "nombre": "M&J AND You",
+    "nombre_raw": "M&J AND You",
+    "nombre_normalizado": "m j and you",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": null,
+    "lat": null,
+    "lng": null,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "SEVILLACERT_LANGUAGECERT",
+    "fuentes": [
+      {
+        "source": "SEVILLACERT_LANGUAGECERT",
+        "source_url": "https://sevillacert.com/centros-preparadores-languagecert-en-sevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "certificadoras": [
+      "LanguageCert"
+    ],
+    "numero": 142
+  },
+  {
+    "id": "sev-9191",
+    "nombre": "Moving On School",
+    "nombre_raw": "Moving On School",
+    "nombre_normalizado": "moving on school",
+    "municipio": "Mairena del Aljarafe",
+    "cp": "41927",
+    "direccion": "C. Campo Alegre, local 6",
+    "direccion_completa": "C. Campo Alegre, local 6",
+    "lat": 37.3463221,
+    "lng": -6.0581103,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "SEVILLACERT_LANGUAGECERT",
+    "fuentes": [
+      {
+        "source": "SEVILLACERT_LANGUAGECERT",
+        "source_url": "https://sevillacert.com/centros-preparadores-languagecert-en-sevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "direccion"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "certificadoras": [
+      "LanguageCert"
+    ],
+    "numero": 143
   },
   {
     "id": "sev-9079",
@@ -4819,9 +5288,12 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
-    "flags": [],
-    "numero": 132
+    "n_fuentes_independientes": 3,
+    "flags": [
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 144
   },
   {
     "id": "sev-9092",
@@ -4852,9 +5324,12 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
-    "flags": [],
-    "numero": 133
+    "n_fuentes_independientes": 3,
+    "flags": [
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 145
   },
   {
     "id": "sev-9076",
@@ -4885,9 +5360,48 @@
         ]
       }
     ],
+    "n_fuentes_independientes": 3,
+    "flags": [
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 146
+  },
+  {
+    "id": "sev-9192",
+    "nombre": "Native Learn",
+    "nombre_raw": "Native Learn",
+    "nombre_normalizado": "native learn",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "Pedro de Castro",
+    "direccion_completa": "Pedro de Castro",
+    "lat": 42.4572115,
+    "lng": -6.0521283,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "SEVILLACERT_LANGUAGECERT",
+    "fuentes": [
+      {
+        "source": "SEVILLACERT_LANGUAGECERT",
+        "source_url": "https://sevillacert.com/centros-preparadores-languagecert-en-sevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "direccion"
+        ]
+      }
+    ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 134
+    "certificadoras": [
+      "LanguageCert"
+    ],
+    "numero": 147
   },
   {
     "id": "sev-9090",
@@ -4919,9 +5433,12 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
-    "flags": [],
-    "numero": 135
+    "n_fuentes_independientes": 3,
+    "flags": [
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 148
   },
   {
     "id": "sev-9171",
@@ -4953,7 +5470,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 136
+    "numero": 149
   },
   {
     "id": "sev-9167",
@@ -4987,7 +5504,7 @@
     "flags": [
       "EMAIL_PLANTILLA_LIMPIADO"
     ],
-    "numero": 137
+    "numero": 150
   },
   {
     "id": "sev-9131",
@@ -5019,7 +5536,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 138
+    "numero": 151
   },
   {
     "id": "sev-9102",
@@ -5051,9 +5568,12 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
-    "flags": [],
-    "numero": 139
+    "n_fuentes_independientes": 3,
+    "flags": [
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 152
   },
   {
     "id": "sev-9173",
@@ -5085,7 +5605,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 140
+    "numero": 153
   },
   {
     "id": "sev-9164",
@@ -5117,7 +5637,42 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 141
+    "numero": 154
+  },
+  {
+    "id": "sev-9171",
+    "nombre": "School of languages",
+    "nombre_raw": "School of languages",
+    "nombre_normalizado": "school of languages",
+    "municipio": "Sevilla",
+    "cp": "41018",
+    "direccion": "Calle Camilo José Cela, 6",
+    "direccion_completa": "Calle Camilo José Cela, 6",
+    "lat": 37.3801478,
+    "lng": -5.9765027,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "OVERPASS_MUN",
+    "fuentes": [
+      {
+        "source": "OVERPASS_MUN",
+        "source_url": "https://overpass-api.de",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "direccion"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 2,
+    "flags": [
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 155
   },
   {
     "id": "sev-9142",
@@ -5149,7 +5704,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 142
+    "numero": 156
   },
   {
     "id": "sev-9095",
@@ -5182,9 +5737,11 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
-    "flags": [],
-    "numero": 143
+    "n_fuentes_independientes": 2,
+    "flags": [
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 157
   },
   {
     "id": "sev-9084",
@@ -5215,9 +5772,11 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
-    "flags": [],
-    "numero": 144
+    "n_fuentes_independientes": 2,
+    "flags": [
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 158
   },
   {
     "id": "sev-9140",
@@ -5251,7 +5810,7 @@
     "flags": [
       "EMAIL_PLANTILLA_LIMPIADO"
     ],
-    "numero": 145
+    "numero": 159
   },
   {
     "id": "sev-9137",
@@ -5285,7 +5844,7 @@
     "flags": [
       "EMAIL_PLANTILLA_LIMPIADO"
     ],
-    "numero": 146
+    "numero": 160
   },
   {
     "id": "sev-9146",
@@ -5317,7 +5876,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 147
+    "numero": 161
   },
   {
     "id": "sev-9159",
@@ -5349,7 +5908,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 148
+    "numero": 162
   },
   {
     "id": "sev-9157",
@@ -5381,7 +5940,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 149
+    "numero": 163
   },
   {
     "id": "sev-9170",
@@ -5413,7 +5972,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 150
+    "numero": 164
   },
   {
     "id": "sev-9139",
@@ -5445,7 +6004,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 151
+    "numero": 165
   },
   {
     "id": "sev-9087",
@@ -5477,9 +6036,12 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
-    "flags": [],
-    "numero": 152
+    "n_fuentes_independientes": 3,
+    "flags": [
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 166
   },
   {
     "id": "sev-9097",
@@ -5511,11 +6073,48 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 2,
+    "n_fuentes_independientes": 4,
     "flags": [
-      "CONFIRMADO_2DA_FUENTE"
+      "CONFIRMADO_2DA_FUENTE",
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2"
     ],
-    "numero": 153
+    "numero": 167
+  },
+  {
+    "id": "sev-9193",
+    "nombre": "TEC Sevilla",
+    "nombre_raw": "TEC Sevilla",
+    "nombre_normalizado": "tec sevilla",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": null,
+    "lat": null,
+    "lng": null,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "SEVILLACERT_LANGUAGECERT",
+    "fuentes": [
+      {
+        "source": "SEVILLACERT_LANGUAGECERT",
+        "source_url": "https://sevillacert.com/centros-preparadores-languagecert-en-sevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "certificadoras": [
+      "LanguageCert"
+    ],
+    "numero": 168
   },
   {
     "id": "sev-9149",
@@ -5547,7 +6146,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 154
+    "numero": 169
   },
   {
     "id": "sev-9135",
@@ -5581,7 +6180,7 @@
     "flags": [
       "EMAIL_PLANTILLA_LIMPIADO"
     ],
-    "numero": 155
+    "numero": 170
   },
   {
     "id": "sev-9160",
@@ -5613,7 +6212,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 156
+    "numero": 171
   },
   {
     "id": "sev-9106",
@@ -5644,9 +6243,11 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
-    "flags": [],
-    "numero": 157
+    "n_fuentes_independientes": 2,
+    "flags": [
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 172
   },
   {
     "id": "sev-9081",
@@ -5678,9 +6279,12 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
-    "flags": [],
-    "numero": 158
+    "n_fuentes_independientes": 3,
+    "flags": [
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 173
   },
   {
     "id": "sev-9138",
@@ -5712,7 +6316,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 159
+    "numero": 174
   },
   {
     "id": "sev-9174",
@@ -5744,7 +6348,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 160
+    "numero": 175
   },
   {
     "id": "sev-9155",
@@ -5776,7 +6380,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 161
+    "numero": 176
   },
   {
     "id": "sev-9169",
@@ -5808,7 +6412,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 162
+    "numero": 177
   },
   {
     "id": "sev-9150",
@@ -5840,7 +6444,7 @@
     ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 163
+    "numero": 178
   },
   {
     "id": "sev-9082",
@@ -5871,9 +6475,46 @@
         ]
       }
     ],
+    "n_fuentes_independientes": 2,
+    "flags": [
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 179
+  },
+  {
+    "id": "sev-9194",
+    "nombre": "Wish English Language School",
+    "nombre_raw": "Wish English Language School",
+    "nombre_normalizado": "wish english language school",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": null,
+    "lat": null,
+    "lng": null,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "SEVILLACERT_LANGUAGECERT",
+    "fuentes": [
+      {
+        "source": "SEVILLACERT_LANGUAGECERT",
+        "source_url": "https://sevillacert.com/centros-preparadores-languagecert-en-sevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
     "n_fuentes_independientes": 1,
     "flags": [],
-    "numero": 164
+    "certificadoras": [
+      "LanguageCert"
+    ],
+    "numero": 180
   },
   {
     "id": "sev-9100",
@@ -5904,9 +6545,12 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
-    "flags": [],
-    "numero": 165
+    "n_fuentes_independientes": 3,
+    "flags": [
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 181
   },
   {
     "id": "sev-9099",
@@ -5937,9 +6581,12 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
-    "flags": [],
-    "numero": 166
+    "n_fuentes_independientes": 3,
+    "flags": [
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 182
   },
   {
     "id": "sev-9089",
@@ -5970,8 +6617,11 @@
         ]
       }
     ],
-    "n_fuentes_independientes": 1,
-    "flags": [],
-    "numero": 167
+    "n_fuentes_independientes": 3,
+    "flags": [
+      "CONFIRMADO_FASE2",
+      "CONFIRMADO_FASE2"
+    ],
+    "numero": 183
   }
 ]

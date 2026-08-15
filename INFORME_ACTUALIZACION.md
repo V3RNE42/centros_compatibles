@@ -1,7 +1,7 @@
 # Informe de actualización — 15/08/2026
 
 ## Resumen ejecutivo
-El censo pasa de **70 fichas** (de las cuales solo ~18 eran academias, casi todas de una única cadena) a **167 fichas** con cobertura en **20 municipios** del ámbito POTAUS. La vertiente de academias pasa de ~18 a ~97 centros de idiomas.
+El censo pasa de **70 fichas** (de las cuales solo ~18 eran academias, casi todas de una única cadena) a **183 fichas** con cobertura en **21 municipios** del ámbito POTAUS. La vertiente de academias pasa de ~18 a ~113 centros de idiomas.
 
 ## Qué se ha hecho (fases del plan)
 
@@ -39,16 +39,25 @@ El censo pasa de **70 fichas** (de las cuales solo ~18 eran academias, casi toda
 - Corrección de emails propagados: 36 emails de plantilla/incoherentes limpiados.
 
 ## Pendiente (para próximas rondas)
-- Geocodificar los ~33 centros sin coordenadas (faltan direcciones estructuradas ACEIA).
+- Geocodificar los ~38 centros sin coordenadas (faltan direcciones estructuradas ACEIA).
 - Verificar si English Connection Santa Justa sigue abierta.
-- Fase 2: barrido por dorks de los 26 municipios aún sin cobertura.
 - Fase 3: portales de empleo (InfoJobs/LinkedIn) para confirmar contratación.
-- Recálculo de Chao1 con 3+ fuentes cuando se complete la Fase 2.
+- Los municipios de la Corona 2-3 sin cobertura (25) no tienen academias en OSM ni prensa — plausible (baja densidad), pero merecen verificación puntual vía Places en una ronda con API key.
+- Recálculo de Chao1 con 3+ fuentes.
 
 ## Métricas
-- **Fichas totales:** 167 (antes 70)
-- **Academias de idiomas (no colegios):** ~97 (antes ~18)
+- **Fichas totales:** 183 (antes 70)
+- **Academias de idiomas (no colegios):** ~113 (antes ~18)
 - **Colegios conservados:** 70 (ninguno tocado, S2)
-- **Municipios con cobertura:** 20/46
-- **Con web:** 119 | **Con teléfono:** 124 | **Con email:** 88 | **Con coordenadas:** 134
-- **Estimación del plan:** 180-320 academias → la recolección inicial ya está en ~97; faltan ~83-223 (Fase 2).
+- **Municipios con cobertura:** 21/46
+- **Con web:** 120 | **Con teléfono:** 125 | **Con email:** 88 | **Con coordenadas:** 145
+- **Estimación del plan:** 180-320 academias → la recolección está en ~113; faltan ~67-207 (Fases 2-3).
+
+## Fase 2 — Extensión geográfica (añadido)
+- **OSM local vía Geofabrik PBF** (192 MB, `andalucia-latest.osm.pbf`): barrido del bbox POTAUS completo sin rate limit — 41 candidatos, con coordenadas precisas. Este es el método recomendado por el plan §5.5 para >20 consultas.
+- **Overpass API por municipio** (Q4, 46 consultas): 15 nuevos + 12 falsos positivos léxicos descartados (El Corte Inglés, Cementerio de los Ingleses, Ingles Steel...).
+- **SevillaCert / LanguageCert**: red de 13 Academic Partners extraída de los iframes de Google Maps de su página — 9 nuevos (Coucke's Academy, Learning Centre, M&J AND You, Moving On School, Native Learn, TEC Sevilla, Wish English, ATENTOS AIAE, Academia Méndez Núñez).
+- **Dorks por municipio** (Google News, 26 municipios): solo 13 pistas, 0 confirmaciones — los municipios pequeños no aparecen en prensa.
+- **Marcas verificadas y descartadas** (ninguna con sede en el ámbito): Berlitz, Number 16, inlingua, Vaughan (todas solo Madrid/Barcelona/Valencia/Bilbao/Zaragoza/Granada). Patrón: el tejido local es 100% andaluz.
+- **Exams Andalucía**: cubre Almería/Granada/Jaén/Málaga, no Sevilla (el Platinum de Sevilla es el Instituto Británico) — no aporta.
+- **Trinity College**: no publica buscador público de centros preparadores accesible.
