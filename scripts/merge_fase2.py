@@ -103,7 +103,9 @@ for src, path in (("OVERPASS_MUN", "overpass_municipios_v2.jsonl"), ("OSM_LOCAL"
     NO = ("baile", "música", "música y danza", "sanitaria", "sanitario", "oposicion", "autoescuela",
           "informática", "fitness", "deporte", "animación", "audiovisual", "unidad de movilidad",
           "v-art", "cefoec", "naturalmente", "albéniz", "centypol", "formatec", "okformación", "elcano")
-    IDIOMAS = ("ingl", "english", "language", "idioma", "school", "academy", "kids", "world", "yes",
+    BASURA = ("yes in spain", "yes escuela de idiomas", "^yes$", "viajes el corte inglés",
+              "cementerio de los ingleses", "ingles steel", "inglesa", "el corte inglés")
+    IDIOMAS = ("ingl", "english", "language", "idioma", "school", "academy", "kids", "world",
                "winners", "learn", "teb", "andrew", "go speak", "my english", "my castle", "giralda",
                "clic", "eli", "st. james", "st james", "ronan", "city school", "new language",
                "english house", "learning is fun", "my little", "afoban", "jr english", "british",
@@ -117,6 +119,10 @@ for src, path in (("OVERPASS_MUN", "overpass_municipios_v2.jsonl"), ("OSM_LOCAL"
         if any(x in n for x in fuera_ambito):
             continue
         if any(x in n for x in NO):
+            continue
+        if re.search(r"^(yes|yes escuela de idiomas|yes in spain|inglesa|ingles steel)$", n):
+            continue
+        if any(x in n for x in BASURA):
             continue
         if src == "OVERPASS_MUN" and not any(x in n for x in IDIOMAS):
             continue
