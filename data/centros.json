@@ -2815,8 +2815,8 @@
     "cp": null,
     "direccion": "Méndez Núñez",
     "direccion_completa": "Méndez Núñez",
-    "lat": 41.653305,
-    "lng": -0.8786721,
+    "lat": 37.3895595,
+    "lng": -5.9964703,
     "telefono": null,
     "web": null,
     "email": null,
@@ -2840,7 +2840,8 @@
     "certificadoras": [
       "LanguageCert"
     ],
-    "numero": 73
+    "numero": 73,
+    "geocod_metodo": "NOMINATIM"
   },
   {
     "id": "sev-9172",
@@ -3651,10 +3652,10 @@
     "nombre_normalizado": "eli el porvenir sevilla",
     "municipio": "Sevilla",
     "cp": null,
-    "direccion": "C/ HERMANOS PORTILLA]",
-    "direccion_completa": "C/ HERMANOS PORTILLA]",
-    "lat": 36.1422293,
-    "lng": -5.4498087,
+    "direccion": "C/ Hermanos Portilla",
+    "direccion_completa": "C/ Hermanos Portilla, Sevilla",
+    "lat": null,
+    "lng": null,
     "telefono": null,
     "web": "https://www.eli.es",
     "email": "porvenir@eli.es",
@@ -3674,7 +3675,8 @@
     ],
     "n_fuentes_independientes": 2,
     "flags": [
-      "DUPLICADO_FUSIONADO"
+      "DUPLICADO_FUSIONADO",
+      "SIN_COORDENADAS"
     ],
     "numero": 98
   },
@@ -4317,8 +4319,8 @@
     "cp": "41012",
     "direccion": "Avda. Reino Unido, 9",
     "direccion_completa": "Avda. Reino Unido, 9",
-    "lat": 37.2436642,
-    "lng": -3.5593227,
+    "lat": 37.3473219,
+    "lng": -5.9765137,
     "telefono": "659681868",
     "web": "https://helendoron.es/",
     "email": null,
@@ -4344,7 +4346,8 @@
     "flags": [
       "EMAIL_INCOHERENTE_WEB_LIMPIADO"
     ],
-    "numero": 117
+    "numero": 117,
+    "geocod_metodo": "NOMINATIM"
   },
   {
     "id": "sev-9187",
@@ -4355,8 +4358,8 @@
     "cp": "41930",
     "direccion": "C/ Uruguay, 10",
     "direccion_completa": "C/ Uruguay, 10",
-    "lat": 39.4582563,
-    "lng": -0.3870173,
+    "lat": 37.3762987,
+    "lng": -6.0767641,
     "telefono": "614412245",
     "web": "https://helendoron.es/",
     "email": null,
@@ -4382,7 +4385,8 @@
     "flags": [
       "EMAIL_INCOHERENTE_WEB_LIMPIADO"
     ],
-    "numero": 118
+    "numero": 118,
+    "geocod_metodo": "NOMINATIM"
   },
   {
     "id": "sev-9189",
@@ -4393,8 +4397,8 @@
     "cp": "41410",
     "direccion": "C/ Prim, 16",
     "direccion_completa": "C/ Prim, 16",
-    "lat": 43.2583288,
-    "lng": -2.9190615,
+    "lat": 37.4716775,
+    "lng": -5.6397028,
     "telefono": "623396222",
     "web": "https://helendoron.es/",
     "email": null,
@@ -4420,7 +4424,8 @@
     "flags": [
       "EMAIL_INCOHERENTE_WEB_LIMPIADO"
     ],
-    "numero": 119
+    "numero": 119,
+    "geocod_metodo": "NOMINATIM"
   },
   {
     "id": "sev-9071",
@@ -4833,7 +4838,7 @@
     "nombre": "Jr English School",
     "nombre_raw": "Jr English School",
     "nombre_normalizado": "jr english school",
-    "municipio": null,
+    "municipio": "Guillena",
     "cp": null,
     "direccion": null,
     "direccion_completa": null,
@@ -5376,8 +5381,8 @@
     "cp": null,
     "direccion": "Pedro de Castro",
     "direccion_completa": "Pedro de Castro",
-    "lat": 42.4572115,
-    "lng": -6.0521283,
+    "lat": 37.376619,
+    "lng": -5.9793808,
     "telefono": null,
     "web": null,
     "email": null,
@@ -5401,7 +5406,8 @@
     "certificadoras": [
       "LanguageCert"
     ],
-    "numero": 147
+    "numero": 147,
+    "geocod_metodo": "NOMINATIM"
   },
   {
     "id": "sev-9090",
