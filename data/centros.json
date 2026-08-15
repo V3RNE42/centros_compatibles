@@ -1,0 +1,5977 @@
+[
+  {
+    "numero": 1,
+    "nombre_raw": "AMT Spain / AM Transnational",
+    "telefono_raw": "954232203",
+    "direccion_raw": "Nuestra Señora de las Mercedes, 4, 41013 Sevilla",
+    "web_raw": "https://www.amt-spain.com/en/english-academy/",
+    "email_raw": "hola@amt-spain.com",
+    "name_map": "AMT Spain / AM Transnational",
+    "area": "Los Bermejales",
+    "lat": 37.3465852,
+    "lng": -5.9796283,
+    "_sin_coordenadas": false,
+    "id": "sev-0001",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Nuestra Señora de las Mercedes, 4, 41013 Sevilla",
+    "nombre_normalizado": "amt spain am transnational",
+    "telefono": "954232203",
+    "web": "https://www.amt-spain.com/en/english-academy/",
+    "email": "hola@amt-spain.com",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 2,
+    "nombre_raw": "CBS, The British School of Seville",
+    "telefono_raw": "693601083",
+    "direccion_raw": "Urb. Pinar de la Juliana, plot 40-A and B, Bollullos de la\n                Mitación, 41110 Sevilla",
+    "web_raw": "https://colegiobs.eu/",
+    "email_raw": "secretaria@colegiobs.eu",
+    "name_map": "CBS, The British School of Seville",
+    "area": "Bollullos de la Mitación",
+    "lat": 37.31564,
+    "lng": -6.16884,
+    "_sin_coordenadas": false,
+    "id": "sev-0002",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Urb. Pinar de la Juliana, plot 40-A and B, Bollullos de la\n                Mitación, 41110 Sevilla",
+    "nombre_normalizado": "cbs the british school of seville",
+    "telefono": "693601083",
+    "web": "https://colegiobs.eu/",
+    "email": "secretaria@colegiobs.eu",
+    "municipio": "Bollullos de la Mitación"
+  },
+  {
+    "numero": 3,
+    "nombre_raw": "Centro Cristo Rey",
+    "telefono_raw": "954271430",
+    "direccion_raw": "Avda. Ramón y Cajal, 2, 41011 Sevilla",
+    "web_raw": "https://cristoreysevilla.blogspot.com/",
+    "email_raw": "secretaria@cristoreysevilla.es",
+    "name_map": "Centro Cristo Rey",
+    "area": "Central Seville",
+    "lat": 37.3778021,
+    "lng": -5.9767936,
+    "_sin_coordenadas": false,
+    "id": "sev-0039",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Avda. Ramón y Cajal, 2, 41011 Sevilla",
+    "nombre_normalizado": "centro cristo rey",
+    "telefono": "954271430",
+    "web": "https://cristoreysevilla.blogspot.com/",
+    "email": null,
+    "municipio": "Sevilla",
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ]
+  },
+  {
+    "numero": 4,
+    "nombre_raw": "Centro Norteamericano",
+    "telefono_raw": "954224107",
+    "direccion_raw": "Calle Harinas, 18, 41001 Sevilla",
+    "web_raw": "https://centronorteamericano.com/",
+    "email_raw": "hi@centronorteamericano.com",
+    "name_map": "Centro Norteamericano",
+    "area": "Central Seville",
+    "lat": 37.3867738,
+    "lng": -5.995963,
+    "_sin_coordenadas": false,
+    "id": "sev-0003",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Calle Harinas, 18, 41001 Sevilla",
+    "nombre_normalizado": "centro norteamericano",
+    "telefono": "954224107",
+    "web": "https://centronorteamericano.com/",
+    "email": "hi@centronorteamericano.com",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 5,
+    "nombre_raw": "Centro Sagrada Familia de Urgel",
+    "telefono_raw": "954531018",
+    "direccion_raw": "C/ Urgel, 12, 41006 Sevilla",
+    "web_raw": "https://www.safaursevilla.es/",
+    "email_raw": "secretaria@sagradafamiliadeurgel.com",
+    "name_map": "Centro Sagrada Familia de Urgel",
+    "area": "Central / San Bernardo",
+    "lat": 37.399754,
+    "lng": -5.9931325,
+    "_sin_coordenadas": false,
+    "id": "sev-0040",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ Urgel, 12, 41006 Sevilla",
+    "nombre_normalizado": "centro sagrada familia de urgel",
+    "telefono": "954531018",
+    "web": "https://www.safaursevilla.es/",
+    "email": null,
+    "municipio": "Sevilla",
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ]
+  },
+  {
+    "numero": 6,
+    "nombre_raw": "Centro San Francisco Solano De La Aurora",
+    "telefono_raw": "954279753",
+    "direccion_raw": "Calle Virgen Del Valle, 46, 41011 Sevilla",
+    "web_raw": "https://colegiosolano.es/",
+    "email_raw": "secretario@colegiosfsolano.es",
+    "lat": 37.375415,
+    "lng": -5.998362,
+    "area": null,
+    "_sin_coordenadas": true,
+    "id": "sev-0069",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Calle Virgen Del Valle, 46, 41011 Sevilla",
+    "nombre_normalizado": "centro san francisco solano de la aurora",
+    "telefono": "954279753",
+    "web": "https://colegiosolano.es/",
+    "email": null,
+    "municipio": "Sevilla",
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ]
+  },
+  {
+    "numero": 7,
+    "nombre_raw": "Centro Santo Tomás de Aquino",
+    "telefono_raw": "954419155",
+    "direccion_raw": "C/ Santo Tomás, 8, 41004 Sevilla",
+    "web_raw": "https://www.colegiostotomasdeaquino.es/",
+    "email_raw": "secretaria@santotomasdeaquino.com",
+    "name_map": "Centro Santo Tomás de Aquino",
+    "area": "Central / Santa Cruz",
+    "lat": 37.38433,
+    "lng": -5.9930211,
+    "_sin_coordenadas": false,
+    "id": "sev-0041",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ Santo Tomás, 8, 41004 Sevilla",
+    "nombre_normalizado": "centro santo tomas de aquino",
+    "telefono": "954419155",
+    "web": "https://www.colegiostotomasdeaquino.es/",
+    "email": null,
+    "municipio": "Sevilla",
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ]
+  },
+  {
+    "numero": 8,
+    "nombre_raw": "CLIC International House Sevilla",
+    "telefono_raw": "954502131",
+    "direccion_raw": "C/ Albareda, 19, 41001 Sevilla",
+    "web_raw": "https://clic.es/seville/",
+    "email_raw": "booking@clic.es",
+    "name_map": "CLIC International House Sevilla",
+    "area": "Central Seville",
+    "lat": 37.389367,
+    "lng": -5.996249,
+    "_sin_coordenadas": false,
+    "id": "sev-0004",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ Albareda, 19, 41001 Sevilla",
+    "nombre_normalizado": "clic international house sevilla",
+    "telefono": "954502131",
+    "web": "https://clic.es/seville/",
+    "email": "booking@clic.es",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 9,
+    "nombre_raw": "Col. Alemán de Sevilla Alberto Durero",
+    "telefono_raw": "954999509",
+    "direccion_raw": "Av. de Altamira s/n, corner with C. Cueva del Gato, 41020\n                Sevilla",
+    "web_raw": "https://www.colegioalemansevilla.com/",
+    "email_raw": "secretaria@colegioalemansevilla.com",
+    "name_map": "Col. Alemán de Sevilla Alberto Durero",
+    "area": "Sevilla Este",
+    "lat": 37.4034,
+    "lng": -5.926,
+    "_sin_coordenadas": false,
+    "id": "sev-0005",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Av. de Altamira s/n, corner with C. Cueva del Gato, 41020\n                Sevilla",
+    "nombre_normalizado": "col aleman de sevilla alberto durero",
+    "telefono": "954999509",
+    "web": "https://www.colegioalemansevilla.com/",
+    "email": "secretaria@colegioalemansevilla.com",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 10,
+    "nombre_raw": "Col. Aljarafe",
+    "telefono_raw": "954760100",
+    "direccion_raw": "Ctra. San Juan a Palomares, 68, 41927 Mairena del Aljarafe",
+    "web_raw": "https://colegioaljarafe.es",
+    "email_raw": "secretaria@colegioaljarafe.es",
+    "name_map": "Col. Aljarafe",
+    "area": "Mairena del Aljarafe",
+    "lat": 37.344491,
+    "lng": -6.060677,
+    "_sin_coordenadas": false,
+    "id": "sev-0061",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Ctra. San Juan a Palomares, 68, 41927 Mairena del Aljarafe",
+    "nombre_normalizado": "col aljarafe",
+    "telefono": "954760100",
+    "web": "https://colegioaljarafe.es",
+    "email": "secretaria@colegioaljarafe.es",
+    "municipio": "Mairena del Aljarafe"
+  },
+  {
+    "numero": 11,
+    "nombre_raw": "Col. Almenar",
+    "telefono_raw": "954720470",
+    "direccion_raw": "C/ Torre del Oro, 3, 41807 Espartinas",
+    "web_raw": "http://www.centroalmenar.com/",
+    "email_raw": "centroalmenar@gmail.com",
+    "name_map": "Col. Almenar",
+    "area": "Espartinas",
+    "lat": 37.38292,
+    "lng": -6.117759,
+    "_sin_coordenadas": false,
+    "id": "sev-0042",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ Torre del Oro, 3, 41807 Espartinas",
+    "nombre_normalizado": "col almenar",
+    "telefono": "954720470",
+    "web": "http://www.centroalmenar.com/",
+    "email": "centroalmenar@gmail.com",
+    "municipio": "Espartinas"
+  },
+  {
+    "numero": 12,
+    "nombre_raw": "Col. Calasancio Hispalense",
+    "telefono_raw": "954572500",
+    "direccion_raw": "C/ San Juan de la Cruz, 1, 41010 Sevilla",
+    "web_raw": "https://www.calasanciohispalense.org/",
+    "email_raw": "secretaria@calasanciohispalense.es",
+    "name_map": "Col. Calasancio Hispalense",
+    "area": "Los Remedios",
+    "lat": 37.2959256,
+    "lng": -5.9265173,
+    "_sin_coordenadas": false,
+    "id": "sev-0043",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ San Juan de la Cruz, 1, 41010 Sevilla",
+    "nombre_normalizado": "col calasancio hispalense",
+    "telefono": "954572500",
+    "web": "https://www.calasanciohispalense.org/",
+    "email": null,
+    "municipio": "Sevilla",
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ]
+  },
+  {
+    "numero": 13,
+    "nombre_raw": "Col. CEU San Pablo Montepríncipe",
+    "telefono_raw": "954488080",
+    "direccion_raw": "C/ Maimónides, s/n, 41930 Bormujos",
+    "web_raw": "https://colegioceusevilla.es",
+    "email_raw": "direccion.colegio@colegioceusevilla.es",
+    "name_map": "Col. CEU San Pablo Montepríncipe",
+    "area": "Bormujos",
+    "lat": 37.367407,
+    "lng": -6.08589,
+    "_sin_coordenadas": false,
+    "id": "sev-0006",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ Maimónides, s/n, 41930 Bormujos",
+    "nombre_normalizado": "col ceu san pablo monteprincipe",
+    "telefono": "954488080",
+    "web": "https://colegioceusevilla.es",
+    "email": "direccion.colegio@colegioceusevilla.es",
+    "municipio": "Bormujos"
+  },
+  {
+    "numero": 14,
+    "nombre_raw": "Col. de Fomento Entreolivos",
+    "telefono_raw": null,
+    "direccion_raw": "C/ Párroco Don Eugenio, 18, 41015 Sevilla",
+    "web_raw": "https://www.entreolivos.com",
+    "email_raw": "secretaria@entreolivos.com",
+    "name_map": "Col. de Fomento Entreolivos",
+    "area": "Los Remedios / Triana",
+    "lat": 37.3829774,
+    "lng": -6.0006165,
+    "_sin_coordenadas": false,
+    "id": "sev-0007",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ Párroco Don Eugenio, 18, 41015 Sevilla",
+    "nombre_normalizado": "col de fomento entreolivos",
+    "telefono": null,
+    "web": "https://www.entreolivos.com",
+    "email": "secretaria@entreolivos.com",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 15,
+    "nombre_raw": "Col. de Fomento Tabladilla",
+    "telefono_raw": "954570511",
+    "direccion_raw": "Avda. de la Palmera, 58, 41012 Sevilla",
+    "web_raw": "https://www.tabladilla.com/",
+    "email_raw": "secretaria@tabladilla.com",
+    "name_map": "Col. de Fomento Tabladilla",
+    "area": "El Porvenir / Sur",
+    "lat": 37.3608398,
+    "lng": -5.9827581,
+    "_sin_coordenadas": false,
+    "id": "sev-0044",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Avda. de la Palmera, 58, 41012 Sevilla",
+    "nombre_normalizado": "col de fomento tabladilla",
+    "telefono": "954570511",
+    "web": "https://www.tabladilla.com/",
+    "email": "secretaria@tabladilla.com",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 16,
+    "nombre_raw": "Col. Huerta Santa Ana",
+    "telefono_raw": "954717289",
+    "direccion_raw": "Avda. Europa 44, 41960 Gines",
+    "web_raw": "https://huertana.es",
+    "email_raw": "secretaria@huertana.es",
+    "name_map": "Col. Huerta Santa Ana",
+    "area": "Gines",
+    "lat": 37.383944,
+    "lng": -6.07119,
+    "_sin_coordenadas": false,
+    "id": "sev-0008",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Avda. Europa 44, 41960 Gines",
+    "nombre_normalizado": "col huerta santa ana",
+    "telefono": "954717289",
+    "web": "https://huertana.es",
+    "email": "secretaria@huertana.es",
+    "municipio": "Gines"
+  },
+  {
+    "numero": 17,
+    "nombre_raw": "Col. Internacional Almenar",
+    "telefono_raw": "955679127",
+    "direccion_raw": "Ronda de Altair, 2, Urbanización La Motilla, 41703 Dos Hermanas,\n                Sevilla",
+    "web_raw": "https://colegioalminar.es/",
+    "email_raw": "colegio@alminar.es",
+    "name_map": "Col. Internacional Almenar",
+    "area": "Dos Hermanas",
+    "lat": 37.283689,
+    "lng": -5.9226718,
+    "_sin_coordenadas": false,
+    "id": "sev-0009",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Ronda de Altair, 2, Urbanización La Motilla, 41703 Dos Hermanas,\n                Sevilla",
+    "nombre_normalizado": "col internacional almenar",
+    "telefono": "955679127",
+    "web": "https://colegioalminar.es/",
+    "email": "colegio@alminar.es",
+    "municipio": "Dos Hermanas"
+  },
+  {
+    "numero": 18,
+    "nombre_raw": "Col. La Inmaculada (Jesuitinas)",
+    "telefono_raw": "954270063",
+    "direccion_raw": "C/ Jesús del Gran Poder, 1, 41002 Sevilla",
+    "web_raw": "https://www.jesuitinas-sevilla.es/",
+    "email_raw": "secretaria@colegiolainmaculadasevilla.com",
+    "name_map": "Col. La Inmaculada (Jesuitinas)",
+    "area": "Central / Alameda",
+    "lat": 37.3946834,
+    "lng": -5.9959183,
+    "_sin_coordenadas": false,
+    "id": "sev-0045",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ Jesús del Gran Poder, 1, 41002 Sevilla",
+    "nombre_normalizado": "col la inmaculada jesuitinas",
+    "telefono": "954270063",
+    "web": "https://www.jesuitinas-sevilla.es/",
+    "email": null,
+    "municipio": "Sevilla",
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ]
+  },
+  {
+    "numero": 19,
+    "nombre_raw": "Col. Ntra. Sra. de la Asunción (Carmona)",
+    "telefono_raw": "954190623",
+    "direccion_raw": "C/ Bailén, 32, 41001 Sevilla",
+    "web_raw": null,
+    "email_raw": "secretaria@carmelitassevilla.es",
+    "name_map": "Col. Ntra. Sra. de la Asunción (Carmona)",
+    "area": "Carmona",
+    "lat": 37.470818,
+    "lng": -5.6388032,
+    "_sin_coordenadas": false,
+    "id": "sev-0046",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ Bailén, 32, 41001 Sevilla",
+    "nombre_normalizado": "col ntra sra de la asuncion carmona",
+    "telefono": "954190623",
+    "web": null,
+    "email": "secretaria@carmelitassevilla.es",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 20,
+    "nombre_raw": "Col. Ntra. Sra. de los Reyes (Mercedarias)",
+    "telefono_raw": "954370550",
+    "direccion_raw": "C/ Calatrava, 38, 41003 Sevilla",
+    "web_raw": "https://www.colegiomercedariasevilla.com/",
+    "email_raw": "secretaria@carmelitassevilla.es",
+    "name_map": "Col. Ntra. Sra. de los Reyes (Mercedarias)",
+    "area": "Central Seville",
+    "lat": 37.40185,
+    "lng": -5.99428,
+    "_sin_coordenadas": false,
+    "id": "sev-0047",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ Calatrava, 38, 41003 Sevilla",
+    "nombre_normalizado": "col ntra sra de los reyes mercedarias",
+    "telefono": "954370550",
+    "web": "https://www.colegiomercedariasevilla.com/",
+    "email": null,
+    "municipio": "Sevilla",
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ]
+  },
+  {
+    "numero": 21,
+    "nombre_raw": "Col. Ntra. Sra. del Águila (Alcalá de Guadaíra)",
+    "telefono_raw": "955687360",
+    "direccion_raw": "C/ Mairena, 36-38, 41500 Alcalá de Guadaíra",
+    "web_raw": "https://alcala.salesianos.edu/",
+    "email_raw": "secretaria@carmelitassevilla.es",
+    "name_map": "Col. Ntra. Sra. del Águila (Alcalá de Guadaíra)",
+    "area": "Alcalá de Guadaíra",
+    "lat": 37.3379,
+    "lng": -5.8433,
+    "_sin_coordenadas": false,
+    "id": "sev-0050",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ Mairena, 36-38, 41500 Alcalá de Guadaíra",
+    "nombre_normalizado": "col ntra sra del aguila alcala de guadaira",
+    "telefono": "955687360",
+    "web": "https://alcala.salesianos.edu/",
+    "email": null,
+    "municipio": "Alcalá de Guadaíra",
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ]
+  },
+  {
+    "numero": 22,
+    "nombre_raw": "Col. Ntra. Sra. del Carmen",
+    "telefono_raw": "954614040",
+    "direccion_raw": "C/ Bailén, 32, 41001 Sevilla",
+    "web_raw": "https://nscarmen.corazonistas.org/",
+    "email_raw": null,
+    "name_map": "Col. Ntra. Sra. del Carmen",
+    "area": "Central / Alameda",
+    "lat": 37.3907821,
+    "lng": -5.9982148,
+    "_sin_coordenadas": false,
+    "id": "sev-0048",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": null,
+    "nombre_normalizado": "col ntra sra del carmen",
+    "telefono": "954614040",
+    "web": "https://nscarmen.corazonistas.org/",
+    "email": null,
+    "flags": [
+      "EMAIL_PROPAGADO_LIMPIADO",
+      "DIRECCION_PROPAGADA_LIMPIADA"
+    ],
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 23,
+    "nombre_raw": "Col. Ntra. Sra. del Carmen (Mairena del Alcor)",
+    "telefono_raw": "955770691",
+    "direccion_raw": "C/ Bailén, 32, 41001 Sevilla",
+    "web_raw": null,
+    "email_raw": null,
+    "name_map": "Col. Ntra. Sra. del Carmen (Mairena del Alcor)",
+    "area": "Mairena del Alcor",
+    "lat": 37.3730933,
+    "lng": -5.7489246,
+    "_sin_coordenadas": false,
+    "id": "sev-0049",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": null,
+    "nombre_normalizado": "col ntra sra del carmen mairena del alcor",
+    "telefono": "955770691",
+    "web": null,
+    "email": null,
+    "flags": [
+      "EMAIL_PROPAGADO_LIMPIADO",
+      "DIRECCION_PROPAGADA_LIMPIADA"
+    ],
+    "municipio": "Mairena del Alcor"
+  },
+  {
+    "numero": 24,
+    "nombre_raw": "Col. SAFA (Alcalá de Guadaíra)",
+    "telefono_raw": "955685744",
+    "direccion_raw": "C/ San Agustín, s/n, 41500 Alcalá de Guadaíra, Sevilla",
+    "web_raw": "https://alcalareal.safa.edu/",
+    "email_raw": "alcalareal@safa.edu",
+    "name_map": "Col. SAFA (Alcalá de Guadaíra)",
+    "area": "Alcalá de Guadaíra",
+    "lat": 37.3397709,
+    "lng": -5.8408396,
+    "_sin_coordenadas": false,
+    "id": "sev-0055",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ San Agustín, s/n, 41500 Alcalá de Guadaíra, Sevilla",
+    "nombre_normalizado": "col safa alcala de guadaira",
+    "telefono": "955685744",
+    "web": "https://alcalareal.safa.edu/",
+    "email": "alcalareal@safa.edu",
+    "municipio": "Alcalá de Guadaíra"
+  },
+  {
+    "numero": 25,
+    "nombre_raw": "Col. Salesiano Ntra. Sra. del Carmen",
+    "telefono_raw": "955867842",
+    "direccion_raw": "Avda. San Juan Bosco, 13, 41710 Utrera",
+    "web_raw": "https://utrera.salesianos.edu",
+    "email_raw": "secretaria.utrera@salesianos.edu",
+    "name_map": "Col. Salesiano Ntra. Sra. del Carmen",
+    "area": "Utrera",
+    "lat": 37.175977,
+    "lng": -5.777608,
+    "_sin_coordenadas": false,
+    "id": "sev-0010",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Avda. San Juan Bosco, 13, 41710 Utrera",
+    "nombre_normalizado": "col salesiano ntra sra del carmen",
+    "telefono": "955867842",
+    "web": "https://utrera.salesianos.edu",
+    "email": "secretaria.utrera@salesianos.edu",
+    "municipio": "Utrera"
+  },
+  {
+    "numero": 26,
+    "nombre_raw": "Col. San Alberto Magno",
+    "telefono_raw": "954121259",
+    "direccion_raw": "C/ Juan de la Cueva, 4, 41009 Sevilla",
+    "web_raw": "https://www.sanalbertomagno.org/",
+    "email_raw": "secretaria@csamsevilla.com",
+    "name_map": "Col. San Alberto Magno",
+    "area": "Sevilla Este / Nervión",
+    "lat": 37.400697,
+    "lng": -5.9260271,
+    "_sin_coordenadas": false,
+    "id": "sev-0051",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ Juan de la Cueva, 4, 41009 Sevilla",
+    "nombre_normalizado": "col san alberto magno",
+    "telefono": "954121259",
+    "web": "https://www.sanalbertomagno.org/",
+    "email": null,
+    "municipio": "Sevilla",
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ]
+  },
+  {
+    "numero": 27,
+    "nombre_raw": "Col. San Blas (Carmona)",
+    "telefono_raw": "955649513",
+    "direccion_raw": "C/ San Blas, s/n, 41410 Carmona, Sevilla",
+    "web_raw": "https://sanblas41001021.wixsite.com/website",
+    "email_raw": "41001021.edu@juntadeandalucia.es",
+    "name_map": "Col. San Blas (Carmona)",
+    "area": "Carmona",
+    "lat": 37.47465,
+    "lng": -5.646,
+    "_sin_coordenadas": false,
+    "id": "sev-0056",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ San Blas, s/n, 41410 Carmona, Sevilla",
+    "nombre_normalizado": "col san blas carmona",
+    "telefono": "955649513",
+    "web": "https://sanblas41001021.wixsite.com/website",
+    "email": null,
+    "municipio": "Carmona",
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ]
+  },
+  {
+    "numero": 28,
+    "nombre_raw": "Col. San Eustaquio (Sanlúcar la Mayor)",
+    "telefono_raw": "955622510",
+    "direccion_raw": "C/ San Eustaquio, s/n, 41800 Sanlúcar la Mayor, Sevilla",
+    "web_raw": "https://www.saneustaquio.es",
+    "email_raw": null,
+    "name_map": "Col. San Eustaquio (Sanlúcar la Mayor)",
+    "area": "Sanlúcar la Mayor",
+    "lat": 37.39203,
+    "lng": -6.19966,
+    "_sin_coordenadas": false,
+    "id": "sev-0062",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ San Eustaquio, s/n, 41800 Sanlúcar la Mayor, Sevilla",
+    "nombre_normalizado": "col san eustaquio sanlucar la mayor",
+    "telefono": "955622510",
+    "web": "https://www.saneustaquio.es",
+    "email": null,
+    "municipio": "Sanlúcar la Mayor"
+  },
+  {
+    "numero": 29,
+    "nombre_raw": "Col. San Hermenegildo",
+    "telefono_raw": "954720127",
+    "direccion_raw": "C/ Camino de los Frailes, s/n, 41702 Dos Hermanas",
+    "web_raw": "https://colegiosanhermenegildo.org",
+    "email_raw": "sanhermenegildotitular@colegiosamigonianos.org",
+    "name_map": "Col. San Hermenegildo",
+    "area": "Montequinto",
+    "lat": 37.283689,
+    "lng": -5.922672,
+    "_sin_coordenadas": false,
+    "id": "sev-0011",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ Camino de los Frailes, s/n, 41702 Dos Hermanas",
+    "nombre_normalizado": "col san hermenegildo",
+    "telefono": "954720127",
+    "web": "https://colegiosanhermenegildo.org",
+    "email": null,
+    "municipio": "Dos Hermanas",
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ]
+  },
+  {
+    "numero": 30,
+    "nombre_raw": "Col. San José",
+    "telefono_raw": "954218353",
+    "direccion_raw": "C/ San José, 5, 41003 Sevilla",
+    "web_raw": "https://www.colegiosanjosesscc.es/",
+    "email_raw": "secretaria@colegiosanjosesevilla.com",
+    "name_map": "Col. San José",
+    "area": "La Rinconada",
+    "lat": 37.480118,
+    "lng": -5.942736,
+    "_sin_coordenadas": false,
+    "id": "sev-0052",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ San José, 5, 41003 Sevilla",
+    "nombre_normalizado": "col san jose",
+    "telefono": "954218353",
+    "web": "https://www.colegiosanjosesscc.es/",
+    "email": null,
+    "municipio": "Sevilla",
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ]
+  },
+  {
+    "numero": 31,
+    "nombre_raw": "Col. San José (Hijas de la Caridad)",
+    "telefono_raw": "954218353",
+    "direccion_raw": "C/ San José, 5, 41003 Sevilla",
+    "web_raw": "https://www.colegiosanjosehijascaridad.es/",
+    "email_raw": null,
+    "name_map": "Col. San José (Hijas de la Caridad)",
+    "area": "Central / Encarnación",
+    "lat": 37.3879951,
+    "lng": -5.9889092,
+    "_sin_coordenadas": false,
+    "id": "sev-0053",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ San José, 5, 41003 Sevilla",
+    "nombre_normalizado": "col san jose hijas de la caridad",
+    "telefono": "954218353",
+    "web": "https://www.colegiosanjosehijascaridad.es/",
+    "email": null,
+    "flags": [
+      "EMAIL_PROPAGADO_LIMPIADO"
+    ],
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 32,
+    "nombre_raw": "Col. San José Obrero (Mairena del Alcor)",
+    "telefono_raw": "955776320",
+    "direccion_raw": "Av. de San José Obrero, s/n, 41510 Mairena del Alcor, Sevilla",
+    "web_raw": null,
+    "email_raw": null,
+    "name_map": "Col. San José Obrero (Mairena del Alcor)",
+    "area": "Mairena del Alcor",
+    "lat": 37.3730933,
+    "lng": -5.7489246,
+    "_sin_coordenadas": false,
+    "id": "sev-0057",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Av. de San José Obrero, s/n, 41510 Mairena del Alcor, Sevilla",
+    "nombre_normalizado": "col san jose obrero mairena del alcor",
+    "telefono": "955776320",
+    "web": null,
+    "email": null,
+    "municipio": "Mairena del Alcor"
+  },
+  {
+    "numero": 33,
+    "nombre_raw": "Col. San Miguel (Alcalá de Guadaíra)",
+    "telefono_raw": "955684167",
+    "direccion_raw": "C/ Ntra. Sra. del Águila, 6, 41500 Alcalá de Guadaíra, Sevilla",
+    "web_raw": null,
+    "email_raw": null,
+    "name_map": "Col. San Miguel (Alcalá de Guadaíra)",
+    "area": "Alcalá de Guadaíra",
+    "lat": 37.3397709,
+    "lng": -5.8408396,
+    "_sin_coordenadas": false,
+    "id": "sev-0058",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ Ntra. Sra. del Águila, 6, 41500 Alcalá de Guadaíra, Sevilla",
+    "nombre_normalizado": "col san miguel alcala de guadaira",
+    "telefono": "955684167",
+    "web": null,
+    "email": null,
+    "municipio": "Alcalá de Guadaíra"
+  },
+  {
+    "numero": 34,
+    "nombre_raw": "Col. San Sebastián (El Viso del Alcor)",
+    "telefono_raw": "955756120",
+    "direccion_raw": "C/ San Sebastián, s/n, 41520 El Viso del Alcor, Sevilla",
+    "web_raw": null,
+    "email_raw": null,
+    "name_map": "Col. San Sebastián (El Viso del Alcor)",
+    "area": "El Viso del Alcor",
+    "lat": 37.3891783,
+    "lng": -5.7224779,
+    "_sin_coordenadas": false,
+    "id": "sev-0059",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ San Sebastián, s/n, 41520 El Viso del Alcor, Sevilla",
+    "nombre_normalizado": "col san sebastian el viso del alcor",
+    "telefono": "955756120",
+    "web": null,
+    "email": null,
+    "municipio": "El Viso del Alcor"
+  },
+  {
+    "numero": 35,
+    "nombre_raw": "Col. Santa María del Alcor (El Viso del Alcor)",
+    "telefono_raw": "955756050",
+    "direccion_raw": "C/ Real, 56, 41520 El Viso del Alcor, Sevilla",
+    "web_raw": null,
+    "email_raw": null,
+    "name_map": "Col. Santa María del Alcor (El Viso del Alcor)",
+    "area": "El Viso del Alcor",
+    "lat": 37.3862066,
+    "lng": -5.7220207,
+    "_sin_coordenadas": false,
+    "id": "sev-0060",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ Real, 56, 41520 El Viso del Alcor, Sevilla",
+    "nombre_normalizado": "col santa maria del alcor el viso del alcor",
+    "telefono": "955756050",
+    "web": null,
+    "email": null,
+    "municipio": "El Viso del Alcor"
+  },
+  {
+    "numero": 36,
+    "nombre_raw": "Colegio La Luna",
+    "telefono_raw": "954404569",
+    "direccion_raw": "Avenida de La Ciencia, 73, 41020 Sevilla",
+    "web_raw": "http://www.colegiolaluna.com/",
+    "email_raw": null,
+    "lat": 37.4791706,
+    "lng": -5.9283291,
+    "area": null,
+    "_sin_coordenadas": true,
+    "id": "sev-0067",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Avenida de La Ciencia, 73, 41020 Sevilla",
+    "nombre_normalizado": "colegio la luna",
+    "telefono": "954404569",
+    "web": "http://www.colegiolaluna.com/",
+    "email": null,
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 37,
+    "nombre_raw": "Colegio San Francisco De Paula",
+    "telefono_raw": "954224382",
+    "direccion_raw": "Calle Santa Ángela De La Cruz, 11, 41003 Sevilla",
+    "web_raw": "https://colegiosfpaula.com/",
+    "email_raw": "sfpaula@sfpaula.com",
+    "lat": 37.3933725,
+    "lng": -5.9906103,
+    "area": null,
+    "_sin_coordenadas": true,
+    "id": "sev-0068",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Calle Santa Ángela De La Cruz, 11, 41003 Sevilla",
+    "nombre_normalizado": "colegio san francisco de paula",
+    "telefono": "954224382",
+    "web": "https://colegiosfpaula.com/",
+    "email": "sfpaula@sfpaula.com",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 38,
+    "nombre_raw": "ELI - English Language Institute",
+    "telefono_raw": "954675667",
+    "direccion_raw": "C/ Larra, 1, 41005 Sevilla; it also has several centres across\n                Sevilla city and the metropolitan area",
+    "web_raw": "https://www.eli.es/",
+    "email_raw": "recruitment@eli.es",
+    "name_map": "ELI - English Language Institute",
+    "area": "Nervión / central address",
+    "lat": 37.3829853,
+    "lng": -5.9739859,
+    "_sin_coordenadas": false,
+    "id": "sev-0012",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 2,
+    "direccion_completa": "C/ Larra, 1, 41005 Sevilla; it also has several centres across\n                Sevilla city and the metropolitan area",
+    "nombre_normalizado": "eli english language institute",
+    "telefono": "954675667",
+    "web": "https://www.eli.es/",
+    "email": "recruitment@eli.es",
+    "flags": [
+      "CONFIRMADO_2DA_FUENTE"
+    ],
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 39,
+    "nombre_raw": "English Connection Sevilla — Bermejales",
+    "telefono_raw": "638273132",
+    "direccion_raw": "Paseo de Europa, 14b, 41012 Sevilla",
+    "web_raw": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email_raw": "sevilla.losremedios@englishconnection.es",
+    "name_map": "English Connection Sevilla — Bermejales",
+    "area": "Bermejales",
+    "lat": 37.346484,
+    "lng": -5.980055,
+    "_sin_coordenadas": false,
+    "id": "sev-0013",
+    "marca_id": "english_connection",
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Paseo de Europa, 14b, 41012 Sevilla",
+    "nombre_normalizado": "english connection sevilla bermejales",
+    "telefono": "638273132",
+    "web": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email": "sevilla.losremedios@englishconnection.es",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 40,
+    "nombre_raw": "English Connection Sevilla — Centro",
+    "telefono_raw": "602249885",
+    "direccion_raw": "Calle O'Donnell 3, 41001 Sevilla",
+    "web_raw": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email_raw": "sevilla.losremedios@englishconnection.es",
+    "name_map": "English Connection Sevilla — Centro",
+    "area": "Centro",
+    "lat": 37.392401,
+    "lng": -5.995273,
+    "_sin_coordenadas": false,
+    "id": "sev-0014",
+    "marca_id": "english_connection",
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 5,
+    "direccion_completa": "Calle O'Donnell 3, 41001 Sevilla",
+    "nombre_normalizado": "english connection sevilla centro",
+    "telefono": "602249885",
+    "web": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email": "sevilla.losremedios@englishconnection.es",
+    "flags": [
+      "CONFIRMADO_2DA_FUENTE",
+      "CONFIRMADO_2DA_FUENTE",
+      "CONFIRMADO_2DA_FUENTE",
+      "CONFIRMADO_2DA_FUENTE"
+    ],
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 41,
+    "nombre_raw": "English Connection Sevilla — Cerro del Águila",
+    "telefono_raw": "607065030",
+    "direccion_raw": "Calle Galicia 19, 41006 Sevilla",
+    "web_raw": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email_raw": "sevilla.losremedios@englishconnection.es",
+    "name_map": "English Connection Sevilla — Cerro del Águila",
+    "area": "Cerro del Águila",
+    "lat": 37.370076,
+    "lng": -5.957103,
+    "_sin_coordenadas": false,
+    "id": "sev-0015",
+    "marca_id": "english_connection",
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Calle Galicia 19, 41006 Sevilla",
+    "nombre_normalizado": "english connection sevilla cerro del aguila",
+    "telefono": "607065030",
+    "web": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email": "sevilla.losremedios@englishconnection.es",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 42,
+    "nombre_raw": "English Connection Sevilla — Este Ciencias",
+    "telefono_raw": "619016169",
+    "direccion_raw": "Avda. de las Ciencias 16, 41020 Sevilla",
+    "web_raw": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email_raw": "sevilla.losremedios@englishconnection.es",
+    "name_map": "English Connection Sevilla — Este Ciencias",
+    "area": "Sevilla Este",
+    "lat": 37.394843,
+    "lng": -5.921283,
+    "_sin_coordenadas": false,
+    "id": "sev-0016",
+    "marca_id": "english_connection",
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Avda. de las Ciencias 16, 41020 Sevilla",
+    "nombre_normalizado": "english connection sevilla este ciencias",
+    "telefono": "619016169",
+    "web": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email": "sevilla.losremedios@englishconnection.es",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 43,
+    "nombre_raw": "English Connection Sevilla — Este Góndolas",
+    "telefono_raw": "669917092",
+    "direccion_raw": "C. Cueva de Menga 3, 41020 Sevilla",
+    "web_raw": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email_raw": "sevilla.losremedios@englishconnection.es",
+    "name_map": "English Connection Sevilla — Este Góndolas",
+    "area": "Sevilla Este",
+    "lat": 37.399333,
+    "lng": -5.943663,
+    "_sin_coordenadas": false,
+    "id": "sev-0017",
+    "marca_id": "english_connection",
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C. Cueva de Menga 3, 41020 Sevilla",
+    "nombre_normalizado": "english connection sevilla este gondolas",
+    "telefono": "669917092",
+    "web": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email": "sevilla.losremedios@englishconnection.es",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 44,
+    "nombre_raw": "English Connection Sevilla — Gran Plaza",
+    "telefono_raw": "613278001",
+    "direccion_raw": "Avda. de la Ciudad Jardín 8, 41005 Sevilla",
+    "web_raw": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email_raw": "sevilla.losremedios@englishconnection.es",
+    "name_map": "English Connection Sevilla — Gran Plaza",
+    "area": "Gran Plaza",
+    "lat": 37.380482,
+    "lng": -5.96616,
+    "_sin_coordenadas": false,
+    "id": "sev-0018",
+    "marca_id": "english_connection",
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Avda. de la Ciudad Jardín 8, 41005 Sevilla",
+    "nombre_normalizado": "english connection sevilla gran plaza",
+    "telefono": "613278001",
+    "web": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email": "sevilla.losremedios@englishconnection.es",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 45,
+    "nombre_raw": "English Connection Sevilla — La Salle",
+    "telefono_raw": "621007712",
+    "direccion_raw": "Avda. de la Salle 26, 41008 Sevilla",
+    "web_raw": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email_raw": "sevilla.losremedios@englishconnection.es",
+    "name_map": "English Connection Sevilla — La Salle",
+    "area": "La Salle",
+    "lat": 37.407578,
+    "lng": -5.971489,
+    "_sin_coordenadas": false,
+    "id": "sev-0019",
+    "marca_id": "english_connection",
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Avda. de la Salle 26, 41008 Sevilla",
+    "nombre_normalizado": "english connection sevilla la salle",
+    "telefono": "621007712",
+    "web": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email": "sevilla.losremedios@englishconnection.es",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 46,
+    "nombre_raw": "English Connection Sevilla — Los Remedios",
+    "telefono_raw": "640178897",
+    "direccion_raw": "Calle Asunción, 59, 41011 Sevilla",
+    "web_raw": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email_raw": "sevilla.losremedios@englishconnection.es",
+    "name_map": "English Connection Sevilla — Los Remedios",
+    "area": "Los Remedios",
+    "lat": 37.374014,
+    "lng": -5.999578,
+    "_sin_coordenadas": false,
+    "id": "sev-0020",
+    "marca_id": "english_connection",
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Calle Asunción, 59, 41011 Sevilla",
+    "nombre_normalizado": "english connection sevilla los remedios",
+    "telefono": "640178897",
+    "web": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email": "sevilla.losremedios@englishconnection.es",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 47,
+    "nombre_raw": "English Connection Sevilla — Macarena",
+    "telefono_raw": "954900810",
+    "direccion_raw": "C. Resolana 37, 41002 Sevilla",
+    "web_raw": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email_raw": "sevilla.losremedios@englishconnection.es",
+    "name_map": "English Connection Sevilla — Macarena",
+    "area": "Macarena",
+    "lat": 37.40341,
+    "lng": -5.993279,
+    "_sin_coordenadas": false,
+    "id": "sev-0021",
+    "marca_id": "english_connection",
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C. Resolana 37, 41002 Sevilla",
+    "nombre_normalizado": "english connection sevilla macarena",
+    "telefono": "954900810",
+    "web": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email": "sevilla.losremedios@englishconnection.es",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 48,
+    "nombre_raw": "English Connection Sevilla — Parque Alcosa",
+    "telefono_raw": "641137822",
+    "direccion_raw": "Av. Turia 3, Puerta C2, 41019 Sevilla",
+    "web_raw": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email_raw": "sevilla.losremedios@englishconnection.es",
+    "name_map": "English Connection Sevilla — Parque Alcosa",
+    "area": "Parque Alcosa",
+    "lat": 37.407069,
+    "lng": -5.928665,
+    "_sin_coordenadas": false,
+    "id": "sev-0022",
+    "marca_id": "english_connection",
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Av. Turia 3, Puerta C2, 41019 Sevilla",
+    "nombre_normalizado": "english connection sevilla parque alcosa",
+    "telefono": "641137822",
+    "web": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email": "sevilla.losremedios@englishconnection.es",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 49,
+    "nombre_raw": "English Connection Sevilla — Parsi",
+    "telefono_raw": "633935243",
+    "direccion_raw": "Calle Parsi 6, 41, 41016 Sevilla",
+    "web_raw": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email_raw": "sevilla.losremedios@englishconnection.es",
+    "name_map": "English Connection Sevilla — Parsi",
+    "area": "Parsi",
+    "lat": 37.376638,
+    "lng": -5.919062,
+    "_sin_coordenadas": false,
+    "id": "sev-0023",
+    "marca_id": "english_connection",
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Calle Parsi 6, 41, 41016 Sevilla",
+    "nombre_normalizado": "english connection sevilla parsi",
+    "telefono": "633935243",
+    "web": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email": "sevilla.losremedios@englishconnection.es",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 50,
+    "nombre_raw": "English Connection Sevilla — Pinomontano",
+    "telefono_raw": "955381613",
+    "direccion_raw": "C. Corral de los Olmos 2, Bajo, 41015 Sevilla",
+    "web_raw": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email_raw": "sevilla.losremedios@englishconnection.es",
+    "name_map": "English Connection Sevilla — Pinomontano",
+    "area": "Pinomontano",
+    "lat": 37.417942,
+    "lng": -5.969986,
+    "_sin_coordenadas": false,
+    "id": "sev-0024",
+    "marca_id": "english_connection",
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C. Corral de los Olmos 2, Bajo, 41015 Sevilla",
+    "nombre_normalizado": "english connection sevilla pinomontano",
+    "telefono": "955381613",
+    "web": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email": "sevilla.losremedios@englishconnection.es",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 51,
+    "nombre_raw": "English Connection Sevilla — Reina Mercedes",
+    "telefono_raw": "665949429",
+    "direccion_raw": "Avda. Reina Mercedes, 49, 41012 Sevilla",
+    "web_raw": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email_raw": "sevilla.losremedios@englishconnection.es",
+    "name_map": "English Connection Sevilla — Reina Mercedes",
+    "area": "Reina Mercedes",
+    "lat": 37.358276,
+    "lng": -5.988318,
+    "_sin_coordenadas": false,
+    "id": "sev-0025",
+    "marca_id": "english_connection",
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Avda. Reina Mercedes, 49, 41012 Sevilla",
+    "nombre_normalizado": "english connection sevilla reina mercedes",
+    "telefono": "665949429",
+    "web": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email": "sevilla.losremedios@englishconnection.es",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 52,
+    "nombre_raw": "English Connection Sevilla — San Jerónimo",
+    "telefono_raw": "604965342",
+    "direccion_raw": "Calle Burgos 22, Esq. Marruecos, 41015 Sevilla",
+    "web_raw": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email_raw": "sevilla.losremedios@englishconnection.es",
+    "name_map": "English Connection Sevilla — San Jerónimo",
+    "area": "San Jerónimo",
+    "lat": 37.423979,
+    "lng": -5.985571,
+    "_sin_coordenadas": false,
+    "id": "sev-0026",
+    "marca_id": "english_connection",
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Calle Burgos 22, Esq. Marruecos, 41015 Sevilla",
+    "nombre_normalizado": "english connection sevilla san jeronimo",
+    "telefono": "604965342",
+    "web": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email": "sevilla.losremedios@englishconnection.es",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 53,
+    "nombre_raw": "English Connection Sevilla — Santa Justa",
+    "telefono_raw": "854557184",
+    "direccion_raw": "C/ Sinaí, 30, 41007 Sevilla",
+    "web_raw": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email_raw": "sevilla.losremedios@englishconnection.es",
+    "name_map": "English Connection Sevilla — Santa Justa",
+    "area": "Santa Justa",
+    "lat": 37.390386,
+    "lng": -5.969926,
+    "_sin_coordenadas": false,
+    "id": "sev-0027",
+    "marca_id": "english_connection",
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ Sinaí, 30, 41007 Sevilla",
+    "nombre_normalizado": "english connection sevilla santa justa",
+    "telefono": "854557184",
+    "web": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email": "sevilla.losremedios@englishconnection.es",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 54,
+    "nombre_raw": "English Connection Sevilla — Tharsis",
+    "telefono_raw": "636307288",
+    "direccion_raw": "Calle Carme Martínez Sancho 10, 41008 Sevilla",
+    "web_raw": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email_raw": "sevilla.losremedios@englishconnection.es",
+    "name_map": "English Connection Sevilla — Tharsis",
+    "area": "Tharsis",
+    "lat": 37.399142,
+    "lng": -5.969881,
+    "_sin_coordenadas": false,
+    "id": "sev-0028",
+    "marca_id": "english_connection",
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Calle Carme Martínez Sancho 10, 41008 Sevilla",
+    "nombre_normalizado": "english connection sevilla tharsis",
+    "telefono": "636307288",
+    "web": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email": "sevilla.losremedios@englishconnection.es",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 55,
+    "nombre_raw": "English Connection Sevilla — Triana",
+    "telefono_raw": "681676526",
+    "direccion_raw": "C/ José María del Campo, Local 1, 41010 Sevilla",
+    "web_raw": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email_raw": "sevilla.losremedios@englishconnection.es",
+    "name_map": "English Connection Sevilla — Triana",
+    "area": "Triana",
+    "lat": 37.383884,
+    "lng": -6.010804,
+    "_sin_coordenadas": false,
+    "id": "sev-0029",
+    "marca_id": "english_connection",
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ José María del Campo, Local 1, 41010 Sevilla",
+    "nombre_normalizado": "english connection sevilla triana",
+    "telefono": "681676526",
+    "web": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email": "sevilla.losremedios@englishconnection.es",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 56,
+    "nombre_raw": "English Connection Sevilla — Viapol",
+    "telefono_raw": "619088550",
+    "direccion_raw": "C. Presidente Cárdenas 6, 41013 Sevilla",
+    "web_raw": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email_raw": "sevilla.losremedios@englishconnection.es",
+    "name_map": "English Connection Sevilla — Viapol",
+    "area": "Viapol",
+    "lat": 37.374939,
+    "lng": -5.977831,
+    "_sin_coordenadas": false,
+    "id": "sev-0030",
+    "marca_id": "english_connection",
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C. Presidente Cárdenas 6, 41013 Sevilla",
+    "nombre_normalizado": "english connection sevilla viapol",
+    "telefono": "619088550",
+    "web": "https://englishconnection.es/academia-ingles/sevilla/",
+    "email": "sevilla.losremedios@englishconnection.es",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 57,
+    "nombre_raw": "Europa International School",
+    "telefono_raw": "954717069",
+    "direccion_raw": "Carretera A-8076, km 6, 41807 Espartinas, Sevilla",
+    "web_raw": "https://www.europaschool.org/",
+    "email_raw": "rph@europaschool.org",
+    "name_map": "Europa International School",
+    "area": "Espartinas",
+    "lat": 37.3814997,
+    "lng": -6.125652,
+    "_sin_coordenadas": false,
+    "id": "sev-0031",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Carretera A-8076, km 6, 41807 Espartinas, Sevilla",
+    "nombre_normalizado": "europa international school",
+    "telefono": "954717069",
+    "web": "https://www.europaschool.org/",
+    "email": "rph@europaschool.org",
+    "municipio": "Espartinas"
+  },
+  {
+    "numero": 58,
+    "nombre_raw": "Giralda Center / Spanish House Idiomas",
+    "telefono_raw": "954221346",
+    "direccion_raw": "C/ Gonzalo Bilbao, 29, Local 3, 41003 Sevilla",
+    "web_raw": "https://www.giraldacenter.com",
+    "email_raw": null,
+    "name_map": "Giralda Center / Spanish House Idiomas",
+    "area": "Central Seville",
+    "lat": 37.392825,
+    "lng": -5.982674,
+    "_sin_coordenadas": false,
+    "id": "sev-0063",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ Gonzalo Bilbao, 29, Local 3, 41003 Sevilla",
+    "nombre_normalizado": "giralda center spanish house idiomas",
+    "telefono": "954221346",
+    "web": "https://www.giraldacenter.com",
+    "email": null,
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 59,
+    "nombre_raw": "Highlands School Sevilla",
+    "telefono_raw": "955990150",
+    "direccion_raw": "Carretera de Utrera, km 4.5, 41089 Montequinto, Sevilla",
+    "web_raw": "https://www.highlandssevilla.es/",
+    "email_raw": "atencionfamilias@highlandssevilla.es",
+    "name_map": "Highlands School Sevilla",
+    "area": "Montequinto",
+    "lat": 37.3431162,
+    "lng": -5.9069299,
+    "_sin_coordenadas": false,
+    "id": "sev-0032",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Carretera de Utrera, km 4.5, 41089 Montequinto, Sevilla",
+    "nombre_normalizado": "highlands school sevilla",
+    "telefono": "955990150",
+    "web": "https://www.highlandssevilla.es/",
+    "email": "atencionfamilias@highlandssevilla.es",
+    "municipio": "Dos Hermanas"
+  },
+  {
+    "numero": 60,
+    "nombre_raw": "Liceo Francés",
+    "telefono_raw": "954907604",
+    "direccion_raw": "Calle Torneo, 167, 41200 Sevilla",
+    "web_raw": "https://lfsevilla.com/",
+    "email_raw": "info@lfsevilla.com",
+    "lat": 37.4034516,
+    "lng": -5.9958423,
+    "area": null,
+    "_sin_coordenadas": true,
+    "id": "sev-0070",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Calle Torneo, 167, 41200 Sevilla",
+    "nombre_normalizado": "liceo frances",
+    "telefono": "954907604",
+    "web": "https://lfsevilla.com/",
+    "email": "info@lfsevilla.com",
+    "municipio": "Alcalá del Río"
+  },
+  {
+    "numero": 61,
+    "nombre_raw": "My English School Sevilla",
+    "telefono_raw": "955944688",
+    "direccion_raw": "Avenida de la República Argentina, 16, 41010 Sevilla",
+    "web_raw": "https://www.myes.school/es/cursos-de-ingles-sevilla/",
+    "email_raw": "info@myes.es",
+    "name_map": "My English School Sevilla",
+    "area": "Los Remedios",
+    "lat": 37.3742211,
+    "lng": -6.0011416,
+    "_sin_coordenadas": false,
+    "id": "sev-0033",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Avenida de la República Argentina, 16, 41010 Sevilla",
+    "nombre_normalizado": "my english school sevilla",
+    "telefono": "955944688",
+    "web": "https://www.myes.school/es/cursos-de-ingles-sevilla/",
+    "email": null,
+    "municipio": "Sevilla",
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ]
+  },
+  {
+    "numero": 62,
+    "nombre_raw": "Notting Hill — Academia de Idiomas y Enseñanza",
+    "telefono_raw": "954002289",
+    "direccion_raw": "C/ Virgen de la Estrella, 10, 41011 Sevilla (Los Remedios)",
+    "web_raw": "https://www.nottinghillacademia.com/",
+    "email_raw": "nottingsevillahill@gmail.com",
+    "name_map": "Notting Hill — Academia de Idiomas y Enseñanza",
+    "area": "Los Remedios / C. Virgen de la Estrella",
+    "lat": 37.3742203,
+    "lng": -6.0005538,
+    "_sin_coordenadas": false,
+    "id": "sev-0034",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ Virgen de la Estrella, 10, 41011 Sevilla (Los Remedios)",
+    "nombre_normalizado": "notting hill academia de idiomas y ensenanza",
+    "telefono": "954002289",
+    "web": "https://www.nottinghillacademia.com/",
+    "email": "nottingsevillahill@gmail.com",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 63,
+    "nombre_raw": "Nuestra Señora de la Compasión",
+    "telefono_raw": "955668224",
+    "direccion_raw": "Avda. de Sevilla, 10, 41702 Dos Hermanas",
+    "web_raw": "https://www.nscompasion.org/",
+    "email_raw": "direccion@nscompasion.org",
+    "name_map": "Nuestra Señora de la Compasión",
+    "area": "Dos Hermanas",
+    "lat": 37.28707,
+    "lng": -5.92556,
+    "_sin_coordenadas": false,
+    "id": "sev-0064",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Avda. de Sevilla, 10, 41702 Dos Hermanas",
+    "nombre_normalizado": "nuestra senora de la compasion",
+    "telefono": "955668224",
+    "web": "https://www.nscompasion.org/",
+    "email": "direccion@nscompasion.org",
+    "municipio": "Dos Hermanas"
+  },
+  {
+    "numero": 64,
+    "nombre_raw": "Sagrada Familia (Utrera)",
+    "telefono_raw": "954860314",
+    "direccion_raw": "C/ Virgen de Consolación, 12, 41710 Utrera",
+    "web_raw": "https://www.sagradafamiliadeutrera.com/",
+    "email_raw": "41007874.edu@juntadeandalucia.es",
+    "name_map": "Sagrada Familia (Utrera)",
+    "area": "Utrera",
+    "lat": 37.18222,
+    "lng": -5.77955,
+    "_sin_coordenadas": false,
+    "id": "sev-0065",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ Virgen de Consolación, 12, 41710 Utrera",
+    "nombre_normalizado": "sagrada familia utrera",
+    "telefono": "954860314",
+    "web": "https://www.sagradafamiliadeutrera.com/",
+    "email": null,
+    "municipio": "Utrera",
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ]
+  },
+  {
+    "numero": 65,
+    "nombre_raw": "Salesianos San José (Alcalá de Guadaíra)",
+    "telefono_raw": null,
+    "direccion_raw": "C/ Ntra. Sra. del Águila, 2, 41500 Alcalá de Guadaíra, Sevilla",
+    "web_raw": "https://salesianosalcala.com",
+    "email_raw": "secretaria@salesianosalcala.com",
+    "name_map": "Salesianos San José (Alcalá de Guadaíra)",
+    "area": "Alcalá de Guadaíra",
+    "lat": 37.3360726,
+    "lng": -5.8465069,
+    "_sin_coordenadas": false,
+    "id": "sev-0035",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ Ntra. Sra. del Águila, 2, 41500 Alcalá de Guadaíra, Sevilla",
+    "nombre_normalizado": "salesianos san jose alcala de guadaira",
+    "telefono": null,
+    "web": "https://salesianosalcala.com",
+    "email": "secretaria@salesianosalcala.com",
+    "municipio": "Alcalá de Guadaíra"
+  },
+  {
+    "numero": 66,
+    "nombre_raw": "Santa María del Valle",
+    "telefono_raw": "954180302",
+    "direccion_raw": "Avda. Magdalena Sofía de Barat, 6, 41927 Mairena del Aljarafe",
+    "web_raw": "http://valle.fesofiabarat.es/",
+    "email_raw": "elena.gvallarino@fesofiabarat.es",
+    "name_map": "Santa María del Valle",
+    "area": "Mairena del Aljarafe",
+    "lat": 37.34671,
+    "lng": -6.04188,
+    "_sin_coordenadas": false,
+    "id": "sev-0066",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Avda. Magdalena Sofía de Barat, 6, 41927 Mairena del Aljarafe",
+    "nombre_normalizado": "santa maria del valle",
+    "telefono": "954180302",
+    "web": "http://valle.fesofiabarat.es/",
+    "email": "elena.gvallarino@fesofiabarat.es",
+    "municipio": "Mairena del Aljarafe"
+  },
+  {
+    "numero": 67,
+    "nombre_raw": "Sevilla Language Center",
+    "telefono_raw": "954214893",
+    "direccion_raw": "Paseo de Cristina, 3, mezzanine floor, 41001 Sevilla",
+    "web_raw": "https://www.sevillalanguagecenter.com/",
+    "email_raw": "info@sevillalanguagecenter.com",
+    "name_map": "Sevilla Language Center",
+    "area": "Central Seville",
+    "lat": 37.399754,
+    "lng": -5.9931325,
+    "_sin_coordenadas": false,
+    "id": "sev-0036",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Paseo de Cristina, 3, mezzanine floor, 41001 Sevilla",
+    "nombre_normalizado": "sevilla language center",
+    "telefono": "954214893",
+    "web": "https://www.sevillalanguagecenter.com/",
+    "email": "info@sevillalanguagecenter.com",
+    "municipio": "Sevilla"
+  },
+  {
+    "numero": 68,
+    "nombre_raw": "St. Angela International School Sevilla",
+    "telefono_raw": "639227458",
+    "direccion_raw": "Calle Canarias, 269, Los Llanos Business Park, Salteras-Sevilla",
+    "web_raw": "https://saintangelainternationalschoolsevilla.com/",
+    "email_raw": "workwithus@stangelainternationalschoolsevilla.com",
+    "name_map": "St. Angela International School Sevilla",
+    "area": "Salteras / La Cartuja area",
+    "lat": 37.45912,
+    "lng": -6.05506,
+    "_sin_coordenadas": false,
+    "id": "sev-0037",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Calle Canarias, 269, Los Llanos Business Park, Salteras-Sevilla",
+    "nombre_normalizado": "st angela international school sevilla",
+    "telefono": "639227458",
+    "web": "https://saintangelainternationalschoolsevilla.com/",
+    "email": null,
+    "municipio": "Sevilla",
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ]
+  },
+  {
+    "numero": 69,
+    "nombre_raw": "St. Mary's School",
+    "telefono_raw": "954690072",
+    "direccion_raw": "C/ Virgen de la Antigua, 35, 41011 Sevilla",
+    "web_raw": "https://stmaryschool.es/",
+    "email_raw": "secretaria@stmaryssevilla.com",
+    "name_map": "St. Mary's School",
+    "area": "Los Remedios",
+    "lat": 37.3729783,
+    "lng": -6.000471,
+    "_sin_coordenadas": false,
+    "id": "sev-0054",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "C/ Virgen de la Antigua, 35, 41011 Sevilla",
+    "nombre_normalizado": "st mary s school",
+    "telefono": "954690072",
+    "web": "https://stmaryschool.es/",
+    "email": null,
+    "municipio": "Sevilla",
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ]
+  },
+  {
+    "numero": 70,
+    "nombre_raw": "Yago School Sevilla",
+    "telefono_raw": "955511234",
+    "direccion_raw": "Senior School, Av. Antonio Mairena, 54, Castilleja de la Cuesta,\n                41950 Sevilla",
+    "web_raw": "https://yagoschoolsevilla.com/",
+    "email_raw": "secretary@yagoschool.com",
+    "name_map": "Yago School Sevilla",
+    "area": "Castilleja de la Cuesta",
+    "lat": 37.39047,
+    "lng": -6.05591,
+    "_sin_coordenadas": false,
+    "id": "sev-0038",
+    "marca_id": null,
+    "fuente_origen": "BASELINE",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuentes": [
+      {
+        "source": "BASELINE_REPO",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "telefono",
+          "direccion",
+          "web",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "direccion_completa": "Senior School, Av. Antonio Mairena, 54, Castilleja de la Cuesta,\n                41950 Sevilla",
+    "nombre_normalizado": "yago school sevilla",
+    "telefono": "955511234",
+    "web": "https://yagoschoolsevilla.com/",
+    "email": null,
+    "municipio": "Castilleja de la Cuesta",
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ]
+  },
+  {
+    "id": "sev-9110",
+    "nombre": "Academia Afoban",
+    "nombre_raw": "Academia Afoban",
+    "nombre_normalizado": "academia afoban",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": null,
+    "lat": 37.3929305,
+    "lng": -5.9988064,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 71
+  },
+  {
+    "id": "sev-9108",
+    "nombre": "Academia CIDE. Refuerzo educativo e inglés",
+    "nombre_raw": "Academia CIDE. Refuerzo educativo e inglés",
+    "nombre_normalizado": "academia cide refuerzo educativo e ingles",
+    "municipio": "Dos Hermanas",
+    "cp": "41702",
+    "direccion": "Avenida 28 de Febrero, 3",
+    "direccion_completa": "Avenida 28 de Febrero, 3",
+    "lat": 37.2885126,
+    "lng": -5.9162436,
+    "telefono": "+34 640 10 66 06",
+    "web": "https://cidesevilla.com/",
+    "email": "info@cidesevilla.com",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng",
+          "telefono",
+          "web"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 72
+  },
+  {
+    "id": "sev-9172",
+    "nombre": "ACADEMIA OXFORD (Sevilla)",
+    "nombre_raw": "ACADEMIA OXFORD (Sevilla)",
+    "nombre_normalizado": "academia oxford sevilla",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "",
+    "direccion_completa": null,
+    "lat": null,
+    "lng": null,
+    "telefono": "954142402",
+    "web": null,
+    "email": "info@oxfordcarmona.com",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/academia-oxford-sevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 73
+  },
+  {
+    "id": "sev-9153",
+    "nombre": "AMERICAN LAND ACADEMY IN SPAIN Bollullos de la Mitación",
+    "nombre_raw": "AMERICAN LAND ACADEMY IN SPAIN Bollullos de la Mitación",
+    "nombre_normalizado": "american land academy in spain bollullos de la mitacion",
+    "municipio": "Bollullos de la Mitación",
+    "cp": "41110",
+    "direccion": "Avda. Pilas s/n - Parque P.I.B.O 41110 - Bollullos de la Mitación Datos de contact",
+    "direccion_completa": "Avda. Pilas s/n - Parque P.I.B.O 41110 - Bollullos de la Mitación Datos de contact",
+    "lat": null,
+    "lng": null,
+    "telefono": "955692474",
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/american-land-academy-in-spain-bollullos-de-la-mitacion/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [
+      "EMAIL_PLANTILLA_LIMPIADO"
+    ],
+    "numero": 74
+  },
+  {
+    "id": "sev-9070",
+    "nombre": "Andrew's school",
+    "nombre_raw": "Andrew's school",
+    "nombre_normalizado": "andrew s school",
+    "municipio": "Alcalá de Guadaíra",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": null,
+    "lat": 37.3426272,
+    "lng": -5.8372453,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 75
+  },
+  {
+    "id": "sev-9132",
+    "nombre": "BLS IDIOMAS (Sevilla)",
+    "nombre_raw": "BLS IDIOMAS (Sevilla)",
+    "nombre_normalizado": "bls idiomas sevilla",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "C/ Isabela, Nº 1441013 - Sevilla",
+    "direccion_completa": "C/ Isabela, Nº 1441013 - Sevilla",
+    "lat": 37.3751062,
+    "lng": -5.9810778,
+    "telefono": "954615469",
+    "web": null,
+    "email": "info@blsidiomas.com",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/bls-idiomas-sevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 76
+  },
+  {
+    "id": "sev-9107",
+    "nombre": "Canadian Language Institute",
+    "nombre_raw": "Canadian Language Institute",
+    "nombre_normalizado": "canadian language institute",
+    "municipio": "Dos Hermanas",
+    "cp": "41089",
+    "direccion": "Calle París",
+    "direccion_completa": "Calle París",
+    "lat": 37.3321225,
+    "lng": -5.9237954,
+    "telefono": null,
+    "web": "https://www.canadianli.es/",
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng",
+          "web"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 77
+  },
+  {
+    "id": "sev-9096",
+    "nombre": "CBS Language Academy",
+    "nombre_raw": "CBS Language Academy",
+    "nombre_normalizado": "cbs language academy",
+    "municipio": "Mairena del Aljarafe",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": null,
+    "lat": 37.3463482,
+    "lng": -6.053698,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 78
+  },
+  {
+    "id": "sev-9175",
+    "nombre": "CBS LANGUAGE ACADEMY (Bollullos de la  Mitación)",
+    "nombre_raw": "CBS LANGUAGE ACADEMY (Bollullos de la  Mitación)",
+    "nombre_normalizado": "cbs language academy bollullos de la mitacion",
+    "municipio": "Bollullos de la Mitación",
+    "cp": null,
+    "direccion": "",
+    "direccion_completa": null,
+    "lat": null,
+    "lng": null,
+    "telefono": null,
+    "web": "https://cbslanguageacademy.eu",
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/cbs-language-academy-bullullos/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [
+      "EMAIL_PLANTILLA_LIMPIADO"
+    ],
+    "numero": 79
+  },
+  {
+    "id": "sev-9141",
+    "nombre": "CBS LANGUAGE ACADEMY (Bormujos)",
+    "nombre_raw": "CBS LANGUAGE ACADEMY (Bormujos)",
+    "nombre_normalizado": "cbs language academy bormujos",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "Calle Paraje de Paterna, 441930 Bormujos (Sevilla)",
+    "direccion_completa": "Calle Paraje de Paterna, 441930 Bormujos (Sevilla)",
+    "lat": 37.3724951,
+    "lng": -6.080031,
+    "telefono": "954788440",
+    "web": "https://cbslanguageacademy.eu",
+    "email": "info@cbslanguageacademy.eu",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/cbs-language-academy-bormujos/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 80
+  },
+  {
+    "id": "sev-9156",
+    "nombre": "CBS LANGUAGE ACADEMY (Mairena del Aljarafe)",
+    "nombre_raw": "CBS LANGUAGE ACADEMY (Mairena del Aljarafe)",
+    "nombre_normalizado": "cbs language academy mairena del aljarafe",
+    "municipio": "Mairena del Aljarafe",
+    "cp": "41927",
+    "direccion": "C/ Haya nº 17 – Local 41927 Mairena del Aljarafe, Sevilla.",
+    "direccion_completa": "C/ Haya nº 17 – Local 41927 Mairena del Aljarafe, Sevilla.",
+    "lat": null,
+    "lng": null,
+    "telefono": null,
+    "web": "https://cbslanguageacademy.eu",
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/cbs-language-academy-mairena-del-aljarafe/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [
+      "EMAIL_PLANTILLA_LIMPIADO"
+    ],
+    "numero": 81
+  },
+  {
+    "id": "sev-9161",
+    "nombre": "Centro Clic IH(Sevilla)",
+    "nombre_raw": "Centro Clic IH(Sevilla)",
+    "nombre_normalizado": "centro clic ih sevilla",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "",
+    "direccion_completa": null,
+    "lat": null,
+    "lng": null,
+    "telefono": "954502131",
+    "web": null,
+    "email": "bernhard@clic.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/centro-clic-sevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 82
+  },
+  {
+    "id": "sev-9166",
+    "nombre": "CENTRO DE IDIOMAS (Sevilla – NUEVO TORNEO)",
+    "nombre_raw": "CENTRO DE IDIOMAS (Sevilla – NUEVO TORNEO)",
+    "nombre_normalizado": "centro de idiomas sevilla nuevo torneo",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "",
+    "direccion_completa": null,
+    "lat": null,
+    "lng": null,
+    "telefono": "955432531",
+    "web": "https://www.emacarena.com",
+    "email": "infotorneo@emacarena.com",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/centro-de-idiomas-sevilla-nuevo-torneo/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 83
+  },
+  {
+    "id": "sev-9133",
+    "nombre": "Centro de Idiomas Macarena (Macarena)",
+    "nombre_raw": "Centro de Idiomas Macarena (Macarena)",
+    "nombre_normalizado": "centro de idiomas macarena macarena",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "",
+    "direccion_completa": null,
+    "lat": null,
+    "lng": null,
+    "telefono": "954356134",
+    "web": null,
+    "email": "info@emacarena.com",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/centro-de-idiomas-macarena-macarena/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 84
+  },
+  {
+    "id": "sev-9147",
+    "nombre": "CENTRO NORTEAMERICANO DE ESTUDIOS INTERCULTURALES(Sevilla)",
+    "nombre_raw": "CENTRO NORTEAMERICANO DE ESTUDIOS INTERCULTURALES(Sevilla)",
+    "nombre_normalizado": "centro norteamericano de estudios interculturales sevilla",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "",
+    "direccion_completa": null,
+    "lat": null,
+    "lng": null,
+    "telefono": "954224107",
+    "web": null,
+    "email": "juandiego@centronorteamericano.com",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/centro-norteamericano-de-estudios-interculturales/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 85
+  },
+  {
+    "id": "sev-9101",
+    "nombre": "City School",
+    "nombre_raw": "City School",
+    "nombre_normalizado": "city school",
+    "municipio": "Sevilla",
+    "cp": "41019",
+    "direccion": "Avenida de Emilio Lemos, 32",
+    "direccion_completa": "Avenida de Emilio Lemos, 32",
+    "lat": 37.4043767,
+    "lng": -5.9161869,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 86
+  },
+  {
+    "id": "sev-9094",
+    "nombre": "Clic",
+    "nombre_raw": "Clic",
+    "nombre_normalizado": "clic",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "Calle Méndez Núñez, 7",
+    "direccion_completa": "Calle Méndez Núñez, 7",
+    "lat": 37.3898839,
+    "lng": -5.9965222,
+    "telefono": null,
+    "web": "https://www.clic.es/",
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng",
+          "web"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 87
+  },
+  {
+    "id": "sev-9144",
+    "nombre": "ELI (Bormujos)",
+    "nombre_raw": "ELI (Bormujos)",
+    "nombre_normalizado": "eli bormujos",
+    "municipio": "Bormujos",
+    "cp": null,
+    "direccion": "",
+    "direccion_completa": null,
+    "lat": null,
+    "lng": null,
+    "telefono": "955723470",
+    "web": "https://www.eli.es",
+    "email": "bormujos@eli.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/eli-bormujos/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 88
+  },
+  {
+    "id": "sev-9158",
+    "nombre": "ELI (Macarena) SEVILLA",
+    "nombre_raw": "ELI (Macarena) SEVILLA",
+    "nombre_normalizado": "eli macarena sevilla",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "",
+    "direccion_completa": null,
+    "lat": null,
+    "lng": null,
+    "telefono": "954414751",
+    "web": "https://www.eli.es",
+    "email": "macarena@eli.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/eli-sevilla-macarena/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 89
+  },
+  {
+    "id": "sev-9143",
+    "nombre": "ELI (Montequinto)",
+    "nombre_raw": "ELI (Montequinto)",
+    "nombre_normalizado": "eli montequinto",
+    "municipio": "Dos Hermanas",
+    "cp": null,
+    "direccion": "",
+    "direccion_completa": null,
+    "lat": null,
+    "lng": null,
+    "telefono": "954127594",
+    "web": "https://www.eli.es",
+    "email": "montequinto@eli.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/eli-monquiello/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 90
+  },
+  {
+    "id": "sev-9151",
+    "nombre": "ELI [SANTA JUSTA]Sevilla",
+    "nombre_raw": "ELI [SANTA JUSTA]Sevilla",
+    "nombre_normalizado": "eli santa justa sevilla",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "",
+    "direccion_completa": null,
+    "lat": null,
+    "lng": null,
+    "telefono": null,
+    "web": "https://www.eli.es",
+    "email": "santajusta@eli.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/eli-santa-justa-sevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 91
+  },
+  {
+    "id": "sev-9136",
+    "nombre": "ELI Camas(Camas)",
+    "nombre_raw": "ELI Camas(Camas)",
+    "nombre_normalizado": "eli camas camas",
+    "municipio": "Camas",
+    "cp": "41900",
+    "direccion": "C/Jose Payán 37 41900 Camas, Sevilla",
+    "direccion_completa": "C/Jose Payán 37 41900 Camas, Sevilla",
+    "lat": 37.4008062,
+    "lng": -6.0344247,
+    "telefono": "954027523",
+    "web": null,
+    "email": "camas@eli.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/eli-camas-camas/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 92
+  },
+  {
+    "id": "sev-9154",
+    "nombre": "ELI El Porvenir (Sevilla)",
+    "nombre_raw": "ELI El Porvenir (Sevilla)",
+    "nombre_normalizado": "eli el porvenir sevilla",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "C/ HERMANOS PORTILLA]",
+    "direccion_completa": "C/ HERMANOS PORTILLA]",
+    "lat": 36.1422293,
+    "lng": -5.4498087,
+    "telefono": null,
+    "web": "https://www.eli.es",
+    "email": "porvenir@eli.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/eli-el-porvenir-sevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 2,
+    "flags": [
+      "DUPLICADO_FUSIONADO"
+    ],
+    "numero": 93
+  },
+  {
+    "id": "sev-9074",
+    "nombre": "ELI Gines",
+    "nombre_raw": "ELI Gines",
+    "nombre_normalizado": "eli gines",
+    "municipio": "Gines",
+    "cp": "41960",
+    "direccion": "Calle Haza de Liendo, 1",
+    "direccion_completa": "Calle Haza de Liendo, 1",
+    "lat": 37.3850538,
+    "lng": -6.0757616,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 94
+  },
+  {
+    "id": "sev-9148",
+    "nombre": "ELI Nervión(Sevilla)",
+    "nombre_raw": "ELI Nervión(Sevilla)",
+    "nombre_normalizado": "eli nervion sevilla",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "",
+    "direccion_completa": null,
+    "lat": null,
+    "lng": null,
+    "telefono": "954640026",
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/eli-nervionsevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [
+      "EMAIL_PLANTILLA_LIMPIADO"
+    ],
+    "numero": 95
+  },
+  {
+    "id": "sev-9134",
+    "nombre": "ELI Sevilla Este I (Sevilla)",
+    "nombre_raw": "ELI Sevilla Este I (Sevilla)",
+    "nombre_normalizado": "eli sevilla este i sevilla",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "",
+    "direccion_completa": null,
+    "lat": null,
+    "lng": null,
+    "telefono": null,
+    "web": "https://www.eli.es",
+    "email": "sevillaeste1@eli.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/eli-sevilla-este-i-sevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 96
+  },
+  {
+    "id": "sev-9145",
+    "nombre": "ELI SEVILLA ESTE II (Sevilla)",
+    "nombre_raw": "ELI SEVILLA ESTE II (Sevilla)",
+    "nombre_normalizado": "eli sevilla este ii sevilla",
+    "municipio": "Sevilla",
+    "cp": "41020",
+    "direccion": "Avda. de las Ciencias, 35 41020 - Sevilla",
+    "direccion_completa": "Avda. de las Ciencias, 35 41020 - Sevilla",
+    "lat": 37.3984348,
+    "lng": -5.9247789,
+    "telefono": "954401847",
+    "web": "https://www.eli.es",
+    "email": "sevillaeste2@eli.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/eli-sevilla-este-ii-sevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 97
+  },
+  {
+    "id": "sev-9078",
+    "nombre": "ELI Triana",
+    "nombre_raw": "ELI Triana",
+    "nombre_normalizado": "eli triana",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": null,
+    "lat": 37.384978,
+    "lng": -6.0115461,
+    "telefono": "954340734",
+    "web": "https://www.eli.es",
+    "email": "triana@eli.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 2,
+    "flags": [
+      "CONFIRMADO_2DA_FUENTE"
+    ],
+    "numero": 98
+  },
+  {
+    "id": "sev-9176",
+    "nombre": "ENGLISH 1 (Sevilla)",
+    "nombre_raw": "ENGLISH 1 (Sevilla)",
+    "nombre_normalizado": "english 1 sevilla",
+    "municipio": "Sevilla",
+    "cp": "41005",
+    "direccion": "C/ Marqués de Nervión, 116 41005 Sevilla",
+    "direccion_completa": "C/ Marqués de Nervión, 116 41005 Sevilla",
+    "lat": 37.3804498,
+    "lng": -5.9686295,
+    "telefono": null,
+    "web": null,
+    "email": "info@english1sevilla.com",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/english-1-sevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 99
+  },
+  {
+    "id": "sev-9152",
+    "nombre": "ENGLISH DOS HERMANAS(Dos Hemanas)",
+    "nombre_raw": "ENGLISH DOS HERMANAS(Dos Hemanas)",
+    "nombre_normalizado": "english dos hermanas dos hemanas",
+    "municipio": "Dos Hermanas",
+    "cp": "41700",
+    "direccion": "Plaza Huerta de San Luis 6 41700 - Dos Hermanas",
+    "direccion_completa": "Plaza Huerta de San Luis 6 41700 - Dos Hermanas",
+    "lat": 37.2882671,
+    "lng": -5.9239794,
+    "telefono": "610063667",
+    "web": null,
+    "email": "EnglishDH@ono.com",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/english-dos-hermanas/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 100
+  },
+  {
+    "id": "sev-9077",
+    "nombre": "English World",
+    "nombre_raw": "English World",
+    "nombre_normalizado": "english world",
+    "municipio": "Gines",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": null,
+    "lat": 37.3808225,
+    "lng": -6.0844206,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 101
+  },
+  {
+    "id": "sev-9104",
+    "nombre": "Escuela Idiomas Abbla",
+    "nombre_raw": "Escuela Idiomas Abbla",
+    "nombre_normalizado": "escuela idiomas abbla",
+    "municipio": "La Rinconada",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": "Avenida Juan de Mata Carriazo,Núm. 5, 41018, Sevilla",
+    "lat": 37.4851394,
+    "lng": -5.9477329,
+    "telefono": null,
+    "web": null,
+    "email": "hello@abbla.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 2,
+    "flags": [
+      "CONFIRMADO_2DA_FUENTE"
+    ],
+    "numero": 102
+  },
+  {
+    "id": "sev-9163",
+    "nombre": "ESCUELA IDIOMAS CARLOS V(Sevilla)",
+    "nombre_raw": "ESCUELA IDIOMAS CARLOS V(Sevilla)",
+    "nombre_normalizado": "escuela idiomas carlos v sevilla",
+    "municipio": "Sevilla",
+    "cp": "41011",
+    "direccion": "Avda. Republica Argentina, 27B1ªPlanta 41011-Sevilla",
+    "direccion_completa": "Avda. Republica Argentina, 27B1ªPlanta 41011-Sevilla",
+    "lat": null,
+    "lng": null,
+    "telefono": null,
+    "web": null,
+    "email": "info@idiomascarlosv.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/escuela-idiomas-carlos-vsevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 103
+  },
+  {
+    "id": "sev-9103",
+    "nombre": "Escuela Oficial de Idiomas",
+    "nombre_raw": "Escuela Oficial de Idiomas",
+    "nombre_normalizado": "escuela oficial de idiomas",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": null,
+    "lat": 37.4089008,
+    "lng": -5.985568,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 104
+  },
+  {
+    "id": "sev-9075",
+    "nombre": "Giralda Center",
+    "nombre_raw": "Giralda Center",
+    "nombre_normalizado": "giralda center",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": "Avenida Menéndez Pelayo",
+    "lat": 37.391831,
+    "lng": -5.9800092,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 2,
+    "flags": [
+      "CONFIRMADO_2DA_FUENTE"
+    ],
+    "numero": 105
+  },
+  {
+    "id": "sev-9073",
+    "nombre": "Giralda in & out",
+    "nombre_raw": "Giralda in & out",
+    "nombre_normalizado": "giralda in out",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": null,
+    "lat": 37.3936606,
+    "lng": -5.9929365,
+    "telefono": null,
+    "web": "https://giraldainout.es",
+    "email": "info@giraldainout.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 2,
+    "flags": [
+      "CONFIRMADO_2DA_FUENTE"
+    ],
+    "numero": 106
+  },
+  {
+    "id": "sev-9086",
+    "nombre": "Global English",
+    "nombre_raw": "Global English",
+    "nombre_normalizado": "global english",
+    "municipio": "Mairena del Aljarafe",
+    "cp": "41927",
+    "direccion": "Avenida de las Civilizaciones, 17",
+    "direccion_completa": "Avenida de las Civilizaciones, 17",
+    "lat": 37.3399015,
+    "lng": -6.0609606,
+    "telefono": "+34 955 515 443",
+    "web": "https://globalenglishschool.es/",
+    "email": "info@globalenglishschool.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng",
+          "telefono",
+          "web"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 107
+  },
+  {
+    "id": "sev-9093",
+    "nombre": "Global Home Language Center",
+    "nombre_raw": "Global Home Language Center",
+    "nombre_normalizado": "global home language center",
+    "municipio": "Dos Hermanas",
+    "cp": "41701",
+    "direccion": "Avenida Adolfo Suárez, 20",
+    "direccion_completa": "Avenida Adolfo Suárez, 20",
+    "lat": 37.2955468,
+    "lng": -5.936847,
+    "telefono": "+34649054147",
+    "web": "https://www.globalhomedh.com/",
+    "email": "direccion@globalhomedh.com",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng",
+          "telefono",
+          "web"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 108
+  },
+  {
+    "id": "sev-9088",
+    "nombre": "Go Speak English Language School",
+    "nombre_raw": "Go Speak English Language School",
+    "nombre_normalizado": "go speak english language school",
+    "municipio": "Sevilla",
+    "cp": "41006",
+    "direccion": "Calle La Puebla del Rio, 13",
+    "direccion_completa": "Calle La Puebla del Rio, 13",
+    "lat": 37.376144,
+    "lng": -5.9411922,
+    "telefono": null,
+    "web": "https://www.gospeaksevilla.es",
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 2,
+    "flags": [
+      "CONFIRMADO_2DA_FUENTE",
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ],
+    "numero": 109
+  },
+  {
+    "id": "sev-9162",
+    "nombre": "GO SPEAK ENGLISH LANGUAGE SCHOOL 2(Sevilla)",
+    "nombre_raw": "GO SPEAK ENGLISH LANGUAGE SCHOOL 2(Sevilla)",
+    "nombre_normalizado": "go speak english language school 2 sevilla",
+    "municipio": "Sevilla",
+    "cp": "41006",
+    "direccion": "C/Puebla del río,13 41006 Sevilla",
+    "direccion_completa": "C/Puebla del río,13 41006 Sevilla",
+    "lat": 37.374178,
+    "lng": -5.942716,
+    "telefono": null,
+    "web": "https://www.gospeaksevilla.es",
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/go-speak-english-language-school-2sevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ],
+    "numero": 110
+  },
+  {
+    "id": "sev-9185",
+    "nombre": "Helen Doron Bermejales LC",
+    "nombre_raw": "Helen Doron Bermejales LC",
+    "nombre_normalizado": "helen doron bermejales lc",
+    "municipio": "Sevilla",
+    "cp": "41012",
+    "direccion": "Avda. Reino Unido, 9",
+    "direccion_completa": "Avda. Reino Unido, 9",
+    "lat": 37.2436642,
+    "lng": -3.5593227,
+    "telefono": "659681868",
+    "web": "https://helendoron.es/",
+    "email": null,
+    "marca_id": "helendoron",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "HELENDORON",
+    "fuentes": [
+      {
+        "source": "HELENDORON_LOCATIONS",
+        "source_url": "https://helendoron.es/locations/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "direccion",
+          "cp",
+          "telefono",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ],
+    "numero": 111
+  },
+  {
+    "id": "sev-9187",
+    "nombre": "Helen Doron Bormujos LC",
+    "nombre_raw": "Helen Doron Bormujos LC",
+    "nombre_normalizado": "helen doron bormujos lc",
+    "municipio": "Bormujos",
+    "cp": "41930",
+    "direccion": "C/ Uruguay, 10",
+    "direccion_completa": "C/ Uruguay, 10",
+    "lat": 39.4582563,
+    "lng": -0.3870173,
+    "telefono": "614412245",
+    "web": "https://helendoron.es/",
+    "email": null,
+    "marca_id": "helendoron",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "HELENDORON",
+    "fuentes": [
+      {
+        "source": "HELENDORON_LOCATIONS",
+        "source_url": "https://helendoron.es/locations/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "direccion",
+          "cp",
+          "telefono",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ],
+    "numero": 112
+  },
+  {
+    "id": "sev-9189",
+    "nombre": "Helen Doron Carmona LS",
+    "nombre_raw": "Helen Doron Carmona LS",
+    "nombre_normalizado": "helen doron carmona ls",
+    "municipio": "Carmona",
+    "cp": "41410",
+    "direccion": "C/ Prim, 16",
+    "direccion_completa": "C/ Prim, 16",
+    "lat": 43.2583288,
+    "lng": -2.9190615,
+    "telefono": "623396222",
+    "web": "https://helendoron.es/",
+    "email": null,
+    "marca_id": "helendoron",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "HELENDORON",
+    "fuentes": [
+      {
+        "source": "HELENDORON_LOCATIONS",
+        "source_url": "https://helendoron.es/locations/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "direccion",
+          "cp",
+          "telefono",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ],
+    "numero": 113
+  },
+  {
+    "id": "sev-9071",
+    "nombre": "Helen Doron English",
+    "nombre_raw": "Helen Doron English",
+    "nombre_normalizado": "helen doron english",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": null,
+    "lat": 37.3768971,
+    "lng": -5.9961772,
+    "telefono": "+34 675 45 93 67",
+    "web": "https://helendoron.es",
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng",
+          "telefono",
+          "web"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ],
+    "numero": 114
+  },
+  {
+    "id": "sev-9188",
+    "nombre": "Helen Doron La Rinconada LC",
+    "nombre_raw": "Helen Doron La Rinconada LC",
+    "nombre_normalizado": "helen doron la rinconada lc",
+    "municipio": "La Rinconada",
+    "cp": "41300",
+    "direccion": "C/ Alcalde Manuel Ardoy, 1 portal 2",
+    "direccion_completa": "C/ Alcalde Manuel Ardoy, 1 portal 2",
+    "lat": null,
+    "lng": null,
+    "telefono": "623156821",
+    "web": "https://helendoron.es/",
+    "email": null,
+    "marca_id": "helendoron",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "HELENDORON",
+    "fuentes": [
+      {
+        "source": "HELENDORON_LOCATIONS",
+        "source_url": "https://helendoron.es/locations/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "direccion",
+          "cp",
+          "telefono",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ],
+    "numero": 115
+  },
+  {
+    "id": "sev-9182",
+    "nombre": "Helen Doron Los Remedios LC",
+    "nombre_raw": "Helen Doron Los Remedios LC",
+    "nombre_normalizado": "helen doron los remedios lc",
+    "municipio": "Sevilla",
+    "cp": "41011",
+    "direccion": "C/ Virgen de la Victoria, 4",
+    "direccion_completa": "C/ Virgen de la Victoria, 4",
+    "lat": 37.3769347,
+    "lng": -5.9962365,
+    "telefono": "675459367",
+    "web": "https://helendoron.es/",
+    "email": null,
+    "marca_id": "helendoron",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "HELENDORON",
+    "fuentes": [
+      {
+        "source": "HELENDORON_LOCATIONS",
+        "source_url": "https://helendoron.es/locations/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "direccion",
+          "cp",
+          "telefono",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ],
+    "numero": 116
+  },
+  {
+    "id": "sev-9184",
+    "nombre": "Helen Doron Montequinto LC",
+    "nombre_raw": "Helen Doron Montequinto LC",
+    "nombre_normalizado": "helen doron montequinto lc",
+    "municipio": "Dos Hermanas",
+    "cp": "41089",
+    "direccion": "Avda. Europa, 40 local 4-A",
+    "direccion_completa": "Avda. Europa, 40 local 4-A",
+    "lat": null,
+    "lng": null,
+    "telefono": "618067233",
+    "web": "https://helendoron.es/",
+    "email": null,
+    "marca_id": "helendoron",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "HELENDORON",
+    "fuentes": [
+      {
+        "source": "HELENDORON_LOCATIONS",
+        "source_url": "https://helendoron.es/locations/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "direccion",
+          "cp",
+          "telefono",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ],
+    "numero": 117
+  },
+  {
+    "id": "sev-9183",
+    "nombre": "Helen Doron Nervión LC",
+    "nombre_raw": "Helen Doron Nervión LC",
+    "nombre_normalizado": "helen doron nervion lc",
+    "municipio": "Sevilla",
+    "cp": "41005",
+    "direccion": "C/ José Luis de Casso, 56",
+    "direccion_completa": "C/ José Luis de Casso, 56",
+    "lat": 37.3860749,
+    "lng": -5.9692549,
+    "telefono": "648694603",
+    "web": "https://helendoron.es/",
+    "email": null,
+    "marca_id": "helendoron",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "HELENDORON",
+    "fuentes": [
+      {
+        "source": "HELENDORON_LOCATIONS",
+        "source_url": "https://helendoron.es/locations/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "direccion",
+          "cp",
+          "telefono",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ],
+    "numero": 118
+  },
+  {
+    "id": "sev-9186",
+    "nombre": "Helen Doron Sevilla Este LC",
+    "nombre_raw": "Helen Doron Sevilla Este LC",
+    "nombre_normalizado": "helen doron sevilla este lc",
+    "municipio": "Sevilla",
+    "cp": "41020",
+    "direccion": "Avda. de las Ciencias, 20",
+    "direccion_completa": "Avda. de las Ciencias, 20",
+    "lat": 37.4027902,
+    "lng": -5.9274092,
+    "telefono": "670650319",
+    "web": "https://helendoron.es/",
+    "email": null,
+    "marca_id": "helendoron",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "HELENDORON",
+    "fuentes": [
+      {
+        "source": "HELENDORON_LOCATIONS",
+        "source_url": "https://helendoron.es/locations/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "direccion",
+          "cp",
+          "telefono",
+          "email"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [
+      "EMAIL_INCOHERENTE_WEB_LIMPIADO"
+    ],
+    "numero": 119
+  },
+  {
+    "id": "sev-9105",
+    "nombre": "Inglés a Mano Academia de Inglés",
+    "nombre_raw": "Inglés a Mano Academia de Inglés",
+    "nombre_normalizado": "ingles a mano academia de ingles",
+    "municipio": "La Rinconada",
+    "cp": "41309",
+    "direccion": "Calle Virgen del Rocío, 3",
+    "direccion_completa": "Calle Virgen del Rocío, 3",
+    "lat": 37.4883137,
+    "lng": -5.9815972,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 120
+  },
+  {
+    "id": "sev-9098",
+    "nombre": "Instituto Británico de Sevilla",
+    "nombre_raw": "Instituto Británico de Sevilla",
+    "nombre_normalizado": "instituto britanico de sevilla",
+    "municipio": "Sevilla",
+    "cp": "41004",
+    "direccion": "Calle Federico Rubio, 14",
+    "direccion_completa": "Calle Federico Rubio, 14",
+    "lat": 37.3876631,
+    "lng": -5.9895876,
+    "telefono": "+34 954220240",
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng",
+          "telefono"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 121
+  },
+  {
+    "id": "sev-9072",
+    "nombre": "Instituto Británico de Sevilla (Sede Bermejales)",
+    "nombre_raw": "Instituto Británico de Sevilla (Sede Bermejales)",
+    "nombre_normalizado": "instituto britanico de sevilla sede bermejales",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": null,
+    "lat": 37.346819,
+    "lng": -5.976493,
+    "telefono": "+34 954 297 842",
+    "web": "https://www.ibsevilla.es/wp-content/cache/all/index.html",
+    "email": "bermejales@ibsevilla.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng",
+          "telefono",
+          "web"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 122
+  },
+  {
+    "id": "sev-9109",
+    "nombre": "Instituto de Idiomas",
+    "nombre_raw": "Instituto de Idiomas",
+    "nombre_normalizado": "instituto de idiomas",
+    "municipio": "Sevilla",
+    "cp": "41012",
+    "direccion": "Avenida de la Reina Mercedes",
+    "direccion_completa": "Avenida de la Reina Mercedes",
+    "lat": 37.358834,
+    "lng": -5.9867048,
+    "telefono": "+34 954 551 208",
+    "web": "https://institutodeidiomas.us.es/",
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng",
+          "telefono",
+          "web"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 123
+  },
+  {
+    "id": "sev-9168",
+    "nombre": "INSTITUTO SAN FERNANDO DE LA LENGUA ESPAÑOLA (Sevilla)",
+    "nombre_raw": "INSTITUTO SAN FERNANDO DE LA LENGUA ESPAÑOLA (Sevilla)",
+    "nombre_normalizado": "instituto san fernando de la lengua espanola sevilla",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "Calle Juglar 441018 Sevilla",
+    "direccion_completa": "Calle Juglar 441018 Sevilla",
+    "lat": 37.3871038,
+    "lng": -5.9817889,
+    "telefono": "954502121",
+    "web": "https://san-fernando.com",
+    "email": "info@san-fernando.com",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/instituto-san-fernando-de-la-lengua-espanola-sevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 124
+  },
+  {
+    "id": "sev-9080",
+    "nombre": "Kids&Us",
+    "nombre_raw": "Kids&Us",
+    "nombre_normalizado": "kids us",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": null,
+    "lat": 37.3784966,
+    "lng": -5.998516,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 125
+  },
+  {
+    "id": "sev-9178",
+    "nombre": "Kids&Us Dos Hermanas - Entrenúcleos",
+    "nombre_raw": "Kids&Us Dos Hermanas - Entrenúcleos",
+    "nombre_normalizado": "kids us dos hermanas entrenucleos",
+    "municipio": "Dos Hermanas",
+    "direccion": "Avda. José Rodríguez de la Borbolla (edif. Abelia), Dos Hermanas",
+    "direccion_completa": "Avda. José Rodríguez de la Borbolla (edif. Abelia), Dos Hermanas",
+    "lat": 37.3194114,
+    "lng": -5.9282648,
+    "telefono": null,
+    "web": "https://www.kidsandus.es/",
+    "email": null,
+    "marca_id": "kidsus",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "KIDSUS",
+    "fuentes": [
+      {
+        "source": "KIDSUS_LOCALIZADOR",
+        "source_url": "https://www.kidsandus.es/es/academias-ingles/dos-hermanas-entrenucleos",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "direccion"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 126
+  },
+  {
+    "id": "sev-9179",
+    "nombre": "Kids&Us Mairena del Aljarafe",
+    "nombre_raw": "Kids&Us Mairena del Aljarafe",
+    "nombre_normalizado": "kids us mairena del aljarafe",
+    "municipio": "Sevilla",
+    "direccion": "Avenida de las Civilizaciones, Mairena del Aljarafe",
+    "direccion_completa": "Avenida de las Civilizaciones, Mairena del Aljarafe",
+    "lat": 37.3393765,
+    "lng": -6.0635681,
+    "telefono": null,
+    "web": "https://www.kidsandus.es/",
+    "email": null,
+    "marca_id": "kidsus",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "KIDSUS",
+    "fuentes": [
+      {
+        "source": "KIDSUS_LOCALIZADOR",
+        "source_url": "https://www.kidsandus.es/es/academias-ingles/mairena-aljarafe",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "direccion"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 127
+  },
+  {
+    "id": "sev-9177",
+    "nombre": "Kids&Us Sevilla",
+    "nombre_raw": "Kids&Us Sevilla",
+    "nombre_normalizado": "kids us sevilla",
+    "municipio": "Sevilla",
+    "direccion": "Avenida de la República Argentina, Sevilla",
+    "direccion_completa": "Avenida de la República Argentina, Sevilla",
+    "lat": 37.1393624,
+    "lng": -6.1762781,
+    "telefono": null,
+    "web": "https://www.kidsandus.es/",
+    "email": null,
+    "marca_id": "kidsus",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "KIDSUS",
+    "fuentes": [
+      {
+        "source": "KIDSUS_LOCALIZADOR",
+        "source_url": "https://www.kidsandus.es/es/academias-ingles/sevilla",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "direccion"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 128
+  },
+  {
+    "id": "sev-9180",
+    "nombre": "Kids&Us Sevilla Este",
+    "nombre_raw": "Kids&Us Sevilla Este",
+    "nombre_normalizado": "kids us sevilla este",
+    "municipio": "Sevilla",
+    "direccion": "Avenida de las Ciencias 17, local 1, Sevilla",
+    "direccion_completa": "Avenida de las Ciencias 17, local 1, Sevilla",
+    "lat": null,
+    "lng": null,
+    "telefono": null,
+    "web": "https://www.kidsandus.es/",
+    "email": null,
+    "marca_id": "kidsus",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "KIDSUS",
+    "fuentes": [
+      {
+        "source": "KIDSUS_LOCALIZADOR",
+        "source_url": "https://www.kidsandus.es/es/academias-ingles/sevilla-este",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "direccion"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 129
+  },
+  {
+    "id": "sev-9181",
+    "nombre": "Kids&Us Sevilla Nervión",
+    "nombre_raw": "Kids&Us Sevilla Nervión",
+    "nombre_normalizado": "kids us sevilla nervion",
+    "municipio": "Sevilla",
+    "direccion": "Calle Espinosa y Cárcel, 22, Sevilla",
+    "direccion_completa": "Calle Espinosa y Cárcel, 22, Sevilla",
+    "lat": 37.3780069,
+    "lng": -5.9740044,
+    "telefono": null,
+    "web": "https://www.kidsandus.es/",
+    "email": null,
+    "marca_id": "kidsus",
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "KIDSUS",
+    "fuentes": [
+      {
+        "source": "KIDSUS_LOCALIZADOR",
+        "source_url": "https://www.kidsandus.es/es/academias-ingles/sevilla-nervion",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "direccion"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 130
+  },
+  {
+    "id": "sev-9128",
+    "nombre": "Learning is Fun",
+    "nombre_raw": "Learning is Fun",
+    "nombre_normalizado": "learning is fun",
+    "municipio": "Gines",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": null,
+    "lat": 37.3881348,
+    "lng": -6.0854664,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 131
+  },
+  {
+    "id": "sev-9079",
+    "nombre": "My Castle Language School",
+    "nombre_raw": "My Castle Language School",
+    "nombre_normalizado": "my castle language school",
+    "municipio": "Sevilla",
+    "cp": "41008",
+    "direccion": "Ronda de Pío XII, 2",
+    "direccion_completa": "Ronda de Pío XII, 2",
+    "lat": 37.4060392,
+    "lng": -5.9754962,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 132
+  },
+  {
+    "id": "sev-9092",
+    "nombre": "My English House",
+    "nombre_raw": "My English House",
+    "nombre_normalizado": "my english house",
+    "municipio": "Sevilla",
+    "cp": "41018",
+    "direccion": "Juan de Zoyas, 8",
+    "direccion_completa": "Juan de Zoyas, 8",
+    "lat": 37.3859989,
+    "lng": -5.9766601,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 133
+  },
+  {
+    "id": "sev-9076",
+    "nombre": "My Little english class",
+    "nombre_raw": "My Little english class",
+    "nombre_normalizado": "my little english class",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": null,
+    "lat": 37.3927118,
+    "lng": -5.9826846,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 134
+  },
+  {
+    "id": "sev-9090",
+    "nombre": "New Language Institute",
+    "nombre_raw": "New Language Institute",
+    "nombre_normalizado": "new language institute",
+    "municipio": "Sevilla",
+    "cp": "41012",
+    "direccion": "Avenida de la Reina Mercedes, 29",
+    "direccion_completa": "Avenida de la Reina Mercedes, 29",
+    "lat": 37.3598947,
+    "lng": -5.9860329,
+    "telefono": "+34 619369390",
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng",
+          "telefono"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 135
+  },
+  {
+    "id": "sev-9171",
+    "nombre": "Notting Hill",
+    "nombre_raw": "Notting Hill",
+    "nombre_normalizado": "notting hill",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "Calle Virgen de la Estrella nº 10, Sevilla",
+    "direccion_completa": "Calle Virgen de la Estrella nº 10, Sevilla",
+    "lat": 37.3740651,
+    "lng": -6.0002228,
+    "telefono": "954002289",
+    "web": null,
+    "email": "nottingsevillahill@gmail.com",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/notting-hill/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 136
+  },
+  {
+    "id": "sev-9167",
+    "nombre": "PENNY LANE ENGLISH SCHOOL San José de la Rinconada",
+    "nombre_raw": "PENNY LANE ENGLISH SCHOOL San José de la Rinconada",
+    "nombre_normalizado": "penny lane english school san jose de la rinconada",
+    "municipio": "La Rinconada",
+    "cp": "41300",
+    "direccion": "C/Vereda de los Chapatales 41300 - San Jose de la Rinconada Datos de [&hellip;]\" />",
+    "direccion_completa": "C/Vereda de los Chapatales 41300 - San Jose de la Rinconada Datos de [&hellip;]\" />",
+    "lat": null,
+    "lng": null,
+    "telefono": null,
+    "web": "https://www.pennylaneenglishschool.com",
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/penny-lane-english-school/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [
+      "EMAIL_PLANTILLA_LIMPIADO"
+    ],
+    "numero": 137
+  },
+  {
+    "id": "sev-9131",
+    "nombre": "PREMIER SCHOOL OF ENGLISH (Utrera)",
+    "nombre_raw": "PREMIER SCHOOL OF ENGLISH (Utrera)",
+    "nombre_normalizado": "premier school of english utrera",
+    "municipio": "Utrera",
+    "cp": "41710",
+    "direccion": "C/ Perafan de Rivera 1 Local 41710 - Utrera",
+    "direccion_completa": "C/ Perafan de Rivera 1 Local 41710 - Utrera",
+    "lat": null,
+    "lng": null,
+    "telefono": "955861951",
+    "web": null,
+    "email": "premier.english@hotmail.com",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/premier-school-of-english-utrera/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 138
+  },
+  {
+    "id": "sev-9102",
+    "nombre": "Ronan's School",
+    "nombre_raw": "Ronan's School",
+    "nombre_normalizado": "ronan s school",
+    "municipio": "Dos Hermanas",
+    "cp": "41701",
+    "direccion": "Calle Doctor Fleming",
+    "direccion_completa": "Calle Doctor Fleming",
+    "lat": 37.2833835,
+    "lng": -5.9331222,
+    "telefono": "+34 955 08 22 68",
+    "web": null,
+    "email": "doctorfleming@ronanschool.com",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng",
+          "telefono"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 139
+  },
+  {
+    "id": "sev-9173",
+    "nombre": "SAINT GABRIEL EDUARDO DATO(Sevilla)",
+    "nombre_raw": "SAINT GABRIEL EDUARDO DATO(Sevilla)",
+    "nombre_normalizado": "saint gabriel eduardo dato sevilla",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "Avenida Eduardo Dato nº 2241018 Sevilla",
+    "direccion_completa": "Avenida Eduardo Dato nº 2241018 Sevilla",
+    "lat": null,
+    "lng": null,
+    "telefono": null,
+    "web": null,
+    "email": "sgnervion@stgabriel.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/saint-gabriel-eduardo-dato-sevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 140
+  },
+  {
+    "id": "sev-9164",
+    "nombre": "SAINT GABRIEL REINA MERCEDES (Sevilla)",
+    "nombre_raw": "SAINT GABRIEL REINA MERCEDES (Sevilla)",
+    "nombre_normalizado": "saint gabriel reina mercedes sevilla",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "",
+    "direccion_completa": null,
+    "lat": null,
+    "lng": null,
+    "telefono": null,
+    "web": null,
+    "email": "secretaria@stgabriel.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/saint-gabriel-reina-mercedes-sevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 141
+  },
+  {
+    "id": "sev-9142",
+    "nombre": "SEVILLA HABLA LANGUAGES (Sevilla)",
+    "nombre_raw": "SEVILLA HABLA LANGUAGES (Sevilla)",
+    "nombre_normalizado": "sevilla habla languages sevilla",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "C/ Cuesta del Rosario 8 2ºB41004 Sevilla",
+    "direccion_completa": "C/ Cuesta del Rosario 8 2ºB41004 Sevilla",
+    "lat": null,
+    "lng": null,
+    "telefono": null,
+    "web": null,
+    "email": "info@sevillahabla.com",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/sevilla-habla-languages-sevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 142
+  },
+  {
+    "id": "sev-9095",
+    "nombre": "St James Language Center",
+    "nombre_raw": "St James Language Center",
+    "nombre_normalizado": "st james language center",
+    "municipio": "Mairena del Aljarafe",
+    "cp": "41927",
+    "direccion": "Calle Galileo Galilei, 5",
+    "direccion_completa": "Calle Galileo Galilei, 5",
+    "lat": 37.341747,
+    "lng": -6.0554159,
+    "telefono": "+34954187244",
+    "web": "https://www.stjames.es/",
+    "email": "nuevobulevar@stjames.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng",
+          "telefono",
+          "web"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 143
+  },
+  {
+    "id": "sev-9084",
+    "nombre": "St. James",
+    "nombre_raw": "St. James",
+    "nombre_normalizado": "st james",
+    "municipio": "Mairena del Aljarafe",
+    "cp": null,
+    "direccion": "Avenida de la Filosofía, 8",
+    "direccion_completa": "Avenida de la Filosofía, 8",
+    "lat": 37.3401212,
+    "lng": -6.0612783,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 144
+  },
+  {
+    "id": "sev-9140",
+    "nombre": "ST. JAMES (Mairena Centro)",
+    "nombre_raw": "ST. JAMES (Mairena Centro)",
+    "nombre_normalizado": "st james mairena centro",
+    "municipio": "Mairena del Aljarafe",
+    "cp": "41927",
+    "direccion": "Avda. de la Filosofía, 8 41927 Mairena del Aljarafe",
+    "direccion_completa": "Avda. de la Filosofía, 8 41927 Mairena del Aljarafe",
+    "lat": 37.3401212,
+    "lng": -6.0612783,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/st-james-mairena-centro/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [
+      "EMAIL_PLANTILLA_LIMPIADO"
+    ],
+    "numero": 145
+  },
+  {
+    "id": "sev-9137",
+    "nombre": "ST. JAMES (San Juan Aznalfarache)",
+    "nombre_raw": "ST. JAMES (San Juan Aznalfarache)",
+    "nombre_normalizado": "st james san juan aznalfarache",
+    "municipio": "San Juan de Aznalfarache",
+    "cp": "41920",
+    "direccion": "C/ Francisco M. González «Paloyo», Locales 12 y 13 41920 San Juan de Aznalfarache Datos de c",
+    "direccion_completa": "C/ Francisco M. González «Paloyo», Locales 12 y 13 41920 San Juan de Aznalfarache Datos de c",
+    "lat": null,
+    "lng": null,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/st-james-san-juan-aznalfarache/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [
+      "EMAIL_PLANTILLA_LIMPIADO"
+    ],
+    "numero": 146
+  },
+  {
+    "id": "sev-9146",
+    "nombre": "ST. JAMES Bulevar (Mairena del Aljarafe)",
+    "nombre_raw": "ST. JAMES Bulevar (Mairena del Aljarafe)",
+    "nombre_normalizado": "st james bulevar mairena del aljarafe",
+    "municipio": "Mairena del Aljarafe",
+    "cp": null,
+    "direccion": "Calle Galileo Galilei, 5, Local 1041927 Mairena del Aljarafe",
+    "direccion_completa": "Calle Galileo Galilei, 5, Local 1041927 Mairena del Aljarafe",
+    "lat": 37.341578,
+    "lng": -6.0556126,
+    "telefono": null,
+    "web": "https://www.stjames.es",
+    "email": "stjames@stjames.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/st-james-bulevar-mairena-del-aljarafe/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 147
+  },
+  {
+    "id": "sev-9159",
+    "nombre": "St. James Ciudad Expo(Mairena del Aljarafe)",
+    "nombre_raw": "St. James Ciudad Expo(Mairena del Aljarafe)",
+    "nombre_normalizado": "st james ciudad expo mairena del aljarafe",
+    "municipio": "Mairena del Aljarafe",
+    "cp": null,
+    "direccion": "",
+    "direccion_completa": null,
+    "lat": null,
+    "lng": null,
+    "telefono": "954187244",
+    "web": null,
+    "email": "burunuela@stjames.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/st-james-ciudad-expo-mairena-del-aljarafe/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 148
+  },
+  {
+    "id": "sev-9157",
+    "nombre": "ST. JAMES Pilas",
+    "nombre_raw": "ST. JAMES Pilas",
+    "nombre_normalizado": "st james pilas",
+    "municipio": "Pilas",
+    "cp": "41840",
+    "direccion": "Avda. Pío XII, 75 Local 41840 Pilas (Sevilla)",
+    "direccion_completa": "Avda. Pío XII, 75 Local 41840 Pilas (Sevilla)",
+    "lat": null,
+    "lng": null,
+    "telefono": "954750378",
+    "web": null,
+    "email": "pilas@stjames.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/st-james-pilas/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 149
+  },
+  {
+    "id": "sev-9170",
+    "nombre": "TAKE ENGLISH AMATE(Sevilla)",
+    "nombre_raw": "TAKE ENGLISH AMATE(Sevilla)",
+    "nombre_normalizado": "take english amate sevilla",
+    "municipio": "Sevilla",
+    "cp": "41006",
+    "direccion": "C/ Puerto de los Alazores 9 41006 Sevilla",
+    "direccion_completa": "C/ Puerto de los Alazores 9 41006 Sevilla",
+    "lat": 37.3753382,
+    "lng": -5.9557087,
+    "telefono": "954651062",
+    "web": "https://www.takeenglish.es",
+    "email": "info@takeenglish.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/take-english-amate-sevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 150
+  },
+  {
+    "id": "sev-9139",
+    "nombre": "TAKE ENGLISH LA NEGRILLA(Sevilla)",
+    "nombre_raw": "TAKE ENGLISH LA NEGRILLA(Sevilla)",
+    "nombre_normalizado": "take english la negrilla sevilla",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "C/ Moriles 141006 Sevilla",
+    "direccion_completa": "C/ Moriles 141006 Sevilla",
+    "lat": 37.375751,
+    "lng": -5.9397889,
+    "telefono": null,
+    "web": "https://www.takeenglish.es",
+    "email": "info@takeenglish.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/take-english-la-negrilla-sevilla/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 151
+  },
+  {
+    "id": "sev-9087",
+    "nombre": "Take English School",
+    "nombre_raw": "Take English School",
+    "nombre_normalizado": "take english school",
+    "municipio": "Sevilla",
+    "cp": "41006",
+    "direccion": "Calle Moriles, 1",
+    "direccion_completa": "Calle Moriles, 1",
+    "lat": 37.3758578,
+    "lng": -5.9398697,
+    "telefono": "+34955235444",
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng",
+          "telefono"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 152
+  },
+  {
+    "id": "sev-9097",
+    "nombre": "Teb English",
+    "nombre_raw": "Teb English",
+    "nombre_normalizado": "teb english",
+    "municipio": "Sevilla",
+    "cp": "41010",
+    "direccion": "Calle Ardilla, 10",
+    "direccion_completa": "Calle Ardilla, 10",
+    "lat": 37.3804725,
+    "lng": -6.0009583,
+    "telefono": "+34679969479",
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng",
+          "telefono"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 2,
+    "flags": [
+      "CONFIRMADO_2DA_FUENTE"
+    ],
+    "numero": 153
+  },
+  {
+    "id": "sev-9149",
+    "nombre": "THE BRITISH SCHOOL (Sanlúcar la Mayor)",
+    "nombre_raw": "THE BRITISH SCHOOL (Sanlúcar la Mayor)",
+    "nombre_normalizado": "the british school sanlucar la mayor",
+    "municipio": "Sanlúcar la Mayor",
+    "cp": null,
+    "direccion": "",
+    "direccion_completa": null,
+    "lat": null,
+    "lng": null,
+    "telefono": "693435994",
+    "web": "https://thebritishschool.net",
+    "email": "info.thebritishschool@gmail.com",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/the-british-school-sanlucar-la-mayor/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 154
+  },
+  {
+    "id": "sev-9135",
+    "nombre": "The British School Aljarafe (Castilleja de la Cuesta)",
+    "nombre_raw": "The British School Aljarafe (Castilleja de la Cuesta)",
+    "nombre_normalizado": "the british school aljarafe castilleja de la cuesta",
+    "municipio": "Castilleja de la Cuesta",
+    "cp": "41950",
+    "direccion": "C/ Ines Rosales, 16 41950 - Castilleja de la Cuesta",
+    "direccion_completa": "C/ Ines Rosales, 16 41950 - Castilleja de la Cuesta",
+    "lat": 37.3853424,
+    "lng": -6.0550128,
+    "telefono": "691933061",
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/the-british-school-castilleja-de-la-cuesta/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [
+      "EMAIL_PLANTILLA_LIMPIADO"
+    ],
+    "numero": 155
+  },
+  {
+    "id": "sev-9160",
+    "nombre": "The English Center by Elisabeth",
+    "nombre_raw": "The English Center by Elisabeth",
+    "nombre_normalizado": "the english center by elisabeth",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "",
+    "direccion_completa": null,
+    "lat": null,
+    "lng": null,
+    "telefono": "689599424",
+    "web": null,
+    "email": "thenglishcenter@gmail.com",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/the-english-center-by-elisabeth/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 156
+  },
+  {
+    "id": "sev-9106",
+    "nombre": "The English House",
+    "nombre_raw": "The English House",
+    "nombre_normalizado": "the english house",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "Avenida Paseo de Europa",
+    "direccion_completa": "Avenida Paseo de Europa",
+    "lat": 37.3450247,
+    "lng": -5.9797545,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 157
+  },
+  {
+    "id": "sev-9081",
+    "nombre": "The English Plaza",
+    "nombre_raw": "The English Plaza",
+    "nombre_normalizado": "the english plaza",
+    "municipio": "Sevilla",
+    "cp": "41010",
+    "direccion": "Calle Trabajo, 8 Local 6",
+    "direccion_completa": "Calle Trabajo, 8 Local 6",
+    "lat": 37.3796625,
+    "lng": -6.0046442,
+    "telefono": "+34 954000520",
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng",
+          "telefono"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 158
+  },
+  {
+    "id": "sev-9138",
+    "nombre": "THE LANGUAGE PROJECT (Sevilla Centro)",
+    "nombre_raw": "THE LANGUAGE PROJECT (Sevilla Centro)",
+    "nombre_normalizado": "the language project sevilla centro",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "Plaza de los Terceros 8 Bajo41003 Sevilla",
+    "direccion_completa": "Plaza de los Terceros 8 Bajo41003 Sevilla",
+    "lat": null,
+    "lng": null,
+    "telefono": "955290006",
+    "web": "https://www.thelanguageproject.es",
+    "email": "info@thelanguageproject.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/the-language-project-sevilla-centro/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 159
+  },
+  {
+    "id": "sev-9174",
+    "nombre": "THE LANGUAGE PROJECT (Triana)",
+    "nombre_raw": "THE LANGUAGE PROJECT (Triana)",
+    "nombre_normalizado": "the language project triana",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": "Calle Manuel Arellano 9 A41010 Sevilla",
+    "direccion_completa": "Calle Manuel Arellano 9 A41010 Sevilla",
+    "lat": null,
+    "lng": null,
+    "telefono": null,
+    "web": "https://www.thelanguageproject.es",
+    "email": "info@thelanguageproject.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/the-language-project-triana/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 160
+  },
+  {
+    "id": "sev-9155",
+    "nombre": "THE LANGUAGE PROJECT Tomares",
+    "nombre_raw": "THE LANGUAGE PROJECT Tomares",
+    "nombre_normalizado": "the language project tomares",
+    "municipio": "Tomares",
+    "cp": null,
+    "direccion": "",
+    "direccion_completa": null,
+    "lat": null,
+    "lng": null,
+    "telefono": "955290006",
+    "web": "https://www.thelanguageproject.es",
+    "email": "info@thelanguageproject.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/the-language-project-tomares/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 161
+  },
+  {
+    "id": "sev-9169",
+    "nombre": "Thompson English Academy",
+    "nombre_raw": "Thompson English Academy",
+    "nombre_normalizado": "thompson english academy",
+    "municipio": "Sanlúcar la Mayor",
+    "cp": null,
+    "direccion": "Avenida Presidente Adolfo Suarez, no17 local 5 - Sanlúcar la Mayor 636 263 844 info@thompso",
+    "direccion_completa": "Avenida Presidente Adolfo Suarez, no17 local 5 - Sanlúcar la Mayor 636 263 844 info@thompso",
+    "lat": null,
+    "lng": null,
+    "telefono": null,
+    "web": "https://thompsonenglishacademy.es",
+    "email": "info@thompsonenglishacademy.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/thompson-english-academy/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 162
+  },
+  {
+    "id": "sev-9150",
+    "nombre": "Winchester Language School",
+    "nombre_raw": "Winchester Language School",
+    "nombre_normalizado": "winchester language school",
+    "municipio": "Dos Hermanas",
+    "cp": "41702",
+    "direccion": "C/ Padre Ramón Ramos Torres, 1 41702 Dos Hermanas 601 08 15 46 info-vistazul@winchesterschoo",
+    "direccion_completa": "C/ Padre Ramón Ramos Torres, 1 41702 Dos Hermanas 601 08 15 46 info-vistazul@winchesterschoo",
+    "lat": null,
+    "lng": null,
+    "telefono": "601081546",
+    "web": null,
+    "email": "info-vistazul@winchesterschool.es",
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "MEDIA",
+    "fuente_origen": "ACEIA",
+    "fuentes": [
+      {
+        "source": "ACEIA",
+        "source_url": "https://aceia.es/portfolio/winchester-language-school/",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 163
+  },
+  {
+    "id": "sev-9082",
+    "nombre": "Winners",
+    "nombre_raw": "Winners",
+    "nombre_normalizado": "winners",
+    "municipio": "Tomares",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": null,
+    "lat": 37.374694,
+    "lng": -6.0411868,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 164
+  },
+  {
+    "id": "sev-9100",
+    "nombre": "Yes",
+    "nombre_raw": "Yes",
+    "nombre_normalizado": "yes",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": null,
+    "lat": 37.4021682,
+    "lng": -5.9211634,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 165
+  },
+  {
+    "id": "sev-9099",
+    "nombre": "Yes escuela de idiomas",
+    "nombre_raw": "Yes escuela de idiomas",
+    "nombre_normalizado": "yes escuela de idiomas",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": null,
+    "lat": 37.3936644,
+    "lng": -5.9928676,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 166
+  },
+  {
+    "id": "sev-9089",
+    "nombre": "yes in spain",
+    "nombre_raw": "yes in spain",
+    "nombre_normalizado": "yes in spain",
+    "municipio": "Sevilla",
+    "cp": null,
+    "direccion": null,
+    "direccion_completa": null,
+    "lat": 37.3942915,
+    "lng": -5.9984041,
+    "telefono": null,
+    "web": null,
+    "email": null,
+    "marca_id": null,
+    "estado": "ACTIVO",
+    "confianza": "BAJA",
+    "fuente_origen": "OVERPASS",
+    "fuentes": [
+      {
+        "source": "OSM_OVERPASS",
+        "fecha_captura": "2026-08-15",
+        "campos": [
+          "nombre",
+          "lat",
+          "lng"
+        ]
+      }
+    ],
+    "n_fuentes_independientes": 1,
+    "flags": [],
+    "numero": 167
+  }
+]
