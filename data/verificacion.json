@@ -1,0 +1,114 @@
+[
+ {
+  "id": "sev-9000",
+  "nombre": "Academia Afoban",
+  "estado_dataset": "ACTIVO",
+  "veredicto": "CERRADO",
+  "razones": [
+   "Google Maps marca cerrado permanentemente"
+  ],
+  "nombre_en_maps": "Academia Afoban",
+  "place_id": "ChIJ24Bzeg5sEg0RahozjmxaejA",
+  "maps_total": null,
+  "rating": 3.5,
+  "categoria_maps": null,
+  "telefono_maps": null,
+  "web_maps": null,
+  "mensaje_maps": null,
+  "telefono_coincide": null,
+  "web_coincide": null,
+  "dias_ultima_resena": null,
+  "reviews": [],
+  "error": null,
+  "segundos": 47.5,
+  "fecha_verificacion": "2026-09-24"
+ },
+ {
+  "id": "sev-9001",
+  "nombre": "Academia CIDE. Refuerzo educativo e inglés",
+  "estado_dataset": "ACTIVO",
+  "veredicto": "OK",
+  "razones": [
+   "reseña hace ~2 meses",
+   "señales: telefono, web, resenas, categoria"
+  ],
+  "nombre_en_maps": "Academia CIDE. Refuerzo educativo e inglés",
+  "place_id": "ChIJD89HIrVxEg0RqIgJTZeXEh8",
+  "maps_total": 36,
+  "rating": 4.9,
+  "categoria_maps": "Centro de refuerzo escolar·",
+  "telefono_maps": "640 10 66 06",
+  "web_maps": "cidesevilla.com",
+  "mensaje_maps": null,
+  "telefono_coincide": false,
+  "web_coincide": false,
+  "dias_ultima_resena": 60,
+  "reviews": [
+   {
+    "name": "Adrian Pacheco Fernandez",
+    "when": "Hace 2 meses"
+   },
+   {
+    "name": "Razas Clínica Veterinaria",
+    "when": "Hace 6 meses"
+   },
+   {
+    "name": "Maria Martinez",
+    "when": "Hace 2 meses"
+   }
+  ],
+  "error": null,
+  "segundos": 45.8,
+  "fecha_verificacion": "2026-09-24"
+ },
+ {
+  "id": "sev-9002",
+  "nombre": "Academia de Enseñanza Méndez Núñez",
+  "estado_dataset": "ACTIVO",
+  "veredicto": "REVISAR",
+  "razones": [
+   "sin reseñas con fecha (¿negocio sin volumen de reseñas?)",
+   "señales: telefono, web, categoria"
+  ],
+  "nombre_en_maps": "Academia de Enseñanza Méndez Núñez",
+  "place_id": "ChIJaZB80RFsEg0RPFqwxrSbs5A",
+  "maps_total": null,
+  "rating": 4.7,
+  "categoria_maps": "Centro educativo·",
+  "telefono_maps": "954 22 52 25",
+  "web_maps": "academiamn.com",
+  "mensaje_maps": null,
+  "telefono_coincide": null,
+  "web_coincide": null,
+  "dias_ultima_resena": null,
+  "reviews": [],
+  "error": null,
+  "segundos": 48.7,
+  "fecha_verificacion": "2026-09-24"
+ },
+ {
+  "id": "sev-9003",
+  "nombre": "ACADEMIA OXFORD (Sevilla)",
+  "estado_dataset": "ACTIVO",
+  "veredicto": "NO_ENCONTRADO",
+  "razones": [
+   "Google Maps no devuelve ninguna ficha para este nombre",
+   "revisar nombre en el dataset o dar de baja: NO es prueba de cierre"
+  ],
+  "nombre_en_maps": null,
+  "place_id": null,
+  "maps_total": null,
+  "rating": null,
+  "categoria_maps": null,
+  "telefono_maps": null,
+  "web_maps": null,
+  "mensaje_maps": "\n\n\n\nGuardado\n\nRecientes\n\nDescargar aplicación\nGoogle Maps no encuentra ACADEMIA OXFORD (Sevilla)\nComprueba que la ",
+  "telefono_coincide": null,
+  "web_coincide": null,
+  "dias_ultima_resena": null,
+  "reviews": [],
+  "error": null,
+  "segundos": 29.7,
+  "fecha_verificacion": "2026-09-24"
+ }
+]
